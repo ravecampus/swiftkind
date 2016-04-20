@@ -1,3 +1,66 @@
-html, body {
-  min-height: 100%;
+.banner-wrapper {
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.banner-wrapper .icon-bar {
+  display: flex;
+  width: 36px;
+  height: 1px;
+  margin-top: 9px;
+  background: #fff;
+}
+.banner-wrapper .nav-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: none;
+}
+.banner-wrapper .navbar {
+  padding-top: 80px;
+}
+.banner-wrapper .navbar a {
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 36px;
+}
+.banner-wrapper .navbar a.navbar-brand {
+  display: inline;
+}
+.banner-wrapper .navbar a.navbar-brand img {
+  width: 42px;
+  height: 42px;
+  display: inline;
+  margin-right: 15px;
+}
+.banner-wrapper .affix {
+  background-color: #1f1f1f;
+  padding-top: 0;
+  transition: background .2s ease-in-out,padding .2s ease-in-out;
+}
+.banner-wrapper .affix a {
+  font-size: 20px;
+}
+.banner-wrapper .affix a.navbar-brand img {
+  width: 32px;
+  height: 32px;
+}
+.banner-wrapper .inner-content h1 {
+  color: #fff;
+  padding-bottom: 130px;
+  padding-top: 215px;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+.banner-wrapper .inner-content .btn-arrow {
+  padding-bottom: 290px;
+  background: url("../images/arrow.png") no-repeat;
+  width: 39px;
+  height: 39px;
 }
