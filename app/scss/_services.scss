@@ -1,0 +1,59 @@
+.entire-text {
+  top:40px;
+  position:relative;
+  font-family:  $font-family-Source-Sans-light;
+}
+
+.col2 {
+  margin-top: 85px;
+}
+
+.col2 h5 {
+  font-size: 25px;
+}
+
+.col2 button {
+  background-color: transparent;
+  border-color: blue;
+  padding: 5px 25px;
+  border-style: solid;
+  margin-top: 70px;
+  font-family:  $font-family-Source-Sans-light;
+  border-width: 0.1px;
+}
+
+.h1Projects h1 {
+  vertical-align:bottom;
+  float: right;
+  margin-right: 190px;
+  margin-top: 60px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight:bold;
+  font-family:  $font-family-Source-Sans-light;
+}
+
+hr {
+  width: 75px;
+  border-top: 2px solid #000;
+  float:right;
+
+}
+
+.inner-title {
+  margin-right:187px;
+  font-family:  $font-family-Source-Sans-light;
+
+
+}
+
+.inner-title h2 {
+   font-size:40px;
+   font-family:  $font-family-Source-Sans-light;
+  font-weight:bold;
+}
+
+
+#main {
+  background-color:#fff;
+}

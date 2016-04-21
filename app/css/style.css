@@ -1,8 +1,28 @@
+@font-face {
+  font-family: 'Source-Light';
+  src: url(../fonts/SourceSansPro-Light.eot);
+  src: url(../fonts/SourceSansPro-Light.eot?#iefix) format("embedded-opentype"), url(../fonts/SourceSansPro-Light.woff) format("woff"), url(../fonts/SourceSansPro-Light.ttf) format("truetype"), url(../fonts/SourceSansPro-Light.otf) format("otf");
+}
+@font-face {
+  font-family: 'Source-Regular';
+  src: url(../fonts/SourceSansPro-Regular.eot);
+  src: url(../fonts/SourceSansPro-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/SourceSansPro-Regular.woff) format("woff"), url(../fonts/SourceSansPro-Regular.ttf) format("truetype"), url(../fonts/SourceSansPro-Regular.otf) format("otf");
+}
+@font-face {
+  font-family: 'Source-Bold';
+  src: url(../fonts/SourceSansPro-Bold.eot);
+  src: url(../fonts/SourceSansPro-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/SourceSansPro-Bold.woff) format("woff"), url(../fonts/SourceSansPro-Bold.ttf) format("truetype"), url(../fonts/SourceSansPro-Bold.otf) format("otf");
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .banner-wrapper {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header3.png");
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
+  background-color: #fff;
 }
 .banner-wrapper .icon-bar {
   display: flex;
@@ -21,6 +41,7 @@
   background-color: transparent;
   background-image: none;
   border: none;
+  z-index: 9;
 }
 .banner-wrapper .navbar {
   padding-top: 80px;
@@ -40,9 +61,12 @@
   margin-right: 15px;
 }
 .banner-wrapper .affix {
-  background-color: #1f1f1f;
   padding-top: 0;
-  transition: background .2s ease-in-out,padding .2s ease-in-out;
+  overflow: hidden;
+  -moz-transition: padding 0.2s ease-in-out;
+  -o-transition: padding 0.2s ease-in-out;
+  -webkit-transition: padding 0.2s ease-in-out;
+  transition: padding 0.2s ease-in-out;
 }
 .banner-wrapper .affix a {
   font-size: 20px;
@@ -54,13 +78,180 @@
 .banner-wrapper .inner-content h1 {
   color: #fff;
   padding-bottom: 130px;
-  padding-top: 215px;
+  padding-top: 245px;
   text-transform: uppercase;
-  font-size: 50px;
+  font-size: 75px;
+  font-family: "Source-Light", sans-serif;
 }
 .banner-wrapper .inner-content .btn-arrow {
-  padding-bottom: 290px;
-  background: url("../images/arrow.png") no-repeat;
+  margin-bottom: 430px;
   width: 39px;
   height: 39px;
+}
+
+#main {
+  padding-bottom: 900px;
+}
+
+/*
+
+  JV jQuery Mobile Menu
+  Author: Julius van der Vaart (http://juliusvaart.com)
+  Version: 2
+
+*/
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #1e1f24;
+}
+
+.page {
+  width: 100%;
+  min-height: 100%;
+  background: #000;
+  overflow: auto;
+  position: relative;
+}
+
+.mobile-nav {
+  padding-top: 150px;
+  background: #1e1f24;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -moz-transition: background 0.5s ease-in-out;
+  -o-transition: background 0.5s ease-in-out;
+  -webkit-transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
+}
+.mobile-nav ul {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+.mobile-nav ul.social-media {
+  width: 140px;
+  padding-top: 30px;
+}
+.mobile-nav ul.social-media li {
+  display: inline-block;
+  margin: 5px;
+  width: 20px;
+}
+.mobile-nav ul.social-media li a {
+  margin: 0;
+  color: #fff;
+  font-size: 20px;
+}
+.mobile-nav ul li {
+  list-style: none;
+  text-align: center;
+  margin: 20px 0;
+}
+.mobile-nav ul li a {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "Source-Light", sans-serif;
+  color: #565654;
+}
+.mobile-nav ul li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hamburger {
+  margin: 10px;
+  padding: 10px 10px 9px;
+  cursor: pointer;
+  z-index: 999;
+  display: block;
+}
+.hamburger .hamburger-inner {
+  position: relative;
+  height: 21px;
+  width: 30px;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.hamburger .bar {
+  width: 30px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+}
+.hamburger .bar.bar2, .hamburger .bar.bar3 {
+  top: 9px;
+}
+.hamburger .bar.bar4 {
+  top: 18px;
+}
+.hamburger.open .bar1,
+.hamburger.open .bar4 {
+  display: none;
+}
+.hamburger.open .bar2,
+.hamburger.open .bar3 {
+  height: 3px;
+}
+
+.entire-text {
+  top: 40px;
+  position: relative;
+  font-family: "Source-Light", sans-serif;
+}
+
+.col2 {
+  margin-top: 85px;
+}
+
+.col2 h5 {
+  font-size: 25px;
+}
+
+.col2 button {
+  background-color: transparent;
+  border-color: blue;
+  padding: 5px 25px;
+  border-style: solid;
+  margin-top: 70px;
+  font-family: "Source-Light", sans-serif;
+  border-width: 0.1px;
+}
+
+.h1Projects h1 {
+  vertical-align: bottom;
+  float: right;
+  margin-right: 190px;
+  margin-top: 60px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Source-Light", sans-serif;
+}
+
+hr {
+  width: 75px;
+  border-top: 2px solid #000;
+  float: right;
+}
+
+.inner-title {
+  margin-right: 187px;
+  font-family: "Source-Light", sans-serif;
+}
+
+.inner-title h2 {
+  font-size: 40px;
+  font-family: "Source-Light", sans-serif;
+  font-weight: bold;
+}
+
+#main {
+  background-color: #fff;
 }
