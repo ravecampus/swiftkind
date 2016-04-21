@@ -9,6 +9,8 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<!--		<link rel="stylesheet" href="css/jv-jquery-mobile-menu.css">-->
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,17 +20,29 @@
 		<![endif]-->
 	</head>
 	<body>
+
+	<div class="page">
 		<div class="banner-wrapper">
 			<nav class="navbar navbar-fixed-top" data-spy="affix" data-offset-top="200">
 				<div class="container">
 					<a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo">swiftkind</a>
-			<button type="button" class="nav-toggle">
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>                   
-		      </button>
-				</div>
-			</nav>
+					<div class="hamburger pull-right"><div class="clearfix"></div>
+						<div class="hamburger-inner">
+							<div class="bar bar1"></div>
+							<div class="bar bar2 cross"></div>
+							<div class="bar bar3 cross"></div>
+							<div class="bar bar4"></div>
+						</div>
+					</div>
+
+				<!--<button type="button" class="hamburger nav-toggle">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>                   
+				      </button>-->
+				</div><!-- / container -->
+
+			</nav><!-- / navbar -->
 
 			<header>
 				<div class="container">
@@ -37,26 +51,48 @@
 							<h1>Strategy</h1>
 						</div>
 
-						<a href="#" class="btn btn-arrow"></a>
+						<a href="#" class="btn btn-arrow"><img src="images/arrow.png" alt=""></a>
 
-					</div>
-				</div>
-			</header>
-		</div>
+					</div><!-- / inner-content -->
+				</div><!-- / container -->
+			</header><!-- / header -->
+		</div><!-- / banner-wrapper -->
 
 		<section id="main">
 			
 		</section>
-
+		<section id="main2">
+			<h1>sapml</h1>
+		</section>
 		<footer>
 			
 		</footer>
+</div>
+		 <div class="mobile-nav">
+		    <ul class="nav-list">
+		      <li><a href="#main2">Home</a></li>
+		      <li><a href="#">Our services</a></li>
+		      <li><a href="#">Our case studies</a></li>
+		      <li><a href="#">Contact</a></li>
+		    </ul>
+
+		    <ul class="social-media">
+		    	<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></a></i></li>
+		    	<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+		    	<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+		    	<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+		    </ul>
+	 	 </div>
 
 		<!-- jQuery -->
 		<script src="lib/jquery/dist/jquery.min.js"></script>
 		<!-- Bootstrap JavaScript -->	
 		<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script src="js/main.min.js"></script>
+		<script src="js/jv-jquery-mobile-menu.min.js"></script>
+		<script src="js/script-right.js"></script>
+  		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
 
 	</body>
 </html>
