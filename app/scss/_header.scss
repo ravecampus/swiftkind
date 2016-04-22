@@ -1,9 +1,9 @@
 .banner-wrapper {
 	background:{
-		image: url("../images/header.jpg");
-		size: cover;
-		position: center;
+		image: url("../images/header3.png");
+		size: cover;			
 		repeat: no-repeat;
+		color:#fff;
 	} 
 
 	.icon-bar {
@@ -67,7 +67,7 @@
 			font-family:  $font-family-Source-Sans-light;
 		}
 		.btn-arrow {
-			margin-bottom: 210px;
+			margin-bottom: 430px;
 			//background: url("../images/arrow.png") no-repeat;
 			width: 39px;
 			height: 39px;
@@ -79,7 +79,4 @@
 #main {
 	padding-bottom: 900px;
 }
-
-
-
 
