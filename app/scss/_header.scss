@@ -44,9 +44,10 @@
 		}
 	}
 	.affix {
-	padding-top: 0;
-	overflow: hidden;
-	@include transition( padding .2s ease-in-out);
+		padding-top: 0;
+		overflow: hidden;
+		background: #999;
+		@include transition( padding .2s ease-in-out);
 		a {
 			font-size: 20px;
 		 	&.navbar-brand {
@@ -77,6 +78,8 @@
 }
 
 #main {
-	padding-bottom: 900px;
+    padding: 15px;
+    height: 100vh;
+    top: 0;
 }
 
