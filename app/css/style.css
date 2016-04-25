@@ -63,6 +63,7 @@ body {
 .banner-wrapper .affix {
   padding-top: 0;
   overflow: hidden;
+  background: #999;
   -moz-transition: padding 0.2s ease-in-out;
   -o-transition: padding 0.2s ease-in-out;
   -webkit-transition: padding 0.2s ease-in-out;
@@ -90,7 +91,9 @@ body {
 }
 
 #main {
-  padding-bottom: 900px;
+  padding: 15px;
+  height: 100vh;
+  top: 0;
 }
 
 /*
@@ -201,8 +204,6 @@ body {
 }
 
 .entire-text {
-  top: 40px;
-  position: relative;
   font-family: "Source-Light", sans-serif;
 }
 
@@ -254,4 +255,83 @@ hr {
 
 #main {
   background-color: #fff;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  padding: 60px 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+.slider#main3 {
+  background: #FFFFFF;
+  min-height: 100vh;
+}
+.slider#main3 #particles-js {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 auto;
+  padding: 45px 15px;
+  background-color: #FFFFFF;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.slider#main3 .container .img-holder {
+  width: 250px;
+  height: 250px;
+  margin: 20px auto 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  overflow: hidden;
+}
+.slider#main3 .container .img-holder img {
+  width: 100%;
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  float: none;
+  cursor: pointer;
+  -webkit-filter: grayscale(100%);
+  /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+  -moz-transition: all ease-in-out 0.15s !important;
+  -webkit-transition: all ease-in-out 0.15s !important;
+  -o-transition: all ease-in-out 0.15s !important;
+  -ms-transition: all ease-in-out 0.15s !important;
+  transition: all ease-in-out 0.15s !important;
+  -moz-backface-visibility: hidden !important;
+  -webkit-backface-visibility: hidden !important;
+  -o-backface-visibility: hidden !important;
+  -ms-backface-visibility: hidden !important;
+  backface-visibility: hidden !important;
+}
+.slider#main3 .container .img-holder img:hover {
+  -webkit-filter: grayscale(0);
+  /* Chrome, Safari, Opera */
+  filter: grayscale(0);
 }
