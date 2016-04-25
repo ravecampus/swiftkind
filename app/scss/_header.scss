@@ -1,6 +1,6 @@
 .banner-wrapper {
 	background:{
-		image: url("../images/header3.png");
+		image: url("../images/header.jpg");
 		size: cover;			
 		repeat: no-repeat;
 		color:#fff;
@@ -29,33 +29,34 @@
 	.navbar {
 		padding-top: 80px;
 		a {
-			color: #fff;
-			letter-spacing: 1px;
-			font-size: 36px;
+				display: block;
+				width: 200px;
+				height: 45px;
+				//background: red;
 			&.navbar-brand {
-				display: inline;
-				img {
-					width: 42px;
-					height: 42px;
-					display: inline;
-					margin-right: 15px;
-				}
+				background: url("../images/bat_white.png") no-repeat;
+				background-size: cover;
 			}
 		}
+
 	}
 	.affix {
-	padding-top: 0;
+	padding-top: 20px;
 	overflow: hidden;
+	//background:red;
 	@include transition( padding .2s ease-in-out);
 		a {
-			font-size: 20px;
+			display: block;
+			width: 200px;
+			height: 45px;
 		 	&.navbar-brand {
-		 		img {
-		 			width: 32px;
-					height: 32px;
-		 		}
+		 		background: url("../images/bat1-1.png") no-repeat;
+				background-size: cover;
 		 	}
 	 	}
+	 .bar {
+			background-color: #000;
+		}
 	}
 	.inner-content {
 		h1 {
@@ -76,7 +77,4 @@
 	}
 }
 
-#main {
-	padding-bottom: 900px;
-}
 

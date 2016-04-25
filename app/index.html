@@ -23,9 +23,9 @@
 
 	<div class="page">
 		<div class="banner-wrapper">
-			<nav class="navbar navbar-fixed-top" data-spy="affix" data-offset-top="200">
+			<nav class="navbar navbar-fixed-top" data-spy="affix" data-offset-top="880">
 				<div class="container">
-					<a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo">swiftkind</a>
+					<a class="navbar-brand" href="#"></a>
 					<div class="hamburger pull-right"><div class="clearfix"></div>
 						<div class="hamburger-inner">
 							<div class="bar bar1"></div>
@@ -34,7 +34,7 @@
 							<div class="bar bar4"></div>
 						</div>
 					</div>
-			</nav>/ navbar
+			</nav><!--/ navbar-->
 
 			<header>
 				<div class="container">
@@ -50,7 +50,9 @@
 			</header> <!-- / header -->
 		</div> <!-- / banner-wrapper-->
 
+
 		<section id="main">   
+			<!---->     
 			<div class="entire-text container">
 				<div class="col1">					
 					<div class="container">
@@ -77,10 +79,8 @@
 
 				<div class="col3">					
 					<div class="container">
-						<div class="h1Projects">		
-							<div class="text-center">
+						<div class="h1Projects pull-right"><div class="clearfix"></div>		
 								<h1>PROJECTS</h1>
-							</div>
 						</div><!--end h1Projects-->
 					</div><!--end container-->
 				</div><!--end col3 -->
@@ -88,9 +88,62 @@
 			<!---->
 		</section>
 
-		<section id="main2">
-			<h1>sample</h1>
-		</section>
+		<section id="projects" class="projects">
+			<div class="container">
+				<div class="section-title">
+					<h2>Project</h2>
+				</div><!-- /section-title-->
+
+				<div id="thumbnail-slider">
+		            <div class="inner">
+		                <ul>
+		                    <li>
+		                        <a class="thumb img-responsive" href="images/img3.jpg">
+		                        <div class="inner-title">
+		                        	<h3>Strategy</h3>
+		                        	<hr class="line">
+		                        	<p>Digital Design</p>
+		                        </div><!-- /inner-title-->
+								</a><!-- /a -->
+		                    </li><!-- /li -->
+		                    <li>
+		                        <a class="thumb img-responsive" href="images/img2.jpg">
+		                        <div class="inner-title">
+									<h3>Strategy</h3>
+		                        	<hr class="line">
+		                        	<p>Digital Design</p>
+		                        </div><!-- /inner-title-->
+								</a><!-- / a-->
+		                    </li><!-- /li -->
+		                    <li>
+		                        <a class="thumb img-responsive" href="images/img4.jpg">
+		                      	<div class="inner-title">
+									<h3>Strategy</h3>
+		                        	<hr class="line">
+		                        	<p>Digital Design</p>
+		                        </div><!-- /inner-title-->
+		                        </a><!-- /a -->
+		                    </li><!-- /li -->
+		                </ul><!-- /ul -->
+		            </div><!-- /inner -->
+        		</div><!-- / thumbnail-slider -->
+
+        		<div class="shortcut-link">
+        		<div class="text-center"> 
+        			<a href="#" class="btn btn-contact">contact us<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+        		</div>
+        		<div class="pull-left">
+        		<a href="#" class="btn btn-home"><i class="fa fa-long-arrow-left" aria-hidden="true"></i>home</a>
+        		</div>
+        		<div class="pull-right">
+        		<a href="#" class="btn btn-services">our services<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+        		</div><div class="clearfix"></div>
+
+        		</div>
+			</div><!--/ container -->
+		</section><!-- / projects -->
+
+
 
 	<div id="counters" class="main-counter text-center">
 		<div class="counter-text container">
@@ -160,9 +213,9 @@
 </div>
 		 <div class="mobile-nav">
 		    <ul class="nav-list">
-		      <li><a href="#main2">Home</a></li>
-		      <li><a href="#">Our services</a></li>
-		      <li><a href="#">Our case studies</a></li>
+		      <li><a href="#">Home</a></li>
+		      <li><a href="#services">Our services</a></li>
+		      <li><a href="#projects">Our case studies</a></li>
 		      <li><a href="#">Contact</a></li>
 		    </ul>
 
@@ -182,6 +235,7 @@
 		<script src="js/jv-jquery-mobile-menu.min.js"></script>
 		<script src="js/script-right.js"></script>
   		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  		<script src="js/slider.js"></script>
 
   		
   		<script src="js/jquery.counterup.min.js"></script>
