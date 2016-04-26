@@ -48,7 +48,6 @@
   padding:3em;
   color:#fff;
   font-family:  $font-family-Source-Sans-light;
-/*   background: #000; */
   white-space: normal;
 }
 
@@ -57,7 +56,7 @@
   font-size:25px;
 }
 
-.slider > .widget > li > h5 > .span
+.slider > .widget > li > h5 > .quote
 {
    font-size: 150px;
   font-family: "Perpetua-Titling-MT-Light";
@@ -111,8 +110,9 @@
   opacity: 1;
 }
 
-.slider > .controls > .bottom > hr
+.slider > .controls > .bottom > hr.slider-line
 {
+  float: none;
   display: block;
   margin: 13px 0;
   height: 1px;
