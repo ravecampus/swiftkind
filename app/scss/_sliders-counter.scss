@@ -1,0 +1,131 @@
+#sliders {
+  background:#202020;
+}
+
+.slider
+{
+  position: relative;
+  width: 1200px;
+  height: 300px;
+  overflow: hidden;   
+  margin:0 auto;
+  background: #202020;
+}
+
+.slider > .widget
+{
+  position: relative;
+  width: 99999999px;
+  height: 450px;  
+  white-space: nowrap;
+}
+
+.slider > .widget.do-slide
+{
+  animation-name: do-slide;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+
+.slider > .widget.backwards-slide
+{
+  animation-name: do-slide;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+  animation-duration: 0.5s;
+  animation-direction: reverse;
+  animation-timing-function: ease-in;
+}
+
+.slider > .widget > li
+{
+  position: relative;
+  width: 1200px;
+  height: 300px;
+  list-style:none;
+  padding:3em;
+  color:#fff;
+  font-family:  $font-family-Source-Sans-light;
+  white-space: normal;
+}
+
+.slider > .widget > li > h5
+{
+  font-size:25px;
+}
+
+.slider > .widget > li > h5 > .quote
+{
+   font-size: 150px;
+  font-family: "Perpetua-Titling-MT-Light";
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 80px;
+  line-height: 0;
+  color: rgba(106, 106, 106, 0.2);
+  margin-left: 10px;
+}
+
+
+ span.spans
+{
+   
+  font-family:  $font-family-Source-Sans-light;
+  color: #6a6a6a;
+}
+
+.slider > .widget > li > credit
+{
+  font-size:10px;
+  margin-left:560px;
+  margin-top:560px;
+  color:#c1c1c1;
+  font-family:  $font-family-Source-Sans-light; 
+}
+
+.slider > .controls > .bottom
+{
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px 25%;
+  text-align: center;
+}
+
+.slider > .controls > .bottom > label
+{
+  font-size: 14px;
+  letter-spacing: 2px;
+  position: relative;
+  top: 30px;
+  right:140px;
+  background: #202020;
+  padding: 0 15px;
+  color: #6a6a6a;
+  opacity: 1;
+}
+
+.slider > .controls > .bottom > hr.slider-line
+{
+  float: none;
+  display: block;
+  margin: 13px 0;
+  height: 1px;
+  background: transparent;
+  border: none;
+  width:560px;
+  padding-bottom:50px;
+  border-top: 1px solid #6a6a6a;
+}
+
+@keyframes do-slide
+{
+  0% { left: 0 }  
+  100% { left: -1000px }
+}
+
