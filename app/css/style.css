@@ -587,6 +587,9 @@ span.spans {
   background-size: cover;
   background-position: 50% 50%;
 }
+.technologies#main3 .container {
+  padding-top: 15vh;
+}
 .technologies#main3 .container .img-holder {
   width: 250px;
   height: 250px;
