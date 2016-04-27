@@ -1,0 +1,83 @@
+// Technologies
+.technologies {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    padding: 60px 0;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -o-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+
+    // custom style
+    &#main3 {
+        background: #FFFFFF;
+        min-height: 100vh;
+        & #particles-js {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            margin: 0 auto;
+            padding: 45px 15px;
+            background-color: #FFFFFF;
+            background-image: url("");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+        & .container {
+            & .img-holder {
+                width: 250px;
+                height: 250px;
+                margin: 20px auto 0;
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -moz-align-items: center;
+                -webkit-align-items: center;
+                -o-align-items: center;
+                -ms-align-items: center;
+                align-items: center;
+                overflow: hidden;
+                & img {
+                    width: 100%;
+                    max-width: 75%;
+                    height: auto;
+                    max-height: 75%;
+                    display: block;
+                    margin: 0 auto;
+                    float: none;
+                    cursor: pointer;
+                    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+                    filter: grayscale(100%);
+                    -moz-transition: all ease-in-out 0.15s !important;
+                    -webkit-transition: all ease-in-out 0.15s !important;
+                    -o-transition: all ease-in-out 0.15s !important;
+                    -ms-transition: all ease-in-out 0.15s !important;
+                    transition: all ease-in-out 0.15s !important;
+                    -moz-backface-visibility: hidden !important;
+                    -webkit-backface-visibility: hidden !important;
+                    -o-backface-visibility: hidden !important;
+                    -ms-backface-visibility: hidden !important;
+                    backface-visibility: hidden !important;
+                    &:hover {
+                        -webkit-filter: grayscale(0); /* Chrome, Safari, Opera */
+                        filter: grayscale(0);
+                    }
+                } 
+            }
+        }
+    }
+}
