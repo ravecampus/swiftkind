@@ -1,7 +1,11 @@
 #sliders {
-  background:#202020;
+  background: #fff;
 }
 
+    .divider {
+        border-bottom: 1px solid #e1e1e1;
+        margin: 15px 0;
+    }
 .slider
 {
   position: relative;
@@ -9,14 +13,14 @@
   height: 300px;
   overflow: hidden;   
   margin:0 auto;
-  background: #202020;
+
 }
 
 .slider > .widget
 {
   position: relative;
   width: 99999999px;
-  height: 450px;  
+  height:600px;  
   white-space: nowrap;
 }
 
@@ -42,7 +46,7 @@
 .slider > .widget > li
 {
   position: relative;
-  width: 1200px;
+  width:1000px;
   height: 300px;
   list-style:none;
   padding:3em;
@@ -54,6 +58,8 @@
 .slider > .widget > li > h5
 {
   font-size:25px;
+  color: #777;
+  text-align:left;
 }
 
 .slider > .widget > li > h5 > .quote
@@ -65,11 +71,15 @@
   position: relative;
   top: 80px;
   line-height: 0;
-  color: rgba(106, 106, 106, 0.2);
   margin-left: 10px;
+  color:rgba(179,11,35,.5);
 }
 
-
+.slider > .widget > li > img{
+  float: right;
+    margin: -150px 20px 179px;
+}
+    
  span.spans
 {
    
@@ -80,7 +90,6 @@
 .slider > .widget > li > credit
 {
   font-size:10px;
-  margin-left:560px;
   margin-top:560px;
   color:#c1c1c1;
   font-family:  $font-family-Source-Sans-light; 
@@ -104,9 +113,9 @@
   position: relative;
   top: 30px;
   right:140px;
-  background: #202020;
+  background: #e2112e;
   padding: 0 15px;
-  color: #6a6a6a;
+  color: #fd5f75;
   opacity: 1;
 }
 
@@ -120,7 +129,7 @@
   border: none;
   width:560px;
   padding-bottom:50px;
-  border-top: 1px solid #6a6a6a;
+  border-top: 1px solid #fd5f75;
 }
 
 @keyframes do-slide

@@ -1,34 +1,36 @@
 .entire-text {
-  font-family:  $font-family-Source-Sans-light;
+    font-family: $font-family-Source-Sans-light;
 }
 
 .col2 {
-  margin-top: 85px;
+    margin-top: 85px;
 }
 
 .col2 h5 {
-  font-size: 25px;
+    font-size: 25px;
 }
 
 .col2 button {
-  background-color: transparent;
-  border-color: blue;
-  padding: 5px 25px;
-  border-style: solid;
-  margin-top: 70px;
-  font-family:  $font-family-Source-Sans-light;
-  border-width: 0.1px;
+    background-color: transparent;
+    border-color: blue;
+    padding: 5px 25px;
+    border-style: solid;
+    margin-top: 70px;
+    font-family: $font-family-Source-Sans-light;
+    border-width: 0.1px;
 }
 
 .h1Projects h1 {
-  vertical-align:bottom;
-  margin-top: 100px;
-  margin-right: 187px;
-  margin-bottom: 120px;
-  font-size: 15px;
-  font-weight:bold;
-  font-family:  $font-family-Source-Sans-light;
+    vertical-align: bottom;
+    margin-top: 100px;
+    margin-right: 187px;
+    margin-bottom: 120px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: $font-family-Source-Sans-light;
 }
+
+
 /*
 hr {
   width: 75px;
@@ -37,18 +39,68 @@ hr {
 
 }
 */
-.inner-title {
-  margin-right:187px;
-  font-family:  $font-family-Source-Sans-light;
 
+.inner-title {
+    margin-right: 187px;
+    font-family: $font-family-Source-Sans-light;
 }
 
 .inner-title h2 {
-   font-size:40px;
-   font-family:  $font-family-Source-Sans-light;
-  font-weight:bold;
+    font-size: 40px;
+    font-family: $font-family-Source-Sans-light;
+    font-weight: bold;
 }
 
-#main {
-  background-color:#fff;
+.services {
+    background: {
+        color: #e2112e;
+        size: cover;
+    }
+}
+
+.services2 {
+    position: relative;
+    display: -webkit-inline-box;
+    margin: 0 auto 120px;
+}
+
+.design {
+    background: #fff;
+    width: 300px;
+    padding: 50px;
+    margin: 50px 15px -50px;
+    color: #e2112e;
+    font-family: 'open sans';
+    img {
+        width: 40px;
+        float: left;
+    }
+    p {
+        color: #7d7d7d;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        width: 100%;
+        font-weight: 100;
+    }
+    h2 {
+        font-size: 25px;
+        color: #222;
+        font-weight: 600;
+        padding: 40px 0 15px;
+    }
+    .divider {
+        border-bottom: 1px solid #e1e1e1;
+        margin: 15px 0;
+    }
+    .plus{
+      border-radius:50%;
+      background:#e2112e;
+      color:#fff;
+         width: 50px;
+       height: 50px;
+    padding: 6px;
+    font-size: 26px;
+    font-weight: 100;
+    margin: 50px auto -10px;
+    }
 }

@@ -20,7 +20,7 @@
 
     // custom style
     &#main3 {
-        background: #FFFFFF;
+        background: #f0f0f0;
         min-height: 100vh;
         & #particles-js {
             width: 100%;
@@ -61,18 +61,18 @@
                     margin: 0 auto;
                     float: none;
                     cursor: pointer;
-                    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-                    filter: grayscale(100%);
-                    -moz-transition: all ease-in-out 0.15s !important;
-                    -webkit-transition: all ease-in-out 0.15s !important;
-                    -o-transition: all ease-in-out 0.15s !important;
-                    -ms-transition: all ease-in-out 0.15s !important;
-                    transition: all ease-in-out 0.15s !important;
-                    -moz-backface-visibility: hidden !important;
-                    -webkit-backface-visibility: hidden !important;
-                    -o-backface-visibility: hidden !important;
-                    -ms-backface-visibility: hidden !important;
-                    backface-visibility: hidden !important;
+                    // -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+                    // filter: grayscale(100%);
+                    // -moz-transition: all ease-in-out 0.15s !important;
+                    // -webkit-transition: all ease-in-out 0.15s !important;
+                    // -o-transition: all ease-in-out 0.15s !important;
+                    // -ms-transition: all ease-in-out 0.15s !important;
+                    // transition: all ease-in-out 0.15s !important;
+                    // -moz-backface-visibility: hidden !important;
+                    // -webkit-backface-visibility: hidden !important;
+                    // -o-backface-visibility: hidden !important;
+                    // -ms-backface-visibility: hidden !important;
+                    // backface-visibility: hidden !important;
                     &:hover {
                         -webkit-filter: grayscale(0); /* Chrome, Safari, Opera */
                         filter: grayscale(0);

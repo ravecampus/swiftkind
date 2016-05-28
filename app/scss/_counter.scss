@@ -1,6 +1,6 @@
 .main-counter {
 	background:{
-		image: url("../images/img1.jpg");
+		//image: url("../images/img1.jpg");
 		size: cover;
 		/* position: center; */
 		repeat: no-repeat;
@@ -9,8 +9,10 @@
 }
 
 .counter-text {
-	color: #fff;
+	color: #e2112e;
     padding: 10em 20px;
+    font-family:'open sans';
+    font-weight:100;
 
     .number {
     	font-size:70px;

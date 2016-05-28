@@ -1,0 +1,126 @@
+.banner-wrapper1 {
+    background: {
+        image: url("../images/img51.jpg");
+        size: cover;
+        repeat: no-repeat;
+        color: rgba(225, 17, 17, .9);
+    }
+}
+
+.job-title {
+    color: #fff;
+    h1 {
+        font-family: 'open sans';
+        font-weight: 100;
+        font-size: 50px!important;
+        margin: 0;
+    }
+    h3 {
+        font-family: 'open sans';
+        font-weight: 100;
+        font-size: 20px!important;
+        margin: 0;
+        position: relative;
+    }
+}
+
+.desc-caption {
+    color: #222222;
+    font-family: 'open sans';
+    font-weight: 100;
+    margin: 20%;
+}
+
+.description {
+    margin: 10% 5% 10%;
+    .desc-image-left {
+        width: 20%;
+        margin: 10%;
+        float: left;
+    }
+    .desc-image-right {
+        width: 20%;
+        margin: 10%;
+        float: right;
+    }
+    .desc-right {
+        float: right;
+        width: 50%;
+        margin: 10% auto;
+        font-family: 'open sans';
+        h4 {
+            font-size: 30px;
+            font-weight: 600;
+            color: #464646;
+            margin: 20px 0;
+            text-transform: uppercase;
+        }
+        h5 {
+            text-transform: uppercase;
+        }
+        p {
+            font-family: 'open sans';
+            font-size: 15px;
+            line-height: 2em;
+            color: #999999;
+            position: relative;
+            width: 90%;
+        }
+        span {
+            float: left;
+            font-size: 114px;
+            font-weight: 100;
+            color: #ebebeb;
+            font-family: 'open sans';
+            margin: -108px 0px -9px;
+        }
+    }
+}
+
+.desc-left {
+    float: left;
+    width: 50%;
+    margin: 10% auto;
+    font-family: 'open sans';
+    h4 {
+        font-size: 30px;
+        font-weight: 600;
+        color: #464646;
+        margin: 20px 0;
+        text-transform: uppercase;
+    }
+    h5 {
+        text-transform: uppercase;
+    }
+    p {
+        font-family: 'open sans';
+        font-size: 15px;
+        line-height: 2em;
+        color: #999999;
+        position: relative;
+        width: 90%;
+    }
+    span {
+        float: left;
+        font-size: 114px;
+        font-weight: 100;
+        color: #ebebeb;
+        font-family: 'open sans';
+        margin: -108px 0px -9px;
+    }
+}
+
+
+
+.design-divider {
+    margin: 10% auto;
+    border-bottom: thick dashed #e1e1e1;
+    border-bottom-width: 3px;
+}
+.hire {
+    color: #d0122c;
+    font-size: 80px;
+    font-weight: 600;
+    font-family: 'open sans';
+    border-bottom: solid 5px #d0122c;
+}

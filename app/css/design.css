@@ -1,0 +1,143 @@
+/* line 1, ../scss/design.scss */
+.banner-wrapper1 {
+  background-image: url("../images/img51.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(225, 17, 17, 0.9);
+}
+
+/* line 10, ../scss/design.scss */
+.job-title {
+  color: #fff;
+}
+/* line 12, ../scss/design.scss */
+.job-title h1 {
+  font-family: 'open sans';
+  font-weight: 100;
+  font-size: 50px !important;
+  margin: 0;
+}
+/* line 18, ../scss/design.scss */
+.job-title h3 {
+  font-family: 'open sans';
+  font-weight: 100;
+  font-size: 20px !important;
+  margin: 0;
+  position: relative;
+}
+
+/* line 27, ../scss/design.scss */
+.desc-caption {
+  color: #222222;
+  font-family: 'open sans';
+  font-weight: 100;
+  margin: 20%;
+}
+
+/* line 34, ../scss/design.scss */
+.description {
+  margin: 10% 5% 10%;
+}
+/* line 36, ../scss/design.scss */
+.description .desc-image-left {
+  width: 20%;
+  margin: 10%;
+  float: left;
+}
+/* line 41, ../scss/design.scss */
+.description .desc-image-right {
+  width: 20%;
+  margin: 10%;
+  float: right;
+}
+/* line 46, ../scss/design.scss */
+.description .desc-right {
+  float: right;
+  width: 50%;
+  margin: 10% auto;
+  font-family: 'open sans';
+}
+/* line 51, ../scss/design.scss */
+.description .desc-right h4 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #464646;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+/* line 58, ../scss/design.scss */
+.description .desc-right h5 {
+  text-transform: uppercase;
+}
+/* line 61, ../scss/design.scss */
+.description .desc-right p {
+  font-family: 'open sans';
+  font-size: 15px;
+  line-height: 2em;
+  color: #999999;
+  position: relative;
+  width: 90%;
+}
+/* line 69, ../scss/design.scss */
+.description .desc-right span {
+  float: left;
+  font-size: 114px;
+  font-weight: 100;
+  color: #ebebeb;
+  font-family: 'open sans';
+  margin: -108px 0px -9px;
+}
+
+/* line 80, ../scss/design.scss */
+.desc-left {
+  float: left;
+  width: 50%;
+  margin: 10% auto;
+  font-family: 'open sans';
+}
+/* line 85, ../scss/design.scss */
+.desc-left h4 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #464646;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+/* line 92, ../scss/design.scss */
+.desc-left h5 {
+  text-transform: uppercase;
+}
+/* line 95, ../scss/design.scss */
+.desc-left p {
+  font-family: 'open sans';
+  font-size: 15px;
+  line-height: 2em;
+  color: #999999;
+  position: relative;
+  width: 90%;
+}
+/* line 103, ../scss/design.scss */
+.desc-left span {
+  float: left;
+  font-size: 114px;
+  font-weight: 100;
+  color: #ebebeb;
+  font-family: 'open sans';
+  margin: -108px 0px -9px;
+}
+
+/* line 115, ../scss/design.scss */
+.design-divider {
+  margin: 10% auto;
+  border-bottom: thick dashed #e1e1e1;
+  border-bottom-width: 3px;
+}
+
+/* line 120, ../scss/design.scss */
+.hire {
+  color: #d0122c;
+  font-size: 80px;
+  font-weight: 600;
+  font-family: 'open sans';
+  border-bottom: solid 5px #d0122c;
+}

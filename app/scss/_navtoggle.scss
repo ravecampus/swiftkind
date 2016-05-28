@@ -13,12 +13,11 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background: #1e1f24;
 }
 .page {
   width: 100%;
   min-height: 100%;
-  background: #000;
+
   overflow: auto;
   position: relative;
 }
@@ -27,7 +26,7 @@ body {
 // Styles for menu
 .mobile-nav {
  padding-top:150px;
- background: #1e1f24;
+ background: #333;
  @include transition(all .2s ease);
  @include transition( background .5s ease-in-out);
 
@@ -44,7 +43,7 @@ body {
         width: 20px;
         a {
           margin: 0;
-          color: #fff;
+          color: #1e1f24;
           font-size: 20px
         }
       }
