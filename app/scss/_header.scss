@@ -2,7 +2,7 @@
     background: {
         size: cover;
         repeat: no-repeat;
-        color: rgba(0,0,0,.5)
+        color: rgba(0, 0, 0, .9)
     }
     .icon-bar {
         display: flex;
@@ -29,22 +29,31 @@
             display: block;
             width: 150px;
             height: 25px;
-          
-
+        }
+    }
+    .navbar-items {
+        ul {
+            list-style-type: none;
+            li {
+                display: inline!important;
+                margin: 0 50px;
+                color: #222;
+            }
         }
     }
     .affix {
         padding-top: 20px;
         overflow: hidden;
-        //background:red;
+        //background: #f9f9f9;
+        color: #000;
         @include transition( padding .2s ease-in-out);
         a {
             display: block;
             width: 200px;
-            height: 45px;
+            height: 55px;
+            margin-bottom: 10px;
             &.navbar-brand {
-
-                  background: url("../images/bat-opacity-50.png") no-repeat;
+                background: url("../images/bat1.png") no-repeat;
                 background-size: cover;
             }
         }
@@ -53,12 +62,35 @@
         }
     }
     .inner-content {
-        h1 {
+        .header-text {
             color: #fff;
-            padding-bottom:560px;
+            padding-bottom: 560px;
             padding-top: 245px;
-            font-size: 80px;
-            font-family: "open sans", sans-serif;
+            font-family: "open sans";
+            font-weight: 100;
+            width: 70%;
+            h1 {
+                margin-top: 70px;
+                font-size: 45px;
+                font-weight: 100;
+            }
+            p {
+            	margin-top: 40px;
+                font-size: 20px;
+                width:80%;
+            }
+            .header-icons{
+            	a{
+            		img{
+            		display:inline;
+            		width:50px;
+            		background:rgba(226,17,46,.4);
+            		margin:1px;
+            		padding:10px;
+            		border-radius: 10px;
+            	}
+            	}
+            }
         }
         .word {
             position: absolute;
@@ -107,10 +139,11 @@
         }
     }
 }
-video#bgvid { 
+
+video#bgvid {
     position: fixed;
     top: 50%;
-    left:50%;
+    left: 50%;
     min-width: 100%;
     min-height: 100%;
     width: auto;

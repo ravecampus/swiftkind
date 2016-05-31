@@ -151,7 +151,7 @@
     margin: 0 auto;
     width: 80%;
     .gallery {
-        margin: 0 auto;
+        margin: 100px auto 100px;
         text-align: center;
         width: 100%;
         li {
@@ -240,4 +240,30 @@
         width: 100%;
         height: auto;
     }
+}
+.work{
+	a:link{
+	color: #e2112e;
+    text-transform: uppercase;
+    border: solid 1px;
+    padding: 20px 50px;
+    text-decoration: none;
+}
+a:hover{
+	color: #fff!important;
+    text-transform: uppercase;
+    border: solid 1px;
+    padding: 20px 50px;
+    text-decoration: none;
+    background-color:#e2112e;
+    transition-duration:0.5s;
+
+}
+	a:visited{
+	color: #e2112e;
+    text-transform: uppercase;
+    border: solid 1px;
+    padding: 20px 50px;
+    text-decoration: none;
+}
 }

@@ -3,14 +3,14 @@
         image: url("../images/img51.jpg");
         size: cover;
         repeat: no-repeat;
-        color: rgba(225, 17, 17, .9);
+        color: rgba(225, 17, 17, 1);
     }
 }
 
 .job-title {
     color: #fff;
     h1 {
-        font-family: 'open sans';
+        font-family:$font-family-open-sans;
         font-weight: 100;
         font-size: 50px!important;
         margin: 0;
@@ -34,29 +34,25 @@
 .description {
     margin: 10% 5% 10%;
     .desc-image-left {
-        width: 20%;
-        margin: 10%;
+        width: 15%;
         float: left;
     }
     .desc-image-right {
-        width: 20%;
-        margin: 10%;
+        width: 15%;
+        margin: 10% -56px;
         float: right;
+        position: absolute;
     }
     .desc-right {
         float: right;
         width: 50%;
-        margin: 10% auto;
+        margin: 25% -10%;
         font-family: 'open sans';
         h4 {
             font-size: 30px;
             font-weight: 600;
-            color: #464646;
+            color: #e2112e;
             margin: 20px 0;
-            text-transform: uppercase;
-        }
-        h5 {
-            text-transform: uppercase;
         }
         p {
             font-family: 'open sans';
@@ -110,13 +106,12 @@
     }
 }
 
-
-
 .design-divider {
     margin: 10% auto;
     border-bottom: thick dashed #e1e1e1;
     border-bottom-width: 3px;
 }
+
 .hire {
     color: #d0122c;
     font-size: 80px;
