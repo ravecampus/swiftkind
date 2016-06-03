@@ -54,7 +54,15 @@
   font-family: 'OpenSans-Bold';
   src: url(../fonts/OpenSans-Bold.ttf);
 }
-/* line 63, ../scss/_typography.scss */
+@font-face {
+  font-family: 'perpetua';
+  src: url(../fonts/perpetua.ttf);
+}
+@font-face {
+  font-family: 'perpetuaitalic';
+  src: url(../fonts/perpetuaitalic.ttf);
+}
+/* line 76, ../scss/_typography.scss */
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -417,13 +425,13 @@ hr {
   background-color: #f7f7f7;
 }
 
-/* line 64, ../scss/_services.scss */
+/* line 63, ../scss/_services.scss */
 .caption {
   font-size: 30px;
   padding: 60px 25% 20px;
 }
 
-/* line 69, ../scss/_services.scss */
+/* line 68, ../scss/_services.scss */
 .square {
   width: 100px;
   height: 5px;
@@ -431,14 +439,14 @@ hr {
   margin: 0 auto;
 }
 
-/* line 77, ../scss/_services.scss */
+/* line 75, ../scss/_services.scss */
 .services2 {
   position: relative;
   display: -webkit-inline-box;
   margin: 0 auto 120px;
 }
 
-/* line 83, ../scss/_services.scss */
+/* line 81, ../scss/_services.scss */
 .design {
   background: #fff;
   width: 300px;
@@ -447,12 +455,12 @@ hr {
   color: #e2112e;
   font-family: "OpenSans-Light";
 }
-/* line 90, ../scss/_services.scss */
+/* line 88, ../scss/_services.scss */
 .design img {
   width: 40px;
   float: left;
 }
-/* line 94, ../scss/_services.scss */
+/* line 92, ../scss/_services.scss */
 .design p {
   color: #7d7d7d;
   font-size: 14px;
@@ -460,19 +468,19 @@ hr {
   width: 100%;
   font-family: "OpenSans-Light";
 }
-/* line 101, ../scss/_services.scss */
+/* line 99, ../scss/_services.scss */
 .design h2 {
   font-size: 25px;
   color: #222;
   font-family: "OpenSans-Bold";
   padding: 40px 0 15px;
 }
-/* line 107, ../scss/_services.scss */
+/* line 105, ../scss/_services.scss */
 .design .divider {
   border-bottom: 1px solid #e1e1e1;
   margin: 15px 0;
 }
-/* line 111, ../scss/_services.scss */
+/* line 109, ../scss/_services.scss */
 .design .plus {
   border-radius: 50%;
   background: #e2112e;
@@ -485,29 +493,56 @@ hr {
   margin: 50px auto -10px;
 }
 
-/* line 123, ../scss/_services.scss */
+/* line 122, ../scss/_services.scss */
 .services-text {
+  z-index: 1;
   font-family: "OpenSans-Light";
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
-  background-image: url("../images/img15.jpg");
-  background-size: cover;
-  background-opacity: 1;
+  background: rgba(226, 17, 46, 0.9);
+  padding: 20%;
   width: 100%;
   height: 100%;
-  padding: 50px auto;
   margin: 0;
 }
-/* line 136, ../scss/_services.scss */
+/* line 138, ../scss/_services.scss */
 .services-text h1 {
   font-size: 30px;
-  color: #222;
+  color: #fff;
   font-family: "OpenSans-Bold";
 }
-/* line 141, ../scss/_services.scss */
+/* line 143, ../scss/_services.scss */
 .services-text p {
-  font-size: 20px;
-  margin: 0 auto;
+  color: #fff;
+  font-size: 25px;
+  margin: 0 auto 10%;
+}
+/* line 148, ../scss/_services.scss */
+.services-text a {
+  margin: 0 10px 0;
+}
+/* line 151, ../scss/_services.scss */
+.services-text a:link {
+  transition: 1s;
+  color: #fff;
+  padding: 15px 50px;
+  text-decoration: none;
+  border: 1px solid #fa96a4;
+}
+/* line 158, ../scss/_services.scss */
+.services-text a:hover {
+  transition: 1s;
+  color: #fff;
+  padding: 15px 70px;
+  background: #ce0d28;
+  text-decoration: none;
+  border: none;
+}
+/* line 166, ../scss/_services.scss */
+.services-text a:visited {
+  transition: 1s;
+  color: #fff;
+  padding: 15px 50px;
+  text-decoration: none;
+  border: 1px solid #fc687d;
 }
 
 /* line 1, ../scss/_counter.scss */
@@ -528,7 +563,6 @@ hr {
 /* line 17, ../scss/_counter.scss */
 .counter-text .number {
   font-size: 70px;
-  font-family: "Source-Light", sans-serif;
 }
 
 /* line 1, ../scss/_sliders-counter.scss */
@@ -559,7 +593,7 @@ hr {
   white-space: nowrap;
 }
 
-/* line 27, ../scss/_sliders-counter.scss */
+/* line 28, ../scss/_sliders-counter.scss */
 .slider > .widget.do-slide {
   animation-name: do-slide;
   animation-iteration-count: 1;
@@ -568,7 +602,7 @@ hr {
   animation-timing-function: ease-out;
 }
 
-/* line 36, ../scss/_sliders-counter.scss */
+/* line 37, ../scss/_sliders-counter.scss */
 .slider > .widget.backwards-slide {
   animation-name: do-slide;
   animation-iteration-count: 1;
@@ -578,26 +612,48 @@ hr {
   animation-timing-function: ease-in;
 }
 
-/* line 46, ../scss/_sliders-counter.scss */
+/* line 47, ../scss/_sliders-counter.scss */
 .slider > .widget > li {
   position: relative;
-  width: 1000px;
+  width: 700px;
   height: 300px;
   list-style: none;
   padding: 3em;
   color: #fff;
-  font-family: "Source-Light", sans-serif;
+  font-family: "perpetuaitalic";
   white-space: normal;
+  text-align: center;
 }
-
-/* line 58, ../scss/_sliders-counter.scss */
-.slider > .widget > li > h5 {
-  font-size: 25px;
-  color: #777;
-  text-align: left;
+/* line 59, ../scss/_sliders-counter.scss */
+.slider > .widget > li div a:first-child {
+  color: #e2112e;
 }
-
+/* line 62, ../scss/_sliders-counter.scss */
+.slider > .widget > li div a:nth-child(2) {
+  color: #777777;
+}
 /* line 65, ../scss/_sliders-counter.scss */
+.slider > .widget > li div a:link {
+  text-decoration: none;
+  font-family: "OpenSans-Bold";
+}
+/* line 69, ../scss/_sliders-counter.scss */
+.slider > .widget > li div a:hover {
+  text-decoration: none;
+  font-family: "OpenSans-Bold";
+}
+
+/* line 76, ../scss/_sliders-counter.scss */
+.slider > .widget > li > h5 {
+  font-style: italic;
+  width: 60%;
+  font-size: 20px;
+  color: #888888;
+  text-align: left;
+  line-height: 30px;
+}
+
+/* line 86, ../scss/_sliders-counter.scss */
 .slider > .widget > li > h5 > .quote {
   font-size: 150px;
   font-family: "Perpetua-Titling-MT-Light";
@@ -606,23 +662,23 @@ hr {
   position: relative;
   top: 80px;
   line-height: 0;
-  margin-left: 10px;
   color: rgba(179, 11, 35, 0.5);
+  float: right;
 }
 
-/* line 78, ../scss/_sliders-counter.scss */
+/* line 99, ../scss/_sliders-counter.scss */
 .slider > .widget > li > img {
   float: right;
   margin: -150px 20px 179px;
 }
 
-/* line 83, ../scss/_sliders-counter.scss */
+/* line 104, ../scss/_sliders-counter.scss */
 span.spans {
   font-family: "Source-Light", sans-serif;
   color: #6a6a6a;
 }
 
-/* line 90, ../scss/_sliders-counter.scss */
+/* line 111, ../scss/_sliders-counter.scss */
 .slider > .widget > li > credit {
   font-size: 10px;
   margin-top: 560px;
@@ -630,7 +686,7 @@ span.spans {
   font-family: "Source-Light", sans-serif;
 }
 
-/* line 98, ../scss/_sliders-counter.scss */
+/* line 119, ../scss/_sliders-counter.scss */
 .slider > .controls > .bottom {
   position: absolute;
   z-index: 2;
@@ -641,7 +697,7 @@ span.spans {
   text-align: center;
 }
 
-/* line 109, ../scss/_sliders-counter.scss */
+/* line 130, ../scss/_sliders-counter.scss */
 .slider > .controls > .bottom > label {
   font-size: 14px;
   letter-spacing: 2px;
@@ -654,7 +710,7 @@ span.spans {
   opacity: 1;
 }
 
-/* line 122, ../scss/_sliders-counter.scss */
+/* line 143, ../scss/_sliders-counter.scss */
 .slider > .controls > .bottom > hr.slider-line {
   float: none;
   display: block;
@@ -1047,23 +1103,24 @@ span.spans {
 
 /* line 145, ../scss/_team-services.scss */
 .project-section {
+  z-index: 100;
   width: 100%;
   height: 100%;
   padding: 100px 0;
   background: #ebebeb;
 }
-/* line 150, ../scss/_team-services.scss */
+/* line 151, ../scss/_team-services.scss */
 .project-section .block-projects {
   margin: 0 auto;
   width: 80%;
 }
-/* line 153, ../scss/_team-services.scss */
+/* line 154, ../scss/_team-services.scss */
 .project-section .block-projects .gallery {
   margin: 100px auto 100px;
   text-align: center;
   width: 100%;
 }
-/* line 157, ../scss/_team-services.scss */
+/* line 158, ../scss/_team-services.scss */
 .project-section .block-projects .gallery li {
   width: auto;
   max-width: 100%;
@@ -1075,13 +1132,13 @@ span.spans {
   overflow: hidden;
   background: #e2112e;
 }
-/* line 167, ../scss/_team-services.scss */
+/* line 168, ../scss/_team-services.scss */
 .project-section .block-projects .gallery li:nth-child(2) img {
   margin: 0;
   display: inline-block;
   float: right;
 }
-/* line 172, ../scss/_team-services.scss */
+/* line 173, ../scss/_team-services.scss */
 .project-section .block-projects .gallery li .name {
   text-decoration: none;
   text-transform: uppercase;
@@ -1100,7 +1157,7 @@ span.spans {
   width: 100%;
   height: 100%;
 }
-/* line 188, ../scss/_team-services.scss */
+/* line 189, ../scss/_team-services.scss */
 .project-section .block-projects .gallery li .name .title {
   display: block;
   text-transform: none;
@@ -1121,7 +1178,7 @@ span.spans {
   -webkit-transition-duration: 0.9s;
   transition-duration: 0.9s;
 }
-/* line 200, ../scss/_team-services.scss */
+/* line 201, ../scss/_team-services.scss */
 .project-section .block-projects .gallery li:hover .name {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -1138,12 +1195,12 @@ span.spans {
   -webkit-transition-duration: 0.6s;
   transition-duration: 0.6s;
 }
-/* line 206, ../scss/_team-services.scss */
+/* line 207, ../scss/_team-services.scss */
 .project-section .block-projects .gallery li:hover .title {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-/* line 209, ../scss/_team-services.scss */
+/* line 210, ../scss/_team-services.scss */
 .project-section .block-projects .gallery li:hover img {
   -moz-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
@@ -1161,11 +1218,11 @@ span.spans {
   -webkit-transition-duration: 0.8s;
   transition-duration: 0.8s;
 }
-/* line 216, ../scss/_team-services.scss */
+/* line 217, ../scss/_team-services.scss */
 .project-section .block-projects .gallery li:hover:hover img {
   opacity: 0.5;
 }
-/* line 220, ../scss/_team-services.scss */
+/* line 221, ../scss/_team-services.scss */
 .project-section .block-projects .gallery li img {
   display: block;
   width: 400px;
@@ -1189,13 +1246,13 @@ span.spans {
   transition-duration: 0.4s;
 }
 
-/* line 239, ../scss/_team-services.scss */
+/* line 240, ../scss/_team-services.scss */
 .team-picture img {
   width: 100%;
   height: auto;
 }
 
-/* line 245, ../scss/_team-services.scss */
+/* line 246, ../scss/_team-services.scss */
 .work a:link {
   color: #e2112e;
   text-transform: uppercase;
@@ -1203,7 +1260,7 @@ span.spans {
   padding: 20px 50px;
   text-decoration: none;
 }
-/* line 252, ../scss/_team-services.scss */
+/* line 253, ../scss/_team-services.scss */
 .work a:hover {
   color: #fff !important;
   text-transform: uppercase;
@@ -1213,7 +1270,7 @@ span.spans {
   background-color: #e2112e;
   transition-duration: 0.5s;
 }
-/* line 262, ../scss/_team-services.scss */
+/* line 263, ../scss/_team-services.scss */
 .work a:visited {
   color: #e2112e;
   text-transform: uppercase;

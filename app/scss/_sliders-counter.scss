@@ -22,6 +22,7 @@
   width: 99999999px;
   height:600px;  
   white-space: nowrap;
+  
 }
 
 .slider > .widget.do-slide
@@ -46,20 +47,40 @@
 .slider > .widget > li
 {
   position: relative;
-  width:1000px;
+  width:700px;
   height: 300px;
   list-style:none;
   padding:3em;
   color:#fff;
-  font-family:  $font-family-Source-Sans-light;
+  font-family:$perpetuaitalic;
   white-space: normal;
+  text-align:center;
+ div{
+  a:first-child{
+       color: #e2112e;
+  }
+  a:nth-child(2){
+    color:#777777;
+  }
+  a:link{
+    text-decoration:none;
+    font-family:$OpenSans-Bold;
+  }
+  a:hover{
+    text-decoration:none;
+    font-family:$OpenSans-Bold;
+  }
+ }
 }
 
 .slider > .widget > li > h5
-{
-  font-size:25px;
-  color: #777;
+{  font-style: italic;
+  width:60%;
+  font-size:20px;
+  color: #888888;
   text-align:left;
+  line-height:30px;
+
 }
 
 .slider > .widget > li > h5 > .quote
@@ -71,8 +92,8 @@
   position: relative;
   top: 80px;
   line-height: 0;
-  margin-left: 10px;
   color:rgba(179,11,35,.5);
+  float:right;
 }
 
 .slider > .widget > li > img{
