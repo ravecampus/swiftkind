@@ -557,7 +557,7 @@ hr {
 .counter-text {
   color: #e2112e;
   padding: 10em 20px;
-  font-family: 'open sans';
+  font-family: "OpenSans-Bold";
   font-weight: 100;
 }
 /* line 17, ../scss/_counter.scss */
@@ -585,7 +585,7 @@ hr {
   margin: 0 auto;
 }
 
-/* line 19, ../scss/_sliders-counter.scss */
+/* line 20, ../scss/_sliders-counter.scss */
 .slider > .widget {
   position: relative;
   width: 99999999px;
@@ -593,7 +593,7 @@ hr {
   white-space: nowrap;
 }
 
-/* line 28, ../scss/_sliders-counter.scss */
+/* line 29, ../scss/_sliders-counter.scss */
 .slider > .widget.do-slide {
   animation-name: do-slide;
   animation-iteration-count: 1;
@@ -602,7 +602,7 @@ hr {
   animation-timing-function: ease-out;
 }
 
-/* line 37, ../scss/_sliders-counter.scss */
+/* line 38, ../scss/_sliders-counter.scss */
 .slider > .widget.backwards-slide {
   animation-name: do-slide;
   animation-iteration-count: 1;
@@ -612,7 +612,7 @@ hr {
   animation-timing-function: ease-in;
 }
 
-/* line 47, ../scss/_sliders-counter.scss */
+/* line 48, ../scss/_sliders-counter.scss */
 .slider > .widget > li {
   position: relative;
   width: 700px;
@@ -624,26 +624,26 @@ hr {
   white-space: normal;
   text-align: center;
 }
-/* line 59, ../scss/_sliders-counter.scss */
+/* line 60, ../scss/_sliders-counter.scss */
 .slider > .widget > li div a:first-child {
   color: #e2112e;
 }
-/* line 62, ../scss/_sliders-counter.scss */
+/* line 63, ../scss/_sliders-counter.scss */
 .slider > .widget > li div a:nth-child(2) {
   color: #777777;
 }
-/* line 65, ../scss/_sliders-counter.scss */
+/* line 66, ../scss/_sliders-counter.scss */
 .slider > .widget > li div a:link {
   text-decoration: none;
   font-family: "OpenSans-Bold";
 }
-/* line 69, ../scss/_sliders-counter.scss */
+/* line 70, ../scss/_sliders-counter.scss */
 .slider > .widget > li div a:hover {
   text-decoration: none;
   font-family: "OpenSans-Bold";
 }
 
-/* line 76, ../scss/_sliders-counter.scss */
+/* line 77, ../scss/_sliders-counter.scss */
 .slider > .widget > li > h5 {
   font-style: italic;
   width: 60%;
@@ -653,7 +653,7 @@ hr {
   line-height: 30px;
 }
 
-/* line 86, ../scss/_sliders-counter.scss */
+/* line 87, ../scss/_sliders-counter.scss */
 .slider > .widget > li > h5 > .quote {
   font-size: 150px;
   font-family: "Perpetua-Titling-MT-Light";
@@ -666,19 +666,19 @@ hr {
   float: right;
 }
 
-/* line 99, ../scss/_sliders-counter.scss */
+/* line 100, ../scss/_sliders-counter.scss */
 .slider > .widget > li > img {
   float: right;
   margin: -150px 20px 179px;
 }
 
-/* line 104, ../scss/_sliders-counter.scss */
+/* line 105, ../scss/_sliders-counter.scss */
 span.spans {
   font-family: "Source-Light", sans-serif;
   color: #6a6a6a;
 }
 
-/* line 111, ../scss/_sliders-counter.scss */
+/* line 112, ../scss/_sliders-counter.scss */
 .slider > .widget > li > credit {
   font-size: 10px;
   margin-top: 560px;
@@ -686,7 +686,7 @@ span.spans {
   font-family: "Source-Light", sans-serif;
 }
 
-/* line 119, ../scss/_sliders-counter.scss */
+/* line 120, ../scss/_sliders-counter.scss */
 .slider > .controls > .bottom {
   position: absolute;
   z-index: 2;
@@ -697,7 +697,7 @@ span.spans {
   text-align: center;
 }
 
-/* line 130, ../scss/_sliders-counter.scss */
+/* line 131, ../scss/_sliders-counter.scss */
 .slider > .controls > .bottom > label {
   font-size: 14px;
   letter-spacing: 2px;
@@ -710,7 +710,7 @@ span.spans {
   opacity: 1;
 }
 
-/* line 143, ../scss/_sliders-counter.scss */
+/* line 144, ../scss/_sliders-counter.scss */
 .slider > .controls > .bottom > hr.slider-line {
   float: none;
   display: block;
@@ -1350,6 +1350,12 @@ span.spans {
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 2px;
+}
+
+/* line 72, ../scss/_footer.scss */
+#map {
+  width: 100%;
+  height: 500px;
 }
 
 /* line 1, ../scss/_about.scss */
