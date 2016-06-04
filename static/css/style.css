@@ -3,65 +3,80 @@
   src: url(../fonts/SourceSansPro-Light.eot);
   src: url(../fonts/SourceSansPro-Light.eot?#iefix) format("embedded-opentype"), url(../fonts/SourceSansPro-Light.woff) format("woff"), url(../fonts/SourceSansPro-Light.ttf) format("truetype"), url(../fonts/SourceSansPro-Light.otf) format("otf");
 }
+
 @font-face {
   font-family: 'Source-Regular';
   src: url(../fonts/SourceSansPro-Regular.eot);
   src: url(../fonts/SourceSansPro-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/SourceSansPro-Regular.woff) format("woff"), url(../fonts/SourceSansPro-Regular.ttf) format("truetype"), url(../fonts/SourceSansPro-Regular.otf) format("otf");
 }
+
 @font-face {
   font-family: 'Source-Bold';
   src: url(../fonts/SourceSansPro-Bold.eot);
   src: url(../fonts/SourceSansPro-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/SourceSansPro-Bold.woff) format("woff"), url(../fonts/SourceSansPro-Bold.ttf) format("truetype"), url(../fonts/SourceSansPro-Bold.otf) format("otf");
 }
+
 @font-face {
   font-family: 'Perpetua-Titling-MT-Light';
   src: url(../fonts/Perpetua-Titling-MT-Light.eot);
   src: url(../fonts/Perpetua-Titling-MT-Light.eot?#iefix) format("embedded-opentype"), url(../fonts/Perpetua-Titling-MT-Light.tff) format("tff"), url(../fonts/Perpetua-Titling-MT-Light.ttf) format("truetype"), url(../fonts/Perpetua-Titling-MT-Light.ttf) format("ttf");
 }
+
 @font-face {
   font-family: 'open-sans-SemiboldItalic';
   src: url(../fonts/OpenSans-SemiboldItalic.ttf);
 }
+
 @font-face {
   font-family: 'OpenSans-Semibold';
   src: url(../fonts/OpenSans-Semibold.ttf);
 }
+
 @font-face {
   font-family: 'OpenSans-Regular';
   src: url(../fonts/OpenSans-Regular.ttf);
 }
+
 @font-face {
   font-family: 'OpenSans-LightItalic';
   src: url(../fonts/OpenSans-LightItalic.ttf);
 }
+
 @font-face {
   font-family: 'OpenSans-Light';
   src: url(../fonts/OpenSans-Light.ttf);
 }
+
 @font-face {
   font-family: 'OpenSans-ExtraBoldItalic';
   src: url(../fonts/OpenSans-ExtraBoldItalic.ttf);
 }
+
 @font-face {
   font-family: 'OpenSans-ExtraBold';
   src: url(../fonts/OpenSans-ExtraBold.ttf);
 }
+
 @font-face {
   font-family: 'OpenSans-BoldItalic';
   src: url(../fonts/OpenSans-BoldItalic.ttf);
 }
+
 @font-face {
   font-family: 'OpenSans-Bold';
   src: url(../fonts/OpenSans-Bold.ttf);
 }
+
 @font-face {
   font-family: 'perpetua';
   src: url(../fonts/perpetua.ttf);
 }
+
 @font-face {
   font-family: 'perpetuaitalic';
   src: url(../fonts/perpetuaitalic.ttf);
 }
+
 /* line 76, ../scss/_typography.scss */
 body {
   -webkit-font-smoothing: antialiased;
@@ -120,9 +135,9 @@ body {
   padding-top: 20px;
   overflow: hidden;
   color: #000;
+  -webkit-transition: padding 0.2s ease-in-out;
   -moz-transition: padding 0.2s ease-in-out;
   -o-transition: padding 0.2s ease-in-out;
-  -webkit-transition: padding 0.2s ease-in-out;
   transition: padding 0.2s ease-in-out;
 }
 /* line 50, ../scss/_header.scss */
@@ -245,7 +260,7 @@ video#bgvid {
   Version: 2
 
 */
-/* line 11, ../scss/_navtoggle.scss */
+/* line 12, ../scss/_navtoggle.scss */
 html,
 body {
   width: 100%;
@@ -265,13 +280,13 @@ body {
 .mobile-nav {
   padding-top: 150px;
   background: #333;
+  -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
-  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  -webkit-transition: background 0.5s ease-in-out;
   -moz-transition: background 0.5s ease-in-out;
   -o-transition: background 0.5s ease-in-out;
-  -webkit-transition: background 0.5s ease-in-out;
   transition: background 0.5s ease-in-out;
 }
 /* line 33, ../scss/_navtoggle.scss */
@@ -341,7 +356,7 @@ body {
   position: absolute;
   top: 0;
 }
-/* line 96, ../scss/_navtoggle.scss */
+/* line 97, ../scss/_navtoggle.scss */
 .hamburger .bar.bar2, .hamburger .bar.bar3 {
   top: 9px;
 }
@@ -349,12 +364,12 @@ body {
 .hamburger .bar.bar4 {
   top: 18px;
 }
-/* line 105, ../scss/_navtoggle.scss */
+/* line 106, ../scss/_navtoggle.scss */
 .hamburger.open .bar1,
 .hamburger.open .bar4 {
   display: none;
 }
-/* line 109, ../scss/_navtoggle.scss */
+/* line 110, ../scss/_navtoggle.scss */
 .hamburger.open .bar2,
 .hamburger.open .bar3 {
   height: 3px;
@@ -498,7 +513,7 @@ hr {
   z-index: 1;
   font-family: "OpenSans-Light";
   background: rgba(226, 17, 46, 0.9);
-  padding: 20%;
+  padding: 20% 0;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -576,7 +591,7 @@ hr {
   margin: 15px 0;
 }
 
-/* line 9, ../scss/_sliders-counter.scss */
+/* line 10, ../scss/_sliders-counter.scss */
 .slider {
   position: relative;
   width: 1200px;
@@ -585,7 +600,7 @@ hr {
   margin: 0 auto;
 }
 
-/* line 20, ../scss/_sliders-counter.scss */
+/* line 21, ../scss/_sliders-counter.scss */
 .slider > .widget {
   position: relative;
   width: 99999999px;
@@ -593,7 +608,7 @@ hr {
   white-space: nowrap;
 }
 
-/* line 29, ../scss/_sliders-counter.scss */
+/* line 30, ../scss/_sliders-counter.scss */
 .slider > .widget.do-slide {
   animation-name: do-slide;
   animation-iteration-count: 1;
@@ -602,7 +617,7 @@ hr {
   animation-timing-function: ease-out;
 }
 
-/* line 38, ../scss/_sliders-counter.scss */
+/* line 39, ../scss/_sliders-counter.scss */
 .slider > .widget.backwards-slide {
   animation-name: do-slide;
   animation-iteration-count: 1;
@@ -612,7 +627,7 @@ hr {
   animation-timing-function: ease-in;
 }
 
-/* line 48, ../scss/_sliders-counter.scss */
+/* line 49, ../scss/_sliders-counter.scss */
 .slider > .widget > li {
   position: relative;
   width: 700px;
@@ -643,7 +658,7 @@ hr {
   font-family: "OpenSans-Bold";
 }
 
-/* line 77, ../scss/_sliders-counter.scss */
+/* line 78, ../scss/_sliders-counter.scss */
 .slider > .widget > li > h5 {
   font-style: italic;
   width: 60%;
@@ -653,7 +668,7 @@ hr {
   line-height: 30px;
 }
 
-/* line 87, ../scss/_sliders-counter.scss */
+/* line 88, ../scss/_sliders-counter.scss */
 .slider > .widget > li > h5 > .quote {
   font-size: 150px;
   font-family: "Perpetua-Titling-MT-Light";
@@ -672,13 +687,13 @@ hr {
   margin: -150px 20px 179px;
 }
 
-/* line 105, ../scss/_sliders-counter.scss */
+/* line 106, ../scss/_sliders-counter.scss */
 span.spans {
   font-family: "Source-Light", sans-serif;
   color: #6a6a6a;
 }
 
-/* line 112, ../scss/_sliders-counter.scss */
+/* line 113, ../scss/_sliders-counter.scss */
 .slider > .widget > li > credit {
   font-size: 10px;
   margin-top: 560px;
@@ -686,7 +701,7 @@ span.spans {
   font-family: "Source-Light", sans-serif;
 }
 
-/* line 120, ../scss/_sliders-counter.scss */
+/* line 121, ../scss/_sliders-counter.scss */
 .slider > .controls > .bottom {
   position: absolute;
   z-index: 2;
@@ -697,7 +712,7 @@ span.spans {
   text-align: center;
 }
 
-/* line 131, ../scss/_sliders-counter.scss */
+/* line 132, ../scss/_sliders-counter.scss */
 .slider > .controls > .bottom > label {
   font-size: 14px;
   letter-spacing: 2px;
@@ -710,7 +725,7 @@ span.spans {
   opacity: 1;
 }
 
-/* line 144, ../scss/_sliders-counter.scss */
+/* line 145, ../scss/_sliders-counter.scss */
 .slider > .controls > .bottom > hr.slider-line {
   float: none;
   display: block;
@@ -724,13 +739,17 @@ span.spans {
 }
 
 @keyframes do-slide {
+  /* line 159, ../scss/_sliders-counter.scss */
   0% {
     left: 0;
   }
+
+  /* line 160, ../scss/_sliders-counter.scss */
   100% {
     left: -1000px;
   }
 }
+
 /* line 1, ../scss/_slider.scss */
 .projects {
   background-color: #fff;
@@ -754,24 +773,25 @@ span.spans {
 }
 /* line 19, ../scss/_slider.scss */
 .projects .carousel.vertical .item {
-  -moz-transition: ease-in-out 0.7s top;
-  -o-transition: ease-in-out 0.7s top;
-  -webkit-transition: ease-in-out 0.7s top;
-  transition: ease-in-out 0.7s top;
+  -webkit-transition: 0.7s ease-in-out top;
+  -moz-transition: 0.7s ease-in-out top;
+  -o-transition: 0.7s ease-in-out top;
+  transition: 0.7s ease-in-out top;
   left: 0;
 }
 /* line 22, ../scss/_slider.scss */
 .projects .carousel.vertical .item:before {
-  -moz-transition: background 0.7s ease-in-out;
-  -o-transition: background 0.7s ease-in-out;
-  -webkit-transition: background 0.7s ease-in-out;
-  transition: background 0.7s ease-in-out;
+  -webkit-transition: background all ease-in-out;
+  -webkit-transition-delay: 0.7s;
+  -moz-transition: background all ease-in-out 0.7s;
+  -o-transition: background all ease-in-out 0.7s;
+  transition: background all ease-in-out 0.7s;
 }
 /* line 25, ../scss/_slider.scss */
 .projects .carousel.vertical .item:hover {
+  -webkit-transition: background 0.6s ease-in-out;
   -moz-transition: background 0.6s ease-in-out;
   -o-transition: background 0.6s ease-in-out;
-  -webkit-transition: background 0.6s ease-in-out;
   transition: background 0.6s ease-in-out;
 }
 /* line 27, ../scss/_slider.scss */
@@ -791,9 +811,9 @@ span.spans {
   bottom: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.6);
+  -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 /* line 48, ../scss/_slider.scss */
@@ -1022,7 +1042,7 @@ span.spans {
   bottom: 47px;
   left: 25px;
 }
-/* line 70, ../scss/_team-services.scss */
+/* line 71, ../scss/_team-services.scss */
 .team-services .memskill ul li .members-info h4,
 .team-services .memskill ul li .members-info span {
   line-height: 0.5;
@@ -1165,57 +1185,60 @@ span.spans {
   color: rgba(255, 255, 255, 0.7);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
+  -webkit-transition-property: all;
   -moz-transition-property: all;
   -o-transition-property: all;
-  -webkit-transition-property: all;
   transition-property: all;
+  -webkit-transition-delay: 0.2s;
   -moz-transition-delay: 0.2s;
   -o-transition-delay: 0.2s;
-  -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
+  -webkit-transition-duration: 0.9s;
   -moz-transition-duration: 0.9s;
   -o-transition-duration: 0.9s;
-  -webkit-transition-duration: 0.9s;
   transition-duration: 0.9s;
 }
 /* line 201, ../scss/_team-services.scss */
 .project-section .block-projects .gallery li:hover .name {
-  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
+  -webkit-transform: scale(1, 1);
   -moz-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
-  -webkit-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
   transform: scale(1, 1);
+  -webkit-transition-property: all;
   -moz-transition-property: all;
   -o-transition-property: all;
-  -webkit-transition-property: all;
   transition-property: all;
+  -webkit-transition-duration: 0.6s;
   -moz-transition-duration: 0.6s;
   -o-transition-duration: 0.6s;
-  -webkit-transition-duration: 0.6s;
   transition-duration: 0.6s;
 }
 /* line 207, ../scss/_team-services.scss */
 .project-section .block-projects .gallery li:hover .title {
-  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 /* line 210, ../scss/_team-services.scss */
 .project-section .block-projects .gallery li:hover img {
+  -webkit-transform: scale(1, 1);
   -moz-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
-  -webkit-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
   transform: scale(1, 1);
   background-position: top top;
   -webkit-filter: 0.4 blur(2px);
+  -moz-filter: 0.4 blur(2px);
   filter: 0.4 blur(2px);
+  -webkit-transition-property: all;
   -moz-transition-property: all;
   -o-transition-property: all;
-  -webkit-transition-property: all;
   transition-property: all;
+  -webkit-transition-duration: 0.8s;
   -moz-transition-duration: 0.8s;
   -o-transition-duration: 0.8s;
-  -webkit-transition-duration: 0.8s;
   transition-duration: 0.8s;
 }
 /* line 217, ../scss/_team-services.scss */
@@ -1232,17 +1255,18 @@ span.spans {
   text-align: center;
   opacity: 1;
   background: #e2112e;
+  -webkit-transform: scale(1.09, 1.09);
   -moz-transform: scale(1.09, 1.09);
   -ms-transform: scale(1.09, 1.09);
-  -webkit-transform: scale(1.09, 1.09);
+  -o-transform: scale(1.09, 1.09);
   transform: scale(1.09, 1.09);
+  -webkit-transition-property: all;
   -moz-transition-property: all;
   -o-transition-property: all;
-  -webkit-transition-property: all;
   transition-property: all;
+  -webkit-transition-duration: 0.4s;
   -moz-transition-duration: 0.4s;
   -o-transition-duration: 0.4s;
-  -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
 
@@ -1262,7 +1286,7 @@ span.spans {
 }
 /* line 253, ../scss/_team-services.scss */
 .work a:hover {
-  color: #fff !important;
+  color: white !important;
   text-transform: uppercase;
   border: solid 1px;
   padding: 20px 50px;
@@ -1295,7 +1319,7 @@ span.spans {
   background: #000;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: #fff;
+  color: white;
 }
 
 /* line 18, ../scss/_footer.scss */
@@ -1438,7 +1462,7 @@ span.spans {
   color: #e2112e;
 }
 
-/* line 1, ../scss/design.scss */
+/* line 3, ../scss/design.scss */
 .banner-wrapper1 {
   background-image: url("../images/img51.jpg");
   background-size: cover;
@@ -1446,18 +1470,18 @@ span.spans {
   background-color: #e11111;
 }
 
-/* line 10, ../scss/design.scss */
+/* line 12, ../scss/design.scss */
 .job-title {
   color: #fff;
 }
-/* line 12, ../scss/design.scss */
+/* line 14, ../scss/design.scss */
 .job-title h1 {
   font-family: "open-sans-SemiboldItalic";
   font-weight: 100;
   font-size: 50px !important;
   margin: 0;
 }
-/* line 18, ../scss/design.scss */
+/* line 20, ../scss/design.scss */
 .job-title h3 {
   font-family: 'open sans';
   font-weight: 100;
@@ -1466,7 +1490,7 @@ span.spans {
   position: relative;
 }
 
-/* line 27, ../scss/design.scss */
+/* line 29, ../scss/design.scss */
 .desc-caption {
   color: #222222;
   font-family: 'open sans';
@@ -1474,37 +1498,37 @@ span.spans {
   margin: 20%;
 }
 
-/* line 34, ../scss/design.scss */
+/* line 36, ../scss/design.scss */
 .description {
   margin: 10% 5% 10%;
 }
-/* line 36, ../scss/design.scss */
+/* line 38, ../scss/design.scss */
 .description .desc-image-left {
   width: 15%;
   float: left;
 }
-/* line 40, ../scss/design.scss */
+/* line 42, ../scss/design.scss */
 .description .desc-image-right {
   width: 15%;
   margin: 10% -56px;
   float: right;
   position: absolute;
 }
-/* line 46, ../scss/design.scss */
+/* line 48, ../scss/design.scss */
 .description .desc-right {
   float: right;
   width: 50%;
   margin: 25% -10%;
   font-family: 'open sans';
 }
-/* line 51, ../scss/design.scss */
+/* line 53, ../scss/design.scss */
 .description .desc-right h4 {
   font-size: 30px;
   font-weight: 600;
   color: #e2112e;
   margin: 20px 0;
 }
-/* line 57, ../scss/design.scss */
+/* line 59, ../scss/design.scss */
 .description .desc-right p {
   font-family: 'open sans';
   font-size: 15px;
@@ -1513,7 +1537,7 @@ span.spans {
   position: relative;
   width: 90%;
 }
-/* line 65, ../scss/design.scss */
+/* line 67, ../scss/design.scss */
 .description .desc-right span {
   float: left;
   font-size: 114px;
@@ -1523,14 +1547,14 @@ span.spans {
   margin: -108px 0px -9px;
 }
 
-/* line 76, ../scss/design.scss */
+/* line 78, ../scss/design.scss */
 .desc-left {
   float: left;
   width: 50%;
   margin: 10% auto;
   font-family: 'open sans';
 }
-/* line 81, ../scss/design.scss */
+/* line 83, ../scss/design.scss */
 .desc-left h4 {
   font-size: 30px;
   font-weight: 600;
@@ -1538,11 +1562,11 @@ span.spans {
   margin: 20px 0;
   text-transform: uppercase;
 }
-/* line 88, ../scss/design.scss */
+/* line 90, ../scss/design.scss */
 .desc-left h5 {
   text-transform: uppercase;
 }
-/* line 91, ../scss/design.scss */
+/* line 93, ../scss/design.scss */
 .desc-left p {
   font-family: 'open sans';
   font-size: 15px;
@@ -1551,7 +1575,7 @@ span.spans {
   position: relative;
   width: 90%;
 }
-/* line 99, ../scss/design.scss */
+/* line 101, ../scss/design.scss */
 .desc-left span {
   float: left;
   font-size: 114px;
@@ -1561,14 +1585,14 @@ span.spans {
   margin: -108px 0px -9px;
 }
 
-/* line 109, ../scss/design.scss */
+/* line 111, ../scss/design.scss */
 .design-divider {
   margin: 10% auto;
   border-bottom: thick dashed #e1e1e1;
   border-bottom-width: 3px;
 }
 
-/* line 115, ../scss/design.scss */
+/* line 117, ../scss/design.scss */
 .hire {
   color: #d0122c;
   font-size: 80px;
