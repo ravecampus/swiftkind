@@ -2,52 +2,23 @@
 .technologies {
     position: relative;
     width: 100%;
-    max-width: 100%;
     height: auto;
-    max-height: 100%;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -moz-align-items: center;
-    -webkit-align-items: center;
-    -o-align-items: center;
-    -ms-align-items: center;
-    align-items: center;
-    text-align:center;
-
-
+    padding:30% auto;
     // custom style
     &#main3 {
         background: #2c2c33;
 
         
         & .container {
-
             & .img-holder {
-                width: 300px;
-                height: 300px;
-                margin: 0px auto 0;
-                display: -webkit-box;
-                display: -moz-box;
-                display: -ms-flexbox;
-                display: -webkit-flex;
-                display: flex;
-                -moz-align-items: center;
-                -webkit-align-items: center;
-                -o-align-items: center;
-                -ms-align-items: center;
-                align-items: center;
-                overflow: hidden;
-                padding:30px;
+                 display:inline-block;
+                width: 70px;
+                height: 120px;
+                margin: 0px 10px 0;
                 & img {
-                    width: 30%;
-                    max-width: 75%;
+                    width: 100%;
                     height: auto;
-                    max-height: 75%;
-                    display: block;
+                 display: block;
                     margin: 0 auto;
                     float: none;
                     cursor: pointer;

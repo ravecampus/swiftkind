@@ -62,70 +62,40 @@
         }
     }
     .inner-content {
-        .header-text {
-            color: #fff;
-            padding-bottom: 560px;
-            padding-top: 245px;
-            font-family:$OpenSans-Light;
-            font-weight: 100;
-            width: 70%;
-            h1 {
-                margin-top: 70px;
-                font-size: 45px;
-                font-weight: 100;
+        .vertical-wrap {
+            display: table;
+            height:100vh;
+            .vertical-content {
+                display: table-cell;
+                vertical-align: middle;
+                .header-text {
+                    color: #fff;
+                    font-family: $OpenSans-Light;
+                    font-weight: 100;
+                    width: 70%;
+                    h1 {
+                        font-size: 45px;
+                        font-weight: 100;
+                    }
+                    p {
+                        margin-top: 40px;
+                        font-size: 20px;
+                        width: 80%;
+                    }
+                    .header-icons {
+                        a {
+                            img {
+                                display: inline;
+                                width: 50px;
+                                background: rgba(226, 17, 46, .4);
+                                margin: 1px;
+                                padding: 10px;
+                                border-radius: 10px;
+                            }
+                        }
+                    }
+                }
             }
-            p {
-            	margin-top: 40px;
-                font-size: 20px;
-                width:80%;
-            }
-            .header-icons{
-            	a{
-            		img{
-            		display:inline;
-            		width:50px;
-            		background:rgba(226,17,46,.4);
-            		margin:1px;
-            		padding:10px;
-            		border-radius: 10px;
-            	}
-            	}
-            }
-        }
-        .word {
-            position: absolute;
-            width: auto;
-            opacity: 0;
-            font-weight: bolder;
-        }
-        .letter {
-            display: inline-block;
-            position: relative;
-            // float: left;
-            -webkit-transform: translateZ(25px);
-            transform: translateZ(25px);
-            -webkit-transform-origin: 50% 50% 25px;
-            transform-origin: 50% 50% 25px;
-        }
-        .letter.out {
-            -webkit-transform: rotateX(90deg);
-            transform: rotateX(90deg);
-            -webkit-transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-            transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-            transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-            transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-        }
-        .letter.behind {
-            -webkit-transform: rotateX(-90deg);
-            transform: rotateX(-90deg);
-        }
-        .letter.in {
-            -webkit-transform: rotateX(0deg);
-            transform: rotateX(0deg);
-            -webkit-transition: -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            transition: -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         .btn-arrow {
             margin-bottom: 430px;
@@ -135,7 +105,6 @@
         }
         .header-logo {
             width: 200px;
-            margin-bottom: -490px;
         }
     }
 }
