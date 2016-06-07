@@ -1,9 +1,4 @@
 .banner-wrapper {
-    background: {
-        size: cover;
-        repeat: no-repeat;
-        color: rgba(0, 0, 0, .9)
-    }
     .icon-bar {
         display: flex;
         width: 36px;
@@ -55,6 +50,86 @@
             &.navbar-brand {
                 background: url("../images/bat1.png") no-repeat;
                 background-size: cover;
+                // .hambuger-style{
+                //   &.a {
+                //      background: rgba(255, 255, 255, 0);
+                //      border-bottom: 1px solid;
+                //      color: #fff;
+                //      line-height: 1.4;
+                //      padding: .25em;
+                //      text-decoration: none;
+                //      &:hover {
+                //          background: rgba(255, 255, 255, 1);
+                //          color: red;
+                //      }
+                //  }
+                // }
+                //button styles
+                //default button
+                // .btn {
+                //     color: #fff;
+                //     cursor: pointer;
+                //     display: block;
+                //     font-size: 16px;
+                //     font-weight: 400;
+                //     line-height: 45px;
+                //     margin: 0 auto 2em;
+                //     max-width: 160px;
+                //     position: relative;
+                //     text-decoration: none;
+                //     text-transform: uppercase;
+                //     vertical-align: middle;
+                //     width: 100%;
+                //     @media(min-width: 400px) {
+                //         display: inline-block;
+                //         margin-right: 2.5em;
+                //         &:nth-of-type(even) {
+                //             margin-right: 0;
+                //         }
+                //     }
+                //     @media(min-width: 600px) {
+                //         &:nth-of-type(even) {
+                //             margin-right: 2.5em;
+                //         }
+                //         &:nth-of-type(5) {
+                //             margin-right: 0;
+                //         }
+                //     }
+                //     &:hover {
+                //         text-decoration: none;
+                //     }
+                // }
+                /////////////////////////////////
+                //button one
+                ///////////////////////////////
+                // .btn-1 {
+                //     background: (255, 0, 0, 1.5%);
+                //     font-weight: 100;
+                //     svg {
+                //         height: 45px;
+                //         left: 0;
+                //         position: absolute;
+                //         top: 0;
+                //         width: 100%;
+                //     }
+                //     rect {
+                //         fill: none;
+                //         stroke-width: 2;
+                //         stroke-dasharray: 422, 0;
+                //     }
+                // }
+                // .btn-1:hover {
+                //     background: rgba(255, 0, 0, 0);
+                //     font-weight: 900;
+                //     letter-spacing: 1px;
+                //     rect {
+                //         stroke: #fff;
+                //         stroke-width: 5;
+                //         stroke-dasharray: 15, 310;
+                //         stroke-dashoffset: 48;
+                //         transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+                //     }
+                // }
             }
         }
         .bar {
@@ -64,7 +139,7 @@
     .inner-content {
         .vertical-wrap {
             display: table;
-            height:100vh;
+            height: 100vh;
             .vertical-content {
                 display: table-cell;
                 vertical-align: middle;
@@ -80,7 +155,17 @@
                     p {
                         margin-top: 40px;
                         font-size: 20px;
-                        width: 80%;
+                        width: 85%;
+                    }
+                    a {
+                        &.hire-link {
+                            color: #fff;
+                            border-bottom: #fff solid 1px;
+                            text-decoration: none;
+                        }
+                        &.hover {
+                            text-decoration: none;
+                        }
                     }
                     .header-icons {
                         a {
@@ -91,6 +176,7 @@
                                 margin: 1px;
                                 padding: 10px;
                                 border-radius: 10px;
+                                border-bottom: none;
                             }
                         }
                     }
@@ -107,6 +193,26 @@
             width: 200px;
         }
     }
+}
+.overlay {
+    content: " ";
+    position: absolute;
+    height: 100vh;
+    width: 200vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: -1;
+    mix-blend-mode: unset;
+    background: rgba(245,61,61,1);
+background: -moz-linear-gradient(-45deg, rgba(245,61,61,1) 1%, rgba(232,14,76,1) 55%, rgba(165,2,106,1) 93%, rgba(153,0,112,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(1%, rgba(245,61,61,1)), color-stop(55%, rgba(232,14,76,1)), color-stop(93%, rgba(165,2,106,1)), color-stop(100%, rgba(153,0,112,1)));
+background: -webkit-linear-gradient(-45deg, rgba(245,61,61,1) 1%, rgba(232,14,76,1) 55%, rgba(165,2,106,1) 93%, rgba(153,0,112,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(245,61,61,1) 1%, rgba(232,14,76,1) 55%, rgba(165,2,106,1) 93%, rgba(153,0,112,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(245,61,61,1) 1%, rgba(232,14,76,1) 55%, rgba(165,2,106,1) 93%, rgba(153,0,112,1) 100%);
+background: linear-gradient(135deg, rgba(245,61,61,1) 1%, rgba(232,14,76,1) 55%, rgba(165,2,106,1) 93%, rgba(153,0,112,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f53d3d', endColorstr='#990070', GradientType=1 );
 }
 
 video#bgvid {
