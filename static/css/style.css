@@ -251,16 +251,16 @@ body {
 
 /* line 27, ../scss/_navtoggle.scss */
 .mobile-nav {
-  padding-top: 150px;
-  background: #333;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-  -moz-transition: background 1s ease-in-out;
-  -o-transition: background 1s ease-in-out;
-  -webkit-transition: background 1s ease-in-out;
-  transition: background 1s ease-in-out;
+  padding-top: 300px;
+  background: rgba(51, 51, 51, 0.8);
+  -moz-transition: all 3s ease;
+  -o-transition: all 3s ease;
+  -webkit-transition: all 3s ease;
+  transition: all 3s ease;
+  -moz-transition: background 6s ease-in-out;
+  -o-transition: background 6s ease-in-out;
+  -webkit-transition: background 6s ease-in-out;
+  transition: background 6s ease-in-out;
   z-index: 100;
 }
 /* line 33, ../scss/_navtoggle.scss */
@@ -273,13 +273,13 @@ body {
 .mobile-nav ul li {
   list-style: none;
   text-align: center;
-  margin: 40px 0;
+  margin: 20px 0;
 }
 /* line 41, ../scss/_navtoggle.scss */
 .mobile-nav ul li a {
-  font-size: 40px;
+  font-size: 20px;
   text-transform: uppercase;
-  font-family: "Source-Light", sans-serif;
+  font-family: "OpenSans-Light";
   color: #fff;
 }
 /* line 46, ../scss/_navtoggle.scss */
@@ -1641,34 +1641,32 @@ button:hover {
 .card {
   margin: 50px 10px;
   width: 285px;
-  height: 500px;
+  height: 450px;
   max-width: 330px;
   position: relative;
   overflow: hidden;
-  padding: 50px 0;
+  padding: 75px 0;
   background: #fff;
 }
-
-/* line 30, ../scss/_materialize.scss */
-h2 {
-  padding: 20px;
+/* line 29, ../scss/_materialize.scss */
+.card h2 {
   color: #222;
   text-align: center;
   text-transform: uppercase;
   font-size: 20px;
   font-family: "OpenSans-Regular";
+  margin-top: 20px;
 }
-
 /* line 39, ../scss/_materialize.scss */
-h3 {
+.card h3 {
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 2px;
   color: #999999;
-  font-family: "OpenSans-Regular";
+  font-family: "OpenSans-Light";
 }
 
-/* line 47, ../scss/_materialize.scss */
+/* line 50, ../scss/_materialize.scss */
 .detail {
   color: #777;
   padding: 20px;
@@ -1676,20 +1674,20 @@ h3 {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 54, ../scss/_materialize.scss */
+/* line 57, ../scss/_materialize.scss */
 .img-wrapper {
   padding: 0;
   position: relative;
 }
 
-/* line 69, ../scss/_materialize.scss */
+/* line 72, ../scss/_materialize.scss */
 .img-wrapper img {
-  width: 50%;
+  width: 30%;
   margin: 0;
   margin-top: 20px;
 }
 
-/* line 75, ../scss/_materialize.scss */
+/* line 78, ../scss/_materialize.scss */
 .button-wrapper {
   height: 100%;
   position: absolute;
@@ -1714,28 +1712,27 @@ h3 {
   bottom: 20px;
 }
 
-/* line 99, ../scss/_materialize.scss */
+/* line 102, ../scss/_materialize.scss */
 button {
   width: 50px;
   height: 50px;
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
   z-index: 9;
   position: relative;
 }
 
-/* line 110, ../scss/_materialize.scss */
+/* line 113, ../scss/_materialize.scss */
 .main-button {
-  background: #ff2670;
+  background: #f72a46;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
   color: #fff;
 }
 
-/* line 118, ../scss/_materialize.scss */
+/* line 121, ../scss/_materialize.scss */
 .ripple {
   position: absolute;
   left: 0;
@@ -1746,19 +1743,19 @@ button {
   z-index: -9;
   background: transparent;
   border: 1px solid #ff2670;
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  transform: scale(0.5);
-  -webkit-transition: .3s all ease;
-  transition: .3s all ease;
+  -webkit-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  transform: scale(0.2);
+  -webkit-transition: .1s all ease;
+  transition: .1s all ease;
   opacity: 1;
 }
 
-/* line 136, ../scss/_materialize.scss */
+/* line 139, ../scss/_materialize.scss */
 .rippling {
-  -webkit-animation: .3s rippling 1;
-  animation: .3s rippling 1;
-  -moz-animation: .3s rippling 1;
+  -webkit-animation: .2s rippling 1;
+  animation: .2s rippling 1;
+  -moz-animation: .2s rippling 1;
 }
 
 @-webkit-keyframes rippling {
@@ -1795,7 +1792,7 @@ button {
     opacity: 0;
   }
 }
-/* line 179, ../scss/_materialize.scss */
+/* line 182, ../scss/_materialize.scss */
 .layer {
   position: absolute;
   left: 0;
@@ -1803,13 +1800,13 @@ button {
   bottom: 0;
   width: 50px;
   height: 50px;
-  background: #ff2670;
+  background: #e2112e;
   border-radius: 50%;
   z-index: -99;
   pointer-events: none;
 }
 
-/* line 192, ../scss/_materialize.scss */
+/* line 195, ../scss/_materialize.scss */
 .button-wrapper.clicked {
   -webkit-transform: rotate(90deg) translateY(-96px);
   -ms-transform: rotate(90deg) translateY(-96px);
@@ -1820,14 +1817,14 @@ button {
   transition: .3s all ease .6s;
 }
 
-/* line 202, ../scss/_materialize.scss */
+/* line 205, ../scss/_materialize.scss */
 .button-wrapper.clicked .main-button {
   opacity: 0;
   -webkit-transition: .3s all ease .3s;
   transition: .3s all ease .3s;
 }
 
-/* line 208, ../scss/_materialize.scss */
+/* line 211, ../scss/_materialize.scss */
 .button-wrapper.clicked .layer {
   -webkit-transform: scale(100);
   -ms-transform: scale(100);
@@ -1836,7 +1833,7 @@ button {
   transition: 2.25s all ease .9s;
 }
 
-/* line 216, ../scss/_materialize.scss */
+/* line 219, ../scss/_materialize.scss */
 .layered-content {
   position: absolute;
   top: 0;
@@ -1858,12 +1855,12 @@ button {
   opacity: 0;
 }
 
-/* line 237, ../scss/_materialize.scss */
+/* line 240, ../scss/_materialize.scss */
 .layered-content.active {
   opacity: 1;
 }
 
-/* line 241, ../scss/_materialize.scss */
+/* line 244, ../scss/_materialize.scss */
 .close-button {
   background: white;
   position: absolute;
@@ -1872,18 +1869,19 @@ button {
   color: #ff2670;
 }
 
-/* line 249, ../scss/_materialize.scss */
+/* line 252, ../scss/_materialize.scss */
 .layered-content.active .close-button {
   -webkit-animation: .5s bounceIn;
   animation: .5s bounceIn;
 }
 
-/* line 254, ../scss/_materialize.scss */
+/* line 257, ../scss/_materialize.scss */
 .content h3 {
   color: #fff;
+  font-family: "OpenSans-Regular";
 }
 
-/* line 258, ../scss/_materialize.scss */
+/* line 262, ../scss/_materialize.scss */
 .content p {
   color: #fff;
   font-weight: 300;
@@ -1893,7 +1891,7 @@ button {
   margin: 30px;
 }
 
-/* line 267, ../scss/_materialize.scss */
+/* line 271, ../scss/_materialize.scss */
 .content p a {
   font-size: 12px;
   background: white;
@@ -1905,7 +1903,7 @@ button {
   margin-left: 1.5px;
 }
 
-/* line 279, ../scss/_materialize.scss */
+/* line 283, ../scss/_materialize.scss */
 .content img,
 .content p {
   opacity: 0;
@@ -1913,20 +1911,12 @@ button {
   top: -7.5px;
 }
 
-/* line 286, ../scss/_materialize.scss */
-.layered-content.active .content img {
-  opacity: 1;
-  top: 0;
-  -webkit-transition: .5s all ease .5s;
-  transition: .5s all ease .5s;
-}
-
-/* line 293, ../scss/_materialize.scss */
+/* line 290, ../scss/_materialize.scss */
 .layered-content.active .content p {
   opacity: 1;
   top: 0;
-  -webkit-transition: .5s all ease 1s;
-  transition: .5s all ease 1s;
+  -webkit-transition: .2s all ease 0.2s;
+  transition: .2s all ease 0.2s;
 }
 
 /* line 1, ../scss/_owl-carousel.scss */
@@ -1942,4 +1932,155 @@ button {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+}
+
+/* line 1, ../scss/_image-map.scss */
+.image-map {
+  z-index: -9999;
+}
+
+/* line 6, ../scss/_image-map.scss */
+.hint {
+  position: relative;
+  display: inline-block;
+  z-index: 1000;
+}
+
+/* line 8, ../scss/_image-map.scss */
+.hint:before, .hint:after {
+  position: absolute;
+  opacity: 0;
+  z-index: 1000000;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  pointer-events: none;
+}
+
+/* line 18, ../scss/_image-map.scss */
+.hint:hover:before, .hint:hover:after {
+  opacity: 1;
+}
+
+/* line 22, ../scss/_image-map.scss */
+.hint:before {
+  content: '';
+  position: absolute;
+  background: transparent;
+  border: 6px solid transparent;
+  position: absolute;
+}
+
+/* line 31, ../scss/_image-map.scss */
+.hint:after {
+  content: attr(data-hint);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px 10px;
+  font-size: 12px;
+  white-space: nowrap;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* top */
+/* line 44, ../scss/_image-map.scss */
+.hint--top:before {
+  bottom: 100%;
+  left: 50%;
+  margin: 0 0 -18px 0;
+  border-top-color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 51, ../scss/_image-map.scss */
+.hint--top:after {
+  bottom: 100%;
+  left: 50%;
+  margin: 0 0 -6px -10px;
+}
+
+/* line 57, ../scss/_image-map.scss */
+.hint--top:hover:before {
+  margin-bottom: -10px;
+}
+
+/* line 61, ../scss/_image-map.scss */
+.hint--top:hover:after {
+  margin-bottom: 2px;
+}
+
+/* default: bottom */
+/* line 67, ../scss/_image-map.scss */
+.hint--bottom:before {
+  top: 100%;
+  left: 50%;
+  margin: -14px 0 0 0;
+  border-bottom-color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 74, ../scss/_image-map.scss */
+.hint--bottom:after {
+  top: 100%;
+  left: 50%;
+  margin: -2px 0 0 -10px;
+}
+
+/* line 80, ../scss/_image-map.scss */
+.hint--bottom:hover:before {
+  margin-top: -6px;
+}
+
+/* line 84, ../scss/_image-map.scss */
+.hint--bottom:hover:after {
+  margin-top: 6px;
+}
+
+/* right */
+/* line 90, ../scss/_image-map.scss */
+.hint--right:before {
+  left: 100%;
+  bottom: 50%;
+  margin: 0 0 -4px -8px;
+  border-right-color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 97, ../scss/_image-map.scss */
+.hint--right:after {
+  left: 100%;
+  bottom: 50%;
+  margin: 0 0 -13px 4px;
+}
+
+/* line 103, ../scss/_image-map.scss */
+.hint--right:hover:before {
+  margin: 0 0 -4px -0;
+}
+
+/* line 107, ../scss/_image-map.scss */
+.hint--right:hover:after {
+  margin: 0 0 -13px 12px;
+}
+
+/* left */
+/* line 113, ../scss/_image-map.scss */
+.hint--left:before {
+  right: 100%;
+  bottom: 50%;
+  margin: 0 -8px -4px 0;
+  border-left-color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 120, ../scss/_image-map.scss */
+.hint--left:after {
+  right: 100%;
+  bottom: 50%;
+  margin: 0 4px -13px 0;
+}
+
+/* line 126, ../scss/_image-map.scss */
+.hint--left:hover:before {
+  margin: 0 0 -4px 0;
+}
+
+/* line 130, ../scss/_image-map.scss */
+.hint--left:hover:after {
+  margin: 0 12px -13px 0;
 }
