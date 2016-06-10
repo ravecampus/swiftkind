@@ -22,9 +22,9 @@
           max-width: 330px;
           position: relative;
           overflow: hidden;
-         //border: solid 0.1px #bdc3c7;
+          //border: solid 0.1px #bdc3c7;
           padding: 50px 0;
-          background:#fff;
+          background: #fff;
       }
       
       h2 {
@@ -112,6 +112,7 @@
           -webkit-align-self: flex-end;
           -ms-flex-item-align: end;
           align-self: flex-end;
+          color: #fff;
       }
       
       .ripple {
@@ -249,17 +250,18 @@
           -webkit-animation: .5s bounceIn;
           animation: .5s bounceIn;
       }
-
-      .content h3{
-        color:#fff;
+      
+      .content h3 {
+          color: #fff;
       }
+      
       .content p {
           color: #fff;
           font-weight: 300;
           text-align: justify;
           line-height: 1.5;
           font-family: 'Roboto', sans-serif;
-          margin:30px;
+          margin: 30px;
       }
       
       .content p a {

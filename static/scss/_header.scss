@@ -153,7 +153,7 @@
                         font-weight: 100;
                     }
                     p {
-                        margin-top: 40px;
+                        margin-top: 15px;
                         font-size: 20px;
                         width: 85%;
                     }
@@ -194,6 +194,7 @@
         }
     }
 }
+
 .overlay {
     content: " ";
     position: absolute;
@@ -205,14 +206,8 @@
     opacity: 0.9;
     z-index: -1;
     mix-blend-mode: unset;
-    background: rgba(28,3,8,1);
-background: -moz-linear-gradient(top, rgba(28,3,8,1) 0%, rgba(28,3,8,1) 15%, rgba(0,0,0,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(28,3,8,1)), color-stop(15%, rgba(28,3,8,1)), color-stop(100%, rgba(0,0,0,1)));
-background: -webkit-linear-gradient(top, rgba(28,3,8,1) 0%, rgba(28,3,8,1) 15%, rgba(0,0,0,1) 100%);
-background: -o-linear-gradient(top, rgba(28,3,8,1) 0%, rgba(28,3,8,1) 15%, rgba(0,0,0,1) 100%);
-background: -ms-linear-gradient(top, rgba(28,3,8,1) 0%, rgba(28,3,8,1) 15%, rgba(0,0,0,1) 100%);
-background: linear-gradient(to bottom, rgba(28,3,8,1) 0%, rgba(28,3,8,1) 15%, rgba(0,0,0,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c0308', endColorstr='#000000', GradientType=0 );}
+    background: rgba(0, 0, 0, 0.9)
+}
 
 video#bgvid {
     position: fixed;

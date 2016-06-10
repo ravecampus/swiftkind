@@ -1,20 +1,13 @@
-.main-counter {
-	background:{
-		//image: url("../images/img1.jpg");
-		size: cover;
-		/* position: center; */
-		repeat: no-repeat;
-		color:#fff;
-	} 
-}
-
 .counter-text {
-	color: #e2112e;
-    padding: 10em 20px;
-   font-family:$OpenSans-Bold;
+	color: #fff;
+    margin: 10em;
+   font-family:$OpenSans-Light;
     font-weight:100;
+    text-transform:uppercase;
+    letter-spacing: 2px;
 
     .number {
-    	font-size:70px;
+    	font-size:40px;
+    	font-family:$OpenSans-Bold;
     }
 }

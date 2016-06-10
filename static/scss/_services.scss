@@ -58,11 +58,17 @@ hr {
         color: #f7f7f7;
         //  image: url("../images/img14.jpg");
     }
+    h2 {
+        color: #666;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
 }
 
 .caption {
     font-size: 30px;
-    padding: 60px 25%;
+    padding: 100px 22% 40px;
 }
 
 .square {
@@ -95,7 +101,7 @@ hr {
         letter-spacing: 0.5px;
         width: 100%;
         font-family: $OpenSans-Light;
-            text-align: justify;
+        text-align: justify;
     }
     h2 {
         font-size: 25px;
@@ -116,11 +122,12 @@ hr {
         padding: 6px;
         font-size: 26px;
         font-weight: 100;
-        margin:0 auto -10px;
+        margin: 0 auto -10px;
     }
 }
 
 .services-text {
+    z-index: 100;
     .container {
         font-family: $OpenSans-Light;
         // background: {
@@ -130,10 +137,15 @@ hr {
         //     size: cover;
         //     opacity: 1;
         // }
-        background: rgba(226, 17, 46, .9);
+       
+
+background: #485563; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #485563 , #29323c); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #485563 , #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
         width: 100%;
-        height: 100vh;
-        padding: 20%;
+        height: 110vh;
+        padding: 15%;
         h1 {
             font-size: 30px;
             color: #fff;
@@ -142,7 +154,7 @@ hr {
         p {
             color: #fff;
             font-size: 25px;
-            margin: 0 auto 10%;
+            margin: 0 15% 10%;
         }
         a {
             margin: 0 10px 0;
@@ -158,7 +170,7 @@ hr {
             transition: 1s;
             color: #fff;
             padding: 15px 70px;
-            background: #ce0d28;
+            background: rgba(206,13,40,.2);
             text-decoration: none;
             border: none;
         }
@@ -171,4 +183,3 @@ hr {
         }
     }
 }
-  
