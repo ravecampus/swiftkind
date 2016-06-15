@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="static/css/style.css" />
     <link rel="stylesheet" href="static/css/animate.css" />
     <link rel="stylesheet" href="static/css/owl.carousel.css" />
-    <link rel="stylesheet" href="static/css/owl.theme.css" />
     <link rel="stylesheet" href="static/css/owl.transitions.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -41,7 +40,7 @@
         </nav>
         <!--/.navbar-->
         <header>
-            <div class="container">
+            <div class="container" id="home">
                 <div class="inner-content">
                     <div class="main-title">
                         <div class="overlay">
@@ -54,15 +53,14 @@
                             <div class="vertical-content">
                                 <img src="static/images/bat_white.png" class="header-logo wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
                                 <div class="header-text">
-                                    <h1 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s"> Moving Fast with High Quality Codebase </h1>
+                                    <h1 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s"> Moving fast with high quality codebase </h1>
                                     <p class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s"> Looking for an Agile team to build your product? We produce Python/Django apps for your business. <a href="#" class="hire-link">Hire Us</a></p>
                                     <div class="header-icons">
-                                        <a href="#">
-                                            <img src="static/images/strategy-white.png" class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.5s"></a>
-                                        <a href="#">
+                                        
+                                            <img src="static/images/strategy-white.png" class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.5s">
                                             <img src="static/images/design-white.png" class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.5s"></a>
-                                        <a href="#">
-                                            <img src="static/images/engineering-white.png" class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.5s"></a>
+                          
+                                            <img src="static/images/engineering-white.png" class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.5s">
                                     </div>
                                 </div>
                             </div>
@@ -75,7 +73,7 @@
         </header>
     </div>
     <!-- /.banner-wrapper-->
-    <div class="about">
+    <div class="about" id="about">
         <div class="entire-text container">
             <div class="col2">
                 <div class="agile text-center wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
@@ -92,7 +90,7 @@
     </div>
     <!-- /.about -->
     <section id="main3" class="technologies text-center">
-        <div class="container text-center">
+        <div class="container text-center" >
             <div class="row">
                 <h2>our technologies
                         
@@ -126,7 +124,7 @@
         </div>
         <!-- /.container -->
     </section>
-    <div class="services">
+    <div class="services" id="services">
         <div class="container">
             <div class=" text-center">
                 <p class="caption wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s"> With wide practical experience in Frontend and Backend development, UI/UX Consulting and design</p>
@@ -200,7 +198,7 @@
         </div>
     </div>
     <!-- /.services -->
-    <div class="project-section ">
+    <div class="project-section " id="projects">
         <div class="container ">
             <div class="block-projects text-center ">
                 <p class="caption ">The goal is to rapidly build best quality of software products for our clients and to successfully deliver business requirements. </p>
@@ -242,9 +240,23 @@
     <!-- /.project-section -->
     <div class="services-text ">
         <div class="container text-center ">
-            <p class="row wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.5s "> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec convallis nibh. Aenean elit turpis, euismod eget tincidunt id, tempor id mauris. Sed sodales in tellus at luctus. Nulla id rhoncus tortor, eu auctor erat. Nulla eu dolor non sem pellentesque facilisis. Duis sit amet consequat elit.</p>
-            <a href="# " class="wow slideInUp " data-wow-duration="1s " data-wow-delay="0.5s ">LEAR MORE</a>
-            <a href="# " class="wow slideInUp " data-wow-duration="1s " data-wow-delay="0.5s ">LOREM IPSUM</a>
+            <p class="row wow fadeInUp " data-wow-duration="1s " data-wow-delay="0.5s "> Building software that matters fuels us. <br/> Swiftkind believes in rapid development with full focus on quality engineering. We are a team of  creative designers and skilled coders particularizing in building human-centered projects.  </p>
+            <a href="# " class="wow slideInUp " data-wow-duration="1s " data-wow-delay="0.5s ">HIRE US</a>
+            <a href="#">links</a>
+  
+  
+
+<div id="content-2" style="display:none">
+    <h2>Slide Two</h2>
+<p>This is the second slide. If you want you can <a href="#">go back to the first slide</a>. The second part of the animation is increasing the size of the element itself in order to create a hole.</p>
+
+<p>This transition could be used for presentation slides. Using pushState then this could be used as a transition between webpages.</p>
+   
+
+  </div>
+
+<div class="ripple-wrap"><div class="ripple"></div></div>
+            
             <div id="counters">
                 <div class="counter-text  ">
                     <div class="row wow fadeInUp " data-wow-duration="2s " data-wow-delay="0.5s ">
@@ -307,69 +319,61 @@
     </div>
    </div> -->
     <!-- /#counters -->
-    <!--   <section id="sliders ">
-            <div class="slider container ">
-                <div class="divider text-center "></div>
-                <ul class="widget row wow fadeInUp " data-wow-duration="2s " data-wow-delay="0.5s ">
-                    <li>
-                        <h5 class="text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas erat purus, vestib ulum quis dictum non, pellentesque quis orci. Cras vitae pellentesque massa.</h5>
-                        <div>
-                            <a href="# " class="person ">JOHN DOE </a> | <a href="# " class="company ">CEO, PYTHON.INC</a>
-                        </div>
-                        <img src="static/images/dummy1.png ">
-                    </li>
-                    <li>
-                        <h5 class="text-center ">Lorem ipsum dolor sit amet, consectetur elit,<span class="quote ">"</span>
-                                </h5>
-                                <h5>Maecenas scelerisque lectus in lingula tringilla vestibulum. Duis</h5>
-                                <h5>sed scelerisque nibh.</h5>
-                                <img src="static/images/dummy1.png">
-                                <credit><span class="spans">LOREM IPSUM - </span> OLOR SIT AMET</credit>
-                                </li>
-                                <li>
-                                    <h5 class="text-center">Lorem ipsum dolor sit amet, consectetur elit,<span class="quote">"</span></h5>
-                                    <h5>Maecenas scelerisque lectus in lingula tringilla vestibulum. Duis</h5>
-                                    <h5>sed scelerisque nibh.</h5>
-                                    <img src="static/images/dummy1.png">
-                                    <credit><span class="spans">LOREM IPSUM - </span> OLOR SIT AMET</credit>
-                                </li>
-                                </ul>
-                            </div>
-                            </section> -->
-    <div id="owl-demo" class="owl-carousel">
-        <div><img src="http://placehold.it/1170x300/42bdc2/FFFFFF"></div>
-        <div><img src="http://placehold.it/1170x400/42bdc2/FFFFFF"></div>
-        <div><img src="http://placehold.it/1170x500/42bdc2/FFFFFF"></div>
-        <div><img src="http://placehold.it/1170x200/42bdc2/FFFFFF"></div>
-        <div><img src="http://placehold.it/1170x500/42bdc2/FFFFFF"></div>
-        <div><img src="http://placehold.it/1170x250/42bdc2/FFFFFF"></div>
-        <div><img src="http://placehold.it/1170x350/42bdc2/FFFFFF"></div>
-        <div><img src="http://placehold.it/1170x300/42bdc2/FFFFFF"></div>
-        <div><img src="http://placehold.it/1170x100/42bdc2/FFFFFF"></div>
-        <div><img src="http://placehold.it/1170x500/42bdc2/FFFFFF"></div>
-    </div>
-    <div class="team-picture"><img id="Image-Maps-Com-image-maps-2016-06-10-083406" src="http://www.image-maps.com/m/private/0/dc12tapjdr31ih6qbsdgl6dl41_group.jpg" border="0" width="1375" height="478" orgWidth="1375" orgHeight="478" usemap="#image-maps-2016-06-10-083406" alt="" />
-<map name="image-maps-2016-06-10-083406" id="ImageMapsCom-image-maps-2016-06-10-083406">
-<area id="ceo"  class="hint  hint--right" data-hint="Made by Kushagra Gour" alt="" title="ceo" href="#ceo" shape="rect" coords="122,116,299,344" style="outline:none;" target="_self"     />
-<area  alt="" title="" href="coo" shape="rect" coords="448,84,625,312" style="outline:none;" target="_self"     />
-<area id="cto" alt="#cto" title="#cto" href="#cto" shape="rect" coords="690,47,867,275" style="outline:none;" target="_self"     />
-<area id="cio" alt="cio" title="cio" href="#cio" shape="rect" coords="848,44,1025,272" style="outline:none;" target="_self"     />
-<area id="ui-designer" alt="ui-designer" title="ui-designer" href="#ui-designer" shape="rect" coords="1115,162,1292,390" style="outline:none;" target="_self"     />
-<area id="dev1" alt="dev1" title="dev1" href="#dev1" shape="rect" coords="1012,36,1187,264" style="outline:none;" target="_self"     />
-<area id="dev2" alt="dev2" title="dev2" href="#dev2" shape="rect" coords="954,0,1129,119" style="outline:none;" target="_self"     />
-<area shape="rect" coords="1373,476,1375,478" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" />
-</map>
 
-    </div>
-    <div id="map" style="pointer-events:none;"></div>
-    <section class="site-footer">
+
+            <div  class="owl-carousel">
+                <div class="item">
+                    <h5 class="text-center">Lorem ipsum dolor sit amet, consectetur elit,<span class="quote">"</span></h5>
+
+                    <h5>Maecenas scelerisque lectus in lingula tringilla vestibulum. Duis</h5>
+                    <h5>sed scelerisque nibh.</h5>
+                    <img src="static/images/dummy1.png">
+                    <credit><span class="spans">LOREM IPSUM - </span> OLOR SIT AMET</credit>
+                </div>
+                <div class="item">
+                    <h5 class="text-center">Lorem ipsum dolor sit amet, consectetur elit,<span class="quote">"</span></h5>
+
+                    <h5>Maecenas scelerisque lectus in lingula tringilla vestibulum. Duis</h5>
+                    <h5>sed scelerisque nibh.</h5>
+                    <img src="static/images/dummy1.png">
+                    <credit><span class="spans">LOREM IPSUM - </span> OLOR SIT AMET</credit>
+                </div>
+                <div class="item">
+                    <h5 class="text-center">Lorem ipsum dolor sit amet, consectetur elit,<span class="quote">"</span></h5>
+
+                    <h5>Maecenas scelerisque lectus in lingula tringilla vestibulum. Duis</h5>
+                    <h5>sed scelerisque nibh.</h5>
+                    <img src="static/images/dummy1.png">
+                    <credit><span class="spans">LOREM IPSUM - </span> OLOR SIT AMET</credit>
+                </div>
+
+            </div>
+             
+        
+                       
+
+       
+<!--     <div class="team-picture">
+
+    <img src="static/images/group.jpg" usemap="#map" />
+        <map name="map">
+            <area shape="circle" coords="396,220,102" href="#" class="tooltip" title="Hello thar, mate!" />
+        </map>
+
+    </div> -->
+  <section id="cd-google-map">
+    <div id="google-container"></div>
+    <div id="cd-zoom-in"></div>
+    <div id="cd-zoom-out"></div>
+</section>
+    <section class="site-footer" id="contact">
         <div class="container">
             <div class="vertical-wrap">
                 <div class="vertical-content">
                     <div class="col-md-6">
                         <ul class="footer-elements">
                             <li>
-                                <img src="../../bat1.png" class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.2s">
+                                <img src="static/images/bat1.png" class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.2s">
                             </li>
                             <li class="swiftkind wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.2s">
                                 Swiftkind Inc.
@@ -391,16 +395,16 @@
                                 COMPANY
                             </li>
                             <li class="element wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.2s">
-                                <a href="#"> Who we are</a>
+                                <a href="#about"> Who we are</a>
                             </li>
                             <li class="element wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.2s">
                                 <a href="#"> Success Stories</a>
                             </li>
                             <li class="element wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.2s">
-                                <a href="#">Success Stories</a>
+                                <a href="#">Our Team</a>
                             </li>
                             <li class="element wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.2s">
-                                <a href="#"> Our Services</a>
+                                <a href="#services"> Our Services</a>
                             </li>
                             <li class="title wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
                                 LEARN MORE
@@ -461,20 +465,28 @@
             <h5>&copy; 2016 Swiftkind Inc.</h5>
         </div>
     </footer>
+    <div id="owl-demo" class="owl-carousel owl-theme">
+ 
+  <div class="item"><img src="static/images/group.jpg" alt="The Last of us"></div>
+  <div class="item"><img src="static/images/group.jpg" alt="GTA V"></div>
+  <div class="item"><img src="static/images/group.jpg" alt="Mirror Edge"></div>
+ 
+</div>
     </div>
     <div class="mobile-nav">
-        <ul class="nav-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#services">Our services</a></li>
-            <li><a href="#projects">Our case studies</a></li>
-            <li><a href="#">Contact</a></li>
+        <ul class="nav-list Quick-navigation">
+            <li><a href="#about" class="Quick-navigation-item">About us</a></li>
+            <li><a href="#services" class="Quick-navigation-item">Our services</a></li>
+            <li><a href="#projects" class="Quick-navigation-item">Our case studies</a></li>
+            <li><a href="#team" class="Quick-navigation-item">Meet the team</a></li>
+            <li><a href="#contact" class="Quick-navigation-item">Contact</a></li>
         </ul>
     </div>
     <!-- jQuery  -->
+
     <script src="static/libs/jquery/dist/jquery.min.js"></script>
     <!--  Bootstrap JavaScript   -->
     <script src="static/libs/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="static/js/main.min.js"></script>
     <script src="static/js/jv-jquery-mobile-menu.min.js"></script>
     <script src="static/js/script-right.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
@@ -483,183 +495,29 @@
     <script src="static/js/waypoints.min.js"></script>
     <script src="static/js/slider-counter.js"></script>
     <script src="static/js/team-progress.min.js"></script>
-    <script src="static/js/text-rotate.js"></script>
-    <script src="static/js/graph.js"></script>
+    <!-- <script src="static/js/graph.js"></script> -->
+    <script src="static/js/ripple.js"></script>
     <script src="static/js/wow.min.js"></script>
+
     <script src="static/js/material-index.js"></script>
-    <script src="static/js/prefixfree.minjs"></script>
+    <script src="static/js/prefixfree.min.js"></script>
     <script src="static/js/material-add.js"></script>
     <script src="static/js/owl.carousel.min.js"></script>
-    <script>
-    new WOW().init();
-    </script>
-    <script>
-    $(document).ready(function() {
-
-        $("#owl-demo").owlCarousel({
-            autoPlay: 3000,
-            stopOnHover: true,
-            navigation: true,
-            paginationSpeed: 1000,
-            goToFirstSpeed: 2000,
-            singleItem: true,
-            autoHeight: true,
-            transitionStyle: "fade"
-        });
-
-    });
-    </script>
-    <!-- Particles JS -->
-    <script src='http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js'></script>
+    <script src="static/js/jquery.tooltipster.min.js"></script>
+   <!-- <script src="static/js/smooth-scroll.js"></script> -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-    $(".hover").mouseleave(
-        function() {
-            $(this).removeClass("hover");
-        }
-
-    );
-    </script>
+    <script src="static/js/main.js"></script>
     <script type="text/javascript">
-    // When the window has finished loading create our google map below
-    google.maps.event.addDomListener(window, 'load', init);
-
-    function init() {
-        // Basic options for a simple Google Map
-        // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-        var mapOptions = {
-            zoom: 17,
-
-            center: new google.maps.LatLng(7.088303, 125.616174),
-
-            // How you would like to style the map. 
-            // This is where you would paste any style found on Snazzy Maps.
-            styles: [{
-                "featureType": "administrative.locality",
-                "elementType": "all",
-                "stylers": [{
-                    "hue": "#2c2e33"
-                }, {
-                    "saturation": 7
-                }, {
-                    "lightness": 19
-                }, {
-                    "visibility": "on"
-                }]
-            }, {
-                "featureType": "landscape",
-                "elementType": "all",
-                "stylers": [{
-                    "hue": "#ffffff"
-                }, {
-                    "saturation": -100
-                }, {
-                    "lightness": 100
-                }, {
-                    "visibility": "simplified"
-                }]
-            }, {
-                "featureType": "poi",
-                "elementType": "all",
-                "stylers": [{
-                    "hue": "#ffffff"
-                }, {
-                    "saturation": -100
-                }, {
-                    "lightness": 100
-                }, {
-                    "visibility": "off"
-                }]
-            }, {
-                "featureType": "road",
-                "elementType": "geometry",
-                "stylers": [{
-                    "hue": "#e2112e"
-                }, {
-                    "saturation": -93
-                }, {
-                    "lightness": 31
-                }, {
-                    "visibility": "simplified"
-                }]
-            }, {
-                "featureType": "road",
-                "elementType": "labels",
-                "stylers": [{
-                    "hue": "#e2112e"
-                }, {
-                    "saturation": -93
-                }, {
-                    "lightness": 31
-                }, {
-                    "visibility": "on"
-                }]
-            }, {
-                "featureType": "road.arterial",
-                "elementType": "labels",
-                "stylers": [{
-                    "hue": "#e2112e"
-                }, {
-                    "saturation": -93
-                }, {
-                    "lightness": -2
-                }, {
-                    "visibility": "simplified"
-                }]
-            }, {
-                "featureType": "road.local",
-                "elementType": "geometry",
-                "stylers": [{
-                    "hue": "#e9ebed"
-                }, {
-                    "saturation": -90
-                }, {
-                    "lightness": -8
-                }, {
-                    "visibility": "simplified"
-                }]
-            }, {
-                "featureType": "transit",
-                "elementType": "all",
-                "stylers": [{
-                    "hue": "#e9ebed"
-                }, {
-                    "saturation": 10
-                }, {
-                    "lightness": 69
-                }, {
-                    "visibility": "on"
-                }]
-            }, {
-                "featureType": "water",
-                "elementType": "all",
-                "stylers": [{
-                    "hue": "#e9ebed"
-                }, {
-                    "saturation": -78
-                }, {
-                    "lightness": 67
-                }, {
-                    "visibility": "simplified"
-                }]
-            }]
-        };
-
-        // Get the HTML DOM element that will contain your map 
-        // We are using a div with id="map" seen below in the <body>
-        var mapElement = document.getElementById('map');
-
-        // Create the Google Map using our element and options defined above
-        var map = new google.maps.Map(mapElement, mapOptions);
-
-        // Let's also add a marker while we're at it
-        var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(7.088303, 125.616174),
-            map: map,
-        });
-    }
+        $(document).ready(function() {
+            $(".owl-carousel").owlCarousel({
+                loop:true,
+                autoplay:true,
+               // autoplayTimeout:5000,
+                autoplayHoverPause:true,
+                autoHeight:false,
+                singleItem:true,
+            });
+        })
     </script>
 </body>
 

@@ -4,116 +4,258 @@ jQuery(document).ready(function( $ ) {
         time: 1000
     });
 
-    /* ---- particles.js config ---- */
 
-    particlesJS("particles-js", {
-      "particles": {
-        "number": {
-          "value": 100,
-          "density": {
-            "enable": true,
-            "value_area": 800
-          }
-        },
-        "color": {
-          "value": "#444444"
-        },
-        "shape": {
-          "type": "circle",
-          "stroke": {
-            "width": 0,
-            "color": "#222222"
-          },
-          "polygon": {
-            "nb_sides": 5
-          },
-          "image": {
-            "src": "img/github.svg",
-            "width": 100,
-            "height": 100
-          }
-        },
-        "opacity": {
-          "value": 0.5,
-          "random": false,
-          "anim": {
-            "enable": false,
-            "speed": 1,
-            "opacity_min": 0.1,
-            "sync": false
-          }
-        },
-        "size": {
-          "value": 3.5,
-          "random": true,
-          "anim": {
-            "enable": false,
-            "speed": 40,
-            "size_min": 0.1,
-            "sync": false
-          }
-        },
-        "line_linked": {
-          "enable": true,
-          "distance": 150,
-          "color": "#444444",
-          "opacity": 0.4,
-          "width": 1
-        },
-        "move": {
-          "enable": true,
-          "speed": 6,
-          "direction": "none",
-          "random": false,
-          "straight": false,
-          "out_mode": "out",
-          "bounce": false,
-          "attract": {
-            "enable": false,
-            "rotateX": 600,
-            "rotateY": 1200
-          }
-        }
-      },
-      "interactivity": {
-        "detect_on": "canvas",
-        "events": {
-          "onhover": {
-            "enable": false,
-            "mode": "grab"
-          },
-          "onclick": {
-            "enable": false,
-            "mode": "push"
-          },
-          "resize": false
-        },
-        "modes": {
-          "grab": {
-            "distance": 140,
-            "line_linked": {
-              "opacity": 1
-            }
-          },
-          "bubble": {
-            "distance": 400,
-            "size": 40,
-            "duration": 2,
-            "opacity": 8,
-            "speed": 3
-          },
-          "repulse": {
-            "distance": 200,
-            "duration": 0.4
-          },
-          "push": {
-            "particles_nb": 4
-          },
-          "remove": {
-            "particles_nb": 2
-          }
-        }
-      },
-      "retina_detect": true
+    //tooltipster
+    $('.tooltip').tooltipster({
+        content: $('<span> This text is in bold case !</span>'),
+        position:'right'
     });
+    new WOW().init();
+     $(".owl-carousel").owlCarousel({
+        loop:true,
+        autoplay:true,
+       // autoplayTimeout:5000,
+        autoplayHoverPause:true,
+        autoHeight:false,
+        singleItem:true,
+      });
+
+         $(".hover").mouseleave(
+        function() {
+            $(this).removeClass("hover");
+        }
+
+    );
+
+
+//set your google maps parameters
+    var $latitude = 7.088303,
+        $longitude = 125.616174,
+        $map_zoom = 17;
+
+    //google map custom marker icon - .png fallback for IE11
+    var is_internetExplorer11= navigator.userAgent.toLowerCase().indexOf('trident') > -1;
+    var $marker_url = ( is_internetExplorer11 ) ? 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.png' : 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location_1.svg';
+        
+    //define the basic color of your map, plus a value for saturation and brightness
+    var $main_color = '#fff',
+        $saturation= -78,
+        $brightness= 67;
+
+    //we define here the style of the map
+    var style= [ 
+        {
+            //set saturation for the labels on the map
+            elementType: "labels",
+            stylers: [
+                {saturation: $saturation}
+            ]
+        },  
+        {   //poi stands for point of interest - don't show these lables on the map 
+            featureType: "poi",
+            elementType: "labels",
+            stylers: [
+                {visibility: "off"}
+            ]
+        },
+        {
+            //don't show highways lables on the map
+            featureType: 'road.highway',
+            elementType: 'labels',
+            stylers: [
+                {visibility: "off"}
+            ]
+        }, 
+        {   
+            //don't show local road lables on the map
+            featureType: "road.local", 
+            elementType: "labels.icon", 
+            stylers: [
+                {visibility: "off"} 
+            ] 
+        },
+        { 
+            //don't show arterial road lables on the map
+            featureType: "road.arterial", 
+            elementType: "labels.icon", 
+            stylers: [
+                {visibility: "off"}
+            ] 
+        },
+        {
+            //don't show road lables on the map
+            featureType: "road",
+            elementType: "geometry.stroke",
+            stylers: [
+                {visibility: "off"}
+            ]
+        }, 
+        //style different elements on the map
+        { 
+            featureType: "transit", 
+            elementType: "geometry.fill", 
+            stylers: [
+                { hue: $main_color },
+                { visibility: "on" }, 
+                { lightness: $brightness }, 
+                { saturation: $saturation }
+            ]
+        }, 
+        {
+            featureType: "poi",
+            elementType: "geometry.fill",
+            stylers: [
+                { hue: $main_color },
+                { visibility: "on" }, 
+                { lightness: $brightness }, 
+                { saturation: $saturation }
+            ]
+        },
+        {
+            featureType: "poi.government",
+            elementType: "geometry.fill",
+            stylers: [
+                { hue: $main_color },
+                { visibility: "on" }, 
+                { lightness: $brightness }, 
+                { saturation: $saturation }
+            ]
+        },
+        {
+            featureType: "poi.sport_complex",
+            elementType: "geometry.fill",
+            stylers: [
+                { hue: $main_color },
+                { visibility: "on" }, 
+                { lightness: $brightness }, 
+                { saturation: $saturation }
+            ]
+        },
+        {
+            featureType: "poi.attraction",
+            elementType: "geometry.fill",
+            stylers: [
+                { hue: $main_color },
+                { visibility: "on" }, 
+                { lightness: $brightness }, 
+                { saturation: $saturation }
+            ]
+        },
+        {
+            featureType: "poi.business",
+            elementType: "geometry.fill",
+            stylers: [
+                { hue: $main_color },
+                { visibility: "on" }, 
+                { lightness: $brightness }, 
+                { saturation: $saturation }
+            ]
+        },
+        {
+            featureType: "transit",
+            elementType: "geometry.fill",
+            stylers: [
+                { hue: $main_color },
+                { visibility: "on" }, 
+                { lightness: $brightness }, 
+                { saturation: $saturation }
+            ]
+        },
+        {
+            featureType: "transit.station",
+            elementType: "geometry.fill",
+            stylers: [
+                { hue: $main_color },
+                { visibility: "on" }, 
+                { lightness: $brightness }, 
+                { saturation: $saturation }
+            ]
+        },
+        {
+            featureType: "landscape",
+            stylers: [
+                { hue: $main_color },
+                { visibility: "on" }, 
+                { lightness: $brightness }, 
+                { saturation: $saturation }
+            ]
+            
+        },
+        {
+            featureType: "road",
+            elementType: "geometry.fill",
+            stylers: [
+                { hue: $main_color },
+                { visibility: "on" }, 
+                { lightness: $brightness }, 
+                { saturation: $saturation }
+            ]
+        },
+        {
+            featureType: "road.highway",
+            elementType: "geometry.fill",
+            stylers: [
+                { hue: $main_color },
+                { visibility: "on" }, 
+                { lightness: $brightness }, 
+                { saturation: $saturation }
+            ]
+        }, 
+        {
+            featureType: "water",
+            elementType: "geometry",
+            stylers: [
+                { hue: $main_color },
+                { visibility: "on" }, 
+                { lightness: $brightness }, 
+                { saturation: $saturation }
+            ]
+        }
+    ];
+        
+    //set google map options
+    var map_options = {
+        center: new google.maps.LatLng($latitude, $longitude),
+        zoom: $map_zoom,
+        panControl: false,
+        zoomControl: false,
+        mapTypeControl: false,
+        streetViewControl: false,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        scrollwheel: false,
+        styles: style,
+    }
+    //inizialize the map
+    var map = new google.maps.Map(document.getElementById('google-container'), map_options);
+    //add a custom marker to the map                
+    var marker = new google.maps.Marker({
+        position: new google.maps.LatLng($latitude, $longitude),
+        map: map,
+        visible: true,
+        icon: $marker_url,
+    });
+
+    //add custom buttons for the zoom-in/zoom-out on the map
+    function CustomZoomControl(controlDiv, map) {
+        //grap the zoom elements from the DOM and insert them in the map 
+        var controlUIzoomIn= document.getElementById('cd-zoom-in'),
+            controlUIzoomOut= document.getElementById('cd-zoom-out');
+        controlDiv.appendChild(controlUIzoomIn);
+        controlDiv.appendChild(controlUIzoomOut);
+
+        // Setup the click event listeners and zoom-in or out according to the clicked element
+        google.maps.event.addDomListener(controlUIzoomIn, 'click', function() {
+            map.setZoom(map.getZoom()+1)
+        });
+        google.maps.event.addDomListener(controlUIzoomOut, 'click', function() {
+            map.setZoom(map.getZoom()-1)
+        });
+    }
+
+    var zoomControlDiv = document.createElement('div');
+    var zoomControl = new CustomZoomControl(zoomControlDiv, map);
+
+    //insert the zoom div on the top left of the map
+    map.controls[google.maps.ControlPosition.LEFT_TOP].push(zoomControlDiv);
+
 });

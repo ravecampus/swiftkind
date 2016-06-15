@@ -1,5 +1,3 @@
-
-
 $(".card").each(function(){
     var $mainButton = $(this).find(".main-button"),
     $closeButton = $(this).find(".close-button"),
@@ -20,6 +18,3 @@ $(".card").each(function(){
         $layer.removeClass("active");
     });
 });
-
-// copy
-balapaCop("Material Overlay Animation", "#777");
