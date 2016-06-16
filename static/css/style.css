@@ -62,7 +62,11 @@
   font-family: 'perpetuaitalic';
   src: url(../fonts/perpetuaitalic.ttf);
 }
-/* line 76, ../scss/_typography.scss */
+@font-face {
+  font-family: 'georgiaitalic';
+  src: url(../fonts/georgiai.ttf);
+}
+/* line 81, ../scss/_typography.scss */
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -248,10 +252,10 @@ body {
   position: relative;
 }
 
-/* line 27, ../scss/_navtoggle.scss */
+/* line 26, ../scss/_navtoggle.scss */
 .mobile-nav {
   padding-top: 300px;
-  background: rgba(51, 51, 51, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   -moz-transition: all 3s ease;
   -o-transition: all 3s ease;
   -webkit-transition: all 3s ease;
@@ -262,32 +266,39 @@ body {
   transition: background 6s ease-in-out;
   z-index: 100;
 }
-/* line 33, ../scss/_navtoggle.scss */
+/* line 32, ../scss/_navtoggle.scss */
 .mobile-nav ul {
   display: block;
   margin: 0 auto;
   padding: 0;
 }
-/* line 37, ../scss/_navtoggle.scss */
+/* line 36, ../scss/_navtoggle.scss */
 .mobile-nav ul li {
   list-style: none;
   text-align: center;
   margin: 20px 0;
 }
-/* line 41, ../scss/_navtoggle.scss */
+/* line 40, ../scss/_navtoggle.scss */
 .mobile-nav ul li a {
   font-size: 20px;
   text-transform: uppercase;
   font-family: "OpenSans-Light";
   color: #fff;
+  letter-spacing: 2px;
+  text-decoration: none;
 }
-/* line 46, ../scss/_navtoggle.scss */
+/* line 47, ../scss/_navtoggle.scss */
 .mobile-nav ul li a:hover {
   color: #fff;
   text-decoration: none;
 }
+/* line 52, ../scss/_navtoggle.scss */
+.mobile-nav ul li a:visited {
+  color: #fff;
+  text-decoration: none;
+}
 
-/* line 60, ../scss/_navtoggle.scss */
+/* line 66, ../scss/_navtoggle.scss */
 .hamburger {
   margin: 10px;
   padding: 10px 10px 9px;
@@ -295,7 +306,7 @@ body {
   z-index: 999;
   display: block;
 }
-/* line 67, ../scss/_navtoggle.scss */
+/* line 73, ../scss/_navtoggle.scss */
 .hamburger .hamburger-inner {
   position: relative;
   height: 21px;
@@ -304,7 +315,7 @@ body {
   margin: 0;
   padding: 0;
 }
-/* line 75, ../scss/_navtoggle.scss */
+/* line 81, ../scss/_navtoggle.scss */
 .hamburger .bar {
   width: 30px;
   height: 2px;
@@ -312,20 +323,20 @@ body {
   position: absolute;
   top: 0;
 }
-/* line 81, ../scss/_navtoggle.scss */
+/* line 87, ../scss/_navtoggle.scss */
 .hamburger .bar.bar2, .hamburger .bar.bar3 {
   top: 9px;
 }
-/* line 85, ../scss/_navtoggle.scss */
+/* line 91, ../scss/_navtoggle.scss */
 .hamburger .bar.bar4 {
   top: 18px;
 }
-/* line 90, ../scss/_navtoggle.scss */
+/* line 96, ../scss/_navtoggle.scss */
 .hamburger.open .bar1,
 .hamburger.open .bar4 {
   display: none;
 }
-/* line 94, ../scss/_navtoggle.scss */
+/* line 100, ../scss/_navtoggle.scss */
 .hamburger.open .bar2,
 .hamburger.open .bar3 {
   height: 3px;
@@ -481,10 +492,6 @@ hr {
   font-family: "OpenSans-Light";
   background: #485563;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #485563, #29323c);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #485563, #29323c);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   width: 100%;
   height: 110vh;
   padding: 15%;
@@ -504,31 +511,113 @@ hr {
 /* line 159, ../scss/_services.scss */
 .services-text .container a {
   margin: 0 10px 0;
+  letter-spacing: 2px;
 }
-/* line 162, ../scss/_services.scss */
+/* line 163, ../scss/_services.scss */
 .services-text .container a:link {
+  color: #fff;
+  padding: 15px 50px;
+  text-decoration: none;
+  background: #f72a46;
+}
+/* line 170, ../scss/_services.scss */
+.services-text .container a:hover {
   transition: 1s;
   color: #fff;
   padding: 15px 50px;
   text-decoration: none;
-  border: 1px solid #fa96a4;
-}
-/* line 169, ../scss/_services.scss */
-.services-text .container a:hover {
-  transition: 1s;
-  color: #fff;
-  padding: 15px 70px;
-  background: rgba(206, 13, 40, 0.2);
-  text-decoration: none;
   border: none;
+  background: #ce0d28;
 }
-/* line 177, ../scss/_services.scss */
+/* line 178, ../scss/_services.scss */
 .services-text .container a:visited {
   transition: 1s;
   color: #fff;
   padding: 15px 50px;
   text-decoration: none;
   border: 1px solid #fc687d;
+}
+/* line 187, ../scss/_services.scss */
+.services-text #content-2 {
+  display: none;
+}
+/* line 190, ../scss/_services.scss */
+.services-text .hire-card {
+  background: #f72a46;
+  color: #fff;
+  width: 40%;
+  height: auto;
+  padding: 5%;
+}
+/* line 197, ../scss/_services.scss */
+.services-text .hire-card .hello {
+  border-bottom: solid 0.2px #ffbec7;
+}
+/* line 200, ../scss/_services.scss */
+.services-text .hire-card .close-link {
+  padding: 5px;
+  background: #dd1d38;
+}
+/* line 204, ../scss/_services.scss */
+.services-text .hire-card .card-link {
+  padding: 5px;
+}
+/* line 206, ../scss/_services.scss */
+.services-text .hire-card .card-link:link {
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  padding: 0;
+}
+/* line 214, ../scss/_services.scss */
+.services-text .hire-card .card-link:hover {
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  background: none;
+}
+/* line 221, ../scss/_services.scss */
+.services-text .hire-card .card-link:visited {
+  color: #fff;
+  border: none;
+  text-decoration: none;
+}
+/* line 229, ../scss/_services.scss */
+.services-text .hire-card h3 {
+  font-family: "georgiaitalic";
+}
+/* line 233, ../scss/_services.scss */
+.services-text .hire-card p {
+  color: #ffbec7;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-top: 40px;
+  margin-left: 53px;
+}
+/* line 240, ../scss/_services.scss */
+.services-text .hire-card h1 {
+  font-family: "OpenSans-Bold";
+}
+/* line 243, ../scss/_services.scss */
+.services-text .hire-card .card-social {
+  margin-left: -53px;
+  margin-top: 30px;
+}
+/* line 246, ../scss/_services.scss */
+.services-text .hire-card .card-social ul {
+  list-style: none;
+}
+/* line 248, ../scss/_services.scss */
+.services-text .hire-card .card-social ul li {
+  display: inline;
+}
+/* line 253, ../scss/_services.scss */
+.services-text .hire-card .card-div {
+  border-bottom: solid 0.5px #ad0219;
+}
+/* line 257, ../scss/_services.scss */
+.services-text .hire-card .card-img {
+  width: 100%;
 }
 
 /* line 1, ../scss/_counter.scss */
@@ -850,11 +939,11 @@ span.spans {
   padding: 30% auto;
 }
 /* line 8, ../scss/_technologies.scss */
-.technologies#main3 {
+.technologies#technologies {
   background: #2c2c33;
 }
 /* line 11, ../scss/_technologies.scss */
-.technologies#main3 .container h2 {
+.technologies#technologies .container h2 {
   color: #666;
   text-transform: uppercase;
   font-size: 12px;
@@ -862,14 +951,14 @@ span.spans {
   margin-bottom: 40px;
 }
 /* line 18, ../scss/_technologies.scss */
-.technologies#main3 .container .img-holder {
+.technologies#technologies .container .img-holder {
   display: inline-block;
   width: 70px;
   height: 120px;
   margin: 0px 10px 0;
 }
 /* line 23, ../scss/_technologies.scss */
-.technologies#main3 .container .img-holder img {
+.technologies#technologies .container .img-holder img {
   width: 50%;
   height: auto;
   display: block;
@@ -878,7 +967,7 @@ span.spans {
   cursor: pointer;
 }
 /* line 42, ../scss/_technologies.scss */
-.technologies#main3 .container .img-holder img:hover {
+.technologies#technologies .container .img-holder img:hover {
   -webkit-filter: grayscale(0);
   /* Chrome, Safari, Opera */
   filter: grayscale(0);
@@ -1261,11 +1350,11 @@ span.spans {
   border-top: solid 1px #f5f5f5;
 }
 
-/* line 17, ../scss/_footer.scss */
-#map {
-  width: 100%;
-  height: 500px;
-  background: #fff;
+/* line 16, ../scss/_footer.scss */
+.footer-text {
+  margin-bottom: 50px;
+  font-family: "OpenSans-Regular";
+  display: none;
 }
 
 /* line 23, ../scss/_footer.scss */
@@ -1334,68 +1423,86 @@ span.spans {
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
+@media (max-width: 768px) {
+  /* line 80, ../scss/_footer.scss */
+  .banner-wrapper .inner-content .vertical-wrap {
+    margin-left: 30px;
+  }
+  /* line 83, ../scss/_footer.scss */
+  .banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text {
+    width: 70%;
+  }
+  /* line 85, ../scss/_footer.scss */
+  .banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text h1 {
+    font-size: 15px;
+  }
+  /* line 88, ../scss/_footer.scss */
+  .banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text p {
+    font-size: 20px;
+  }
+}
 @media (max-width: 1366px) {
-  /* line 84, ../scss/_footer.scss */
+  /* line 104, ../scss/_footer.scss */
   .mobile-nav {
     padding-top: 150px;
   }
 
-  /* line 88, ../scss/_footer.scss */
+  /* line 108, ../scss/_footer.scss */
   .banner-wrapper .inner-content .vertical-wrap {
     margin-left: 30px;
   }
-  /* line 91, ../scss/_footer.scss */
+  /* line 111, ../scss/_footer.scss */
   .banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text {
     width: 70%;
   }
-  /* line 93, ../scss/_footer.scss */
+  /* line 113, ../scss/_footer.scss */
   .banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text h1 {
     font-size: 35px;
   }
-  /* line 96, ../scss/_footer.scss */
+  /* line 116, ../scss/_footer.scss */
   .banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text p {
     font-size: 20px;
   }
 
-  /* line 107, ../scss/_footer.scss */
+  /* line 127, ../scss/_footer.scss */
   .project-section .container .block-projects .gallery {
     margin: 50px auto;
   }
-  /* line 109, ../scss/_footer.scss */
+  /* line 129, ../scss/_footer.scss */
   .project-section .container .block-projects .gallery li {
     width: 25%;
     margin: 10px;
   }
 
-  /* line 118, ../scss/_footer.scss */
+  /* line 138, ../scss/_footer.scss */
   .services-text .container {
     height: 110vh;
     padding: 8%;
   }
-  /* line 121, ../scss/_footer.scss */
+  /* line 141, ../scss/_footer.scss */
   .services-text .container p {
     font-size: 20px;
     margin: 0 15% 10%;
   }
 
-  /* line 127, ../scss/_footer.scss */
+  /* line 147, ../scss/_footer.scss */
   .caption {
     font-size: 25px;
     padding: 40px 25% 20px;
   }
 
-  /* line 131, ../scss/_footer.scss */
+  /* line 151, ../scss/_footer.scss */
   .about {
     height: 60vh;
   }
 }
 @media (min-width: 1200px) {
-  /* line 143, ../scss/_footer.scss */
+  /* line 163, ../scss/_footer.scss */
   .project-section .container {
     width: 1270px;
   }
 }
-/* line 149, ../scss/_footer.scss */
+/* line 169, ../scss/_footer.scss */
 #test {
   width: 227px;
   height: 142px;
@@ -1420,7 +1527,7 @@ span.spans {
   font-family: "OpenSans-Regular";
   font-size: 20px;
   margin: 10% auto;
-  color: #D52267;
+  color: #ff1744;
   letter-spacing: 1px;
 }
 /* line 19, ../scss/_about.scss */
@@ -1929,6 +2036,19 @@ button {
   transition: .2s all ease 0.2s;
 }
 
+/* line 305, ../scss/_materialize.scss */
+.ripple-wrap {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  font-size: 0;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 @-webkit-keyframes RIPPLER {
   0% {
     border-width: 0;
@@ -1939,7 +2059,7 @@ button {
     border-width: 1500px;
     margin-top: -1500px;
     margin-left: -1500px;
-    border-color: #009688;
+    border-color: #485563;
   }
   41% {
     height: 0;
@@ -1947,7 +2067,7 @@ button {
     border-width: 1500px;
     margin-top: -1500px;
     margin-left: -1500px;
-    border-color: #009688;
+    border-color: #485563;
   }
   100% {
     border-width: 1500px;
@@ -1955,7 +2075,7 @@ button {
     width: 2000px;
     margin-top: -2500px;
     margin-left: -2500px;
-    border-color: #009688;
+    border-color: #485563;
   }
 }
 @keyframes RIPPLER {
@@ -1968,7 +2088,7 @@ button {
     border-width: 1500px;
     margin-top: -1500px;
     margin-left: -1500px;
-    border-color: #009688;
+    border-color: #485563;
   }
   41% {
     height: 0;
@@ -1976,7 +2096,7 @@ button {
     border-width: 1500px;
     margin-top: -1500px;
     margin-left: -1500px;
-    border-color: #009688;
+    border-color: #485563;
   }
   100% {
     border-width: 1500px;
@@ -1984,17 +2104,17 @@ button {
     width: 2000px;
     margin-top: -2500px;
     margin-left: -2500px;
-    border-color: #009688;
+    border-color: #485563;
   }
 }
-/* line 357, ../scss/_materialize.scss */
-.ripple {
+/* line 368, ../scss/_materialize.scss */
+.ripple1 {
   display: block;
   height: 0;
   width: 0;
   border-width: 0px;
   border-style: solid;
-  border-color: #00796b;
+  border-color: #29323c;
   border-radius: 100%;
   position: absolute;
   top: 300px;
@@ -2003,13 +2123,13 @@ button {
   animation: none;
 }
 
-/* line 371, ../scss/_materialize.scss */
+/* line 382, ../scss/_materialize.scss */
 .ripple-wrap.goripple {
   display: block;
 }
 
-/* line 374, ../scss/_materialize.scss */
-.ripple-wrap.goripple .ripple {
+/* line 385, ../scss/_materialize.scss */
+.ripple-wrap.goripple .ripple1 {
   -webkit-animation-name: RIPPLER;
   -webkit-animation-duration: 1.5s;
   -webkit-animation-fill-mode: forwards;
@@ -2490,7 +2610,7 @@ button {
   position: relative;
   width: 100%;
   height: 200px;
-  background-color: #e7eaf0;
+  background-color: #fff;
 }
 
 @media only screen and (min-width: 768px) {

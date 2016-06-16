@@ -299,6 +299,17 @@ background: linear-gradient(to left, #D31027 , #EA384D); /* W3C, IE 10+/ Edge, F
           transition: .2s all ease 0.2s;
       }
 
+      //ripple
+
+
+.ripple-wrap {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  font-size: 0;
+  z-index: 1000;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
 @-webkit-keyframes RIPPLER {
   0%   { border-width: 0; }
   40% { 
@@ -307,7 +318,7 @@ background: linear-gradient(to left, #D31027 , #EA384D); /* W3C, IE 10+/ Edge, F
     border-width: 1500px;
     margin-top: -1500px;
     margin-left:-1500px; 
-    border-color: #009688;
+    border-color: #485563;
   }
   
   41% { 
@@ -316,7 +327,7 @@ background: linear-gradient(to left, #D31027 , #EA384D); /* W3C, IE 10+/ Edge, F
     border-width: 1500px;
     margin-top: -1500px;
     margin-left:-1500px; 
-    border-color: #009688;
+    border-color: #485563;
   }
   100% {
     border-width: 1500px;
@@ -324,7 +335,7 @@ background: linear-gradient(to left, #D31027 , #EA384D); /* W3C, IE 10+/ Edge, F
     width: 2000px;
     margin-top: -2500px;
     margin-left:-2500px;
-    border-color: #009688;
+    border-color: #485563;
   }
 }
 @keyframes RIPPLER {
@@ -335,7 +346,7 @@ background: linear-gradient(to left, #D31027 , #EA384D); /* W3C, IE 10+/ Edge, F
     border-width: 1500px;
     margin-top: -1500px;
     margin-left:-1500px; 
-    border-color: #009688;
+    border-color: #485563;
   }
   41% { 
     height: 0;
@@ -343,7 +354,7 @@ background: linear-gradient(to left, #D31027 , #EA384D); /* W3C, IE 10+/ Edge, F
     border-width: 1500px;
     margin-top: -1500px;
     margin-left:-1500px; 
-    border-color: #009688;
+    border-color: #485563;
   }
   100% {
     border-width: 1500px;
@@ -351,16 +362,16 @@ background: linear-gradient(to left, #D31027 , #EA384D); /* W3C, IE 10+/ Edge, F
     width: 2000px;
     margin-top: -2500px;
     margin-left:-2500px;
-    border-color: #009688;
+    border-color: #485563;
   }
 }
-.ripple {
+.ripple1 {
   display: block;
   height: 0;
   width: 0;
   border-width: 0px;
   border-style: solid;
-  border-color: #00796b;
+  border-color: #29323c;
   border-radius: 100%;
   position: absolute;
   top: 300px;
@@ -371,7 +382,7 @@ background: linear-gradient(to left, #D31027 , #EA384D); /* W3C, IE 10+/ Edge, F
 .ripple-wrap.goripple {
   display: block;
 }
-.ripple-wrap.goripple .ripple {
+.ripple-wrap.goripple .ripple1 {
  -webkit-animation-name: RIPPLER;
  -webkit-animation-duration: 1.5s;
  -webkit-animation-fill-mode: forwards;

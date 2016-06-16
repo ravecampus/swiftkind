@@ -1,6 +1,6 @@
 $(document).ready(function() {
   var ripple_wrap = $('.ripple-wrap'),
-      rippler = $('.ripple'),
+      rippler = $('.ripple1'),
       finish = false,
       monitor = function(el) {
         var computed = window.getComputedStyle(el, null),
@@ -26,7 +26,7 @@ $(document).ready(function() {
     ripple_wrap.removeClass('goripple');
   });
 
-  $('body').on('click', 'a', function(e) {
+  $('body').on('click', '.link', function(e) {
     rippler.css('left', e.clientX + 'px');
     rippler.css('top', e.clientY + 'px');
     e.preventDefault();

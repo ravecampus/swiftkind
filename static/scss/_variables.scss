@@ -14,31 +14,5 @@ $OpenSans-BoldItalic:'OpenSans-BoldItalic';
 $OpenSans-Bold:'OpenSans-Bold';
 $perpetua:'perpetua';
 $perpetuaitalic:'perpetuaitalic';
-
-
-// Media Queries
-$xs-screen: 376px !default;
-$sm-screen: 767px !default;
-$md-screen: 992px !default;
-$lg-screen: 1200px !default;
-$md-2-screen: 1023px !default;
-
-$xs-screen-up: 426px !default;
-$sm-screen-up: 769px !default;
-$md-screen-up: 993px !default;
-$md-2-screen-up: 1024px !default;
-
-$xs-and-up: "only screen and (min-width:#{$xs-screen})" !default;
-$sm-and-up: "only screen and (min-width:#{$sm-screen})" !default;
-$md-and-up: "only screen and (min-width:#{$md-screen})" !default;
-$lg-and-up: "only screen and (min-width:#{$lg-screen})" !default;
-
-$xs-and-down: "only screen and (max-width:#{$xs-screen})" !default;
-$sm-and-down: "only screen and (max-width:#{$sm-screen})" !default;
-$md-and-down: "only screen and (max-width:#{$md-screen})" !default;
-$lg-and-down: "only screen and (max-width:#{$lg-screen})" !default;
-
-$xs-only: "only screen and (min-width:#{$xs-screen}) and (max-width:#{$xs-screen-up})" !default;
-$sm-only: "only screen and (min-width:#{$sm-screen}) and (max-width:#{$sm-screen-up})" !default;
-$md-only: "only screen and (min-width:#{$md-screen}) and (max-width:#{$md-screen-up})" !default;
-$md-lg-only: "only screen and (min-width:#{$md-2-screen}) and (max-width:#{$md-2-screen-up})" !default;
+$georgiaitalic:'georgiaitalic';
+$Playfair-Display-italic:'Playfair-Display-italic';

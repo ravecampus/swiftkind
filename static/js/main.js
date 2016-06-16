@@ -4,17 +4,25 @@ jQuery(document).ready(function( $ ) {
         time: 1000
     });
 
+    //nav-bar
+
+      $(".mobile-nav ul li.trigger-collapse a").click(function(event) {
+          $(".mobile-nav").collapse('hide');
+        });
 
     //tooltipster
     $('.tooltip').tooltipster({
         content: $('<span> This text is in bold case !</span>'),
         position:'right'
     });
+
+
+    //
     new WOW().init();
      $(".owl-carousel").owlCarousel({
         loop:true,
         autoplay:true,
-       // autoplayTimeout:5000,
+        autoplayTimeout:5000,
         autoplayHoverPause:true,
         autoHeight:false,
         singleItem:true,
@@ -257,5 +265,18 @@ jQuery(document).ready(function( $ ) {
 
     //insert the zoom div on the top left of the map
     map.controls[google.maps.ControlPosition.LEFT_TOP].push(zoomControlDiv);
+
+    $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
 
 });
