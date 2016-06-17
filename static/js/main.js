@@ -19,13 +19,23 @@ jQuery(document).ready(function( $ ) {
 
     //
     new WOW().init();
-     $(".owl-carousel").owlCarousel({
+     $("#owl-theme").owlCarousel({
         loop:true,
-        autoplay:true,
-        autoplayTimeout:5000,
+        autoplay:5000,
         autoplayHoverPause:true,
         autoHeight:false,
         singleItem:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
       });
 
          $(".hover").mouseleave(

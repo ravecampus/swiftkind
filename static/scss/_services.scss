@@ -64,6 +64,29 @@ hr {
         font-size: 12px;
         letter-spacing: 2px;
     }
+    h2.background {
+        position: relative;
+        z-index: 1;
+    }
+    h2.background:before {
+        border-top: 1px solid #e2112e;;
+        content: "";
+        margin: 0 auto;
+        /* this centers the line to the full width specified */
+        position: absolute;
+        /* positioning must be absolute here, and relative positioning must be applied to the parent */
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        z-index: -1;
+    }
+    h2.background span {
+        /* to hide the lines from behind the text, you have to set the background color the same as the container */
+        background: #f7f7f7;
+        padding: 0 15px;
+    }
 }
 
 .caption {
@@ -137,12 +160,10 @@ hr {
         //     size: cover;
         //     opacity: 1;
         // }
-       
-
-background: #485563; /* fallback for old browsers */
-//background: -webkit-linear-gradient(to left, #485563 , #29323c); /* Chrome 10-25, Safari 5.1-6 */
-//background: linear-gradient(to left, #485563 , #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
+        background: #485563;
+        /* fallback for old browsers */
+        //background: -webkit-linear-gradient(to left, #485563 , #29323c); /* Chrome 10-25, Safari 5.1-6 */
+        //background: linear-gradient(to left, #485563 , #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         width: 100%;
         height: 110vh;
         padding: 15%;
@@ -161,7 +182,6 @@ background: #485563; /* fallback for old browsers */
             letter-spacing: 2px;
         }
         a:link {
-        
             color: #fff;
             padding: 15px 50px;
             text-decoration: none;
@@ -173,7 +193,7 @@ background: #485563; /* fallback for old browsers */
             padding: 15px 50px;
             text-decoration: none;
             border: none;
-            background: rgba(206,13,40,1);
+            background: rgba(206, 13, 40, 1);
         }
         a:visited {
             transition: 1s;
@@ -183,87 +203,85 @@ background: #485563; /* fallback for old browsers */
             border: 1px solid #fc687d;
         }
     }
-  
-        #content-2{
+    #content-2 {
         display: none;
-         }
-          .hire-card{
-                background: #f72a46;
-                color: #fff;
-                width: 40%;
-                height: auto;
-                padding: 5%;
-
-                .hello{
-                    border-bottom: solid 0.2px #ffbec7; 
-                }
-                .close-link{
-                    padding: 5px;
-                     background: #dd1d38;
-                }
-            .card-link{
-                   padding: 5px;
-                    &:link{
-
-                        color: #fff;
-                        border:none;
-                        text-decoration: none;
-                        padding: 0;
-                        
-                    }
-                    &:hover{
-                        color: #fff;
-                        border:none;
-                        text-decoration: none;
-                        background: none;
-                       
-                    }
-                    &:visited{
-                        color: #fff;
-                        border:none;
-                        text-decoration: none;
-                        
-                    }
-            
-                }
-            h3{
-                font-family: $georgiaitalic;
-               
+    }
+    .card-background {
+        background: {
+            image: url('../images/img18.jpg');
+            size: cover;
+           
+        }
+        height: 110vh;
+        margin:-9.5%;
+        padding-left: 10%;
+        padding-top: 30%;
+        .hire-card {
+            background: #f72a46;
+            color: #fff;
+            width: 40%;
+            height: auto;
+            padding: 5%;
+            display: block;
+            clear: both;
+            position: relative;
+            margin-top: -70px;
+            margin-left: 130px;
+            .hello {
+                border-bottom: solid 0.2px #ffbec7;
             }
-            p{
+            .close-link {
+                padding: 5px;
+            }
+            .card-link {
+                padding: 5px;
+                &:link {
+                    color: #fff;
+                    border: none;
+                    text-decoration: none;
+                    padding: 0;
+                }
+                &:hover {
+                    color: #fff;
+                    border: none;
+                    text-decoration: none;
+                    background: none;
+                }
+                &:visited {
+                    color: #fff;
+                    border: none;
+                    text-decoration: none;
+                }
+            }
+            h3 {
+                font-family: $georgiaitalic;
+            }
+            p {
                 color: #ffbec7;
                 font-size: 13px;
                 letter-spacing: 2px;
                 margin-top: 40px;
                 margin-left: 53px;
             }
-            h1{
+            h1 {
                 font-family: $OpenSans-Bold;
             }
-           .card-social{
-            margin-left: -53px;
-            margin-top: 30px;
-             ul{
-                list-style: none;
-                li{
-                    display: inline;
+            .card-social {
+                margin-left: -53px;
+                margin-top: 30px;
+                ul {
+                    list-style: none;
+                    li {
+                        display: inline;
+                    }
                 }
             }
-           }
-           .card-div{
-            border-bottom: solid 0.5px #ad0219;
-
-           }
-           .card-img{
-            width: 100%;
-           }
-
+            .card-div {
+                border-bottom: solid 0.5px #ad0219;
             }
-
-
-            
-
+            .card-img {
+                width: 100%;
+            }
+        }
     }
-
-
-
+}

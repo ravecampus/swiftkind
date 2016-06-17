@@ -151,12 +151,35 @@
         .block-projects {
             margin: 0 auto;
             width: 100%;
-            h2 {
-                color: #666;
-                text-transform: uppercase;
-                font-size: 12px;
-                letter-spacing: 2px;
-            }
+             h2 {
+        color: #666;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+    h2.background {
+        position: relative;
+        z-index: 1;
+    }
+    h2.background:before {
+        border-top: 1px solid #e2112e;;
+        content: "";
+        margin: 0 auto;
+        /* this centers the line to the full width specified */
+        position: absolute;
+        /* positioning must be absolute here, and relative positioning must be applied to the parent */
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        z-index: -1;
+    }
+    h2.background span {
+        /* to hide the lines from behind the text, you have to set the background color the same as the container */
+        background: #ebebeb;
+        padding: 0 15px;
+    }
             .gallery {
                 margin: 70px auto;
                 text-align: center;

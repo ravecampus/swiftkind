@@ -60,7 +60,7 @@
 }
 @font-face {
   font-family: 'perpetuaitalic';
-  src: url(../fonts/perpetuaitalic.ttf);
+  src: url(../fonts/perpetua-italic.ttf);
 }
 @font-face {
   font-family: 'georgiaitalic';
@@ -413,14 +413,40 @@ hr {
   font-size: 12px;
   letter-spacing: 2px;
 }
+/* line 67, ../scss/_services.scss */
+.services h2.background {
+  position: relative;
+  z-index: 1;
+}
+/* line 71, ../scss/_services.scss */
+.services h2.background:before {
+  border-top: 1px solid #e2112e;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  z-index: -1;
+}
+/* line 85, ../scss/_services.scss */
+.services h2.background span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: #f7f7f7;
+  padding: 0 15px;
+}
 
-/* line 69, ../scss/_services.scss */
+/* line 92, ../scss/_services.scss */
 .caption {
   font-size: 30px;
   padding: 100px 22% 40px;
 }
 
-/* line 74, ../scss/_services.scss */
+/* line 97, ../scss/_services.scss */
 .square {
   width: 100px;
   height: 5px;
@@ -428,14 +454,14 @@ hr {
   margin: 0 auto;
 }
 
-/* line 81, ../scss/_services.scss */
+/* line 104, ../scss/_services.scss */
 .services2 {
   position: relative;
   display: -webkit-inline-box;
   margin: 0 auto 120px;
 }
 
-/* line 87, ../scss/_services.scss */
+/* line 110, ../scss/_services.scss */
 .design {
   background: #fff;
   width: 300px;
@@ -444,12 +470,12 @@ hr {
   color: #e2112e;
   font-family: "OpenSans-Light";
 }
-/* line 94, ../scss/_services.scss */
+/* line 117, ../scss/_services.scss */
 .design img {
   width: 40px;
   float: left;
 }
-/* line 98, ../scss/_services.scss */
+/* line 121, ../scss/_services.scss */
 .design p {
   color: #7d7d7d;
   font-size: 14px;
@@ -458,19 +484,19 @@ hr {
   font-family: "OpenSans-Light";
   text-align: justify;
 }
-/* line 106, ../scss/_services.scss */
+/* line 129, ../scss/_services.scss */
 .design h2 {
   font-size: 25px;
   color: #222;
   font-family: "OpenSans-Bold";
   padding: 40px 0 15px;
 }
-/* line 112, ../scss/_services.scss */
+/* line 135, ../scss/_services.scss */
 .design .divider {
   border-bottom: 1px solid #e1e1e1;
   margin: 15px 0;
 }
-/* line 116, ../scss/_services.scss */
+/* line 139, ../scss/_services.scss */
 .design .plus {
   border-radius: 50%;
   background: #e2112e;
@@ -483,11 +509,11 @@ hr {
   margin: 0 auto -10px;
 }
 
-/* line 129, ../scss/_services.scss */
+/* line 152, ../scss/_services.scss */
 .services-text {
   z-index: 100;
 }
-/* line 131, ../scss/_services.scss */
+/* line 154, ../scss/_services.scss */
 .services-text .container {
   font-family: "OpenSans-Light";
   background: #485563;
@@ -496,31 +522,31 @@ hr {
   height: 110vh;
   padding: 15%;
 }
-/* line 149, ../scss/_services.scss */
+/* line 170, ../scss/_services.scss */
 .services-text .container h1 {
   font-size: 30px;
   color: #fff;
   font-family: "OpenSans-Bold";
 }
-/* line 154, ../scss/_services.scss */
+/* line 175, ../scss/_services.scss */
 .services-text .container p {
   color: #fff;
   font-size: 25px;
   margin: 0 15% 10%;
 }
-/* line 159, ../scss/_services.scss */
+/* line 180, ../scss/_services.scss */
 .services-text .container a {
   margin: 0 10px 0;
   letter-spacing: 2px;
 }
-/* line 163, ../scss/_services.scss */
+/* line 184, ../scss/_services.scss */
 .services-text .container a:link {
   color: #fff;
   padding: 15px 50px;
   text-decoration: none;
   background: #f72a46;
 }
-/* line 170, ../scss/_services.scss */
+/* line 190, ../scss/_services.scss */
 .services-text .container a:hover {
   transition: 1s;
   color: #fff;
@@ -529,7 +555,7 @@ hr {
   border: none;
   background: #ce0d28;
 }
-/* line 178, ../scss/_services.scss */
+/* line 198, ../scss/_services.scss */
 .services-text .container a:visited {
   transition: 1s;
   color: #fff;
@@ -537,86 +563,99 @@ hr {
   text-decoration: none;
   border: 1px solid #fc687d;
 }
-/* line 187, ../scss/_services.scss */
+/* line 206, ../scss/_services.scss */
 .services-text #content-2 {
   display: none;
 }
-/* line 190, ../scss/_services.scss */
-.services-text .hire-card {
+/* line 209, ../scss/_services.scss */
+.services-text .card-background {
+  background-image: url("../images/img18.jpg");
+  background-size: cover;
+  height: 110vh;
+  margin: -9.5%;
+  padding-left: 10%;
+  padding-top: 30%;
+}
+/* line 219, ../scss/_services.scss */
+.services-text .card-background .hire-card {
   background: #f72a46;
   color: #fff;
   width: 40%;
   height: auto;
   padding: 5%;
+  display: block;
+  clear: both;
+  position: relative;
+  margin-top: -70px;
+  margin-left: 130px;
 }
-/* line 197, ../scss/_services.scss */
-.services-text .hire-card .hello {
+/* line 230, ../scss/_services.scss */
+.services-text .card-background .hire-card .hello {
   border-bottom: solid 0.2px #ffbec7;
 }
-/* line 200, ../scss/_services.scss */
-.services-text .hire-card .close-link {
-  padding: 5px;
-  background: #dd1d38;
-}
-/* line 204, ../scss/_services.scss */
-.services-text .hire-card .card-link {
+/* line 233, ../scss/_services.scss */
+.services-text .card-background .hire-card .close-link {
   padding: 5px;
 }
-/* line 206, ../scss/_services.scss */
-.services-text .hire-card .card-link:link {
+/* line 236, ../scss/_services.scss */
+.services-text .card-background .hire-card .card-link {
+  padding: 5px;
+}
+/* line 238, ../scss/_services.scss */
+.services-text .card-background .hire-card .card-link:link {
   color: #fff;
   border: none;
   text-decoration: none;
   padding: 0;
 }
-/* line 214, ../scss/_services.scss */
-.services-text .hire-card .card-link:hover {
+/* line 244, ../scss/_services.scss */
+.services-text .card-background .hire-card .card-link:hover {
   color: #fff;
   border: none;
   text-decoration: none;
   background: none;
 }
-/* line 221, ../scss/_services.scss */
-.services-text .hire-card .card-link:visited {
+/* line 250, ../scss/_services.scss */
+.services-text .card-background .hire-card .card-link:visited {
   color: #fff;
   border: none;
   text-decoration: none;
 }
-/* line 229, ../scss/_services.scss */
-.services-text .hire-card h3 {
+/* line 256, ../scss/_services.scss */
+.services-text .card-background .hire-card h3 {
   font-family: "georgiaitalic";
 }
-/* line 233, ../scss/_services.scss */
-.services-text .hire-card p {
+/* line 259, ../scss/_services.scss */
+.services-text .card-background .hire-card p {
   color: #ffbec7;
   font-size: 13px;
   letter-spacing: 2px;
   margin-top: 40px;
   margin-left: 53px;
 }
-/* line 240, ../scss/_services.scss */
-.services-text .hire-card h1 {
+/* line 266, ../scss/_services.scss */
+.services-text .card-background .hire-card h1 {
   font-family: "OpenSans-Bold";
 }
-/* line 243, ../scss/_services.scss */
-.services-text .hire-card .card-social {
+/* line 269, ../scss/_services.scss */
+.services-text .card-background .hire-card .card-social {
   margin-left: -53px;
   margin-top: 30px;
 }
-/* line 246, ../scss/_services.scss */
-.services-text .hire-card .card-social ul {
+/* line 272, ../scss/_services.scss */
+.services-text .card-background .hire-card .card-social ul {
   list-style: none;
 }
-/* line 248, ../scss/_services.scss */
-.services-text .hire-card .card-social ul li {
+/* line 274, ../scss/_services.scss */
+.services-text .card-background .hire-card .card-social ul li {
   display: inline;
 }
-/* line 253, ../scss/_services.scss */
-.services-text .hire-card .card-div {
+/* line 279, ../scss/_services.scss */
+.services-text .card-background .hire-card .card-div {
   border-bottom: solid 0.5px #ad0219;
 }
-/* line 257, ../scss/_services.scss */
-.services-text .hire-card .card-img {
+/* line 282, ../scss/_services.scss */
+.services-text .card-background .hire-card .card-img {
   width: 100%;
 }
 
@@ -1173,12 +1212,38 @@ span.spans {
   letter-spacing: 2px;
 }
 /* line 160, ../scss/_team-services.scss */
+.project-section .container .block-projects h2.background {
+  position: relative;
+  z-index: 1;
+}
+/* line 164, ../scss/_team-services.scss */
+.project-section .container .block-projects h2.background:before {
+  border-top: 1px solid #e2112e;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  z-index: -1;
+}
+/* line 178, ../scss/_team-services.scss */
+.project-section .container .block-projects h2.background span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: #ebebeb;
+  padding: 0 15px;
+}
+/* line 183, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery {
   margin: 70px auto;
   text-align: center;
   width: 100%;
 }
-/* line 164, ../scss/_team-services.scss */
+/* line 187, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery li {
   max-width: 100%;
   min-height: 100%;
@@ -1189,13 +1254,13 @@ span.spans {
   overflow: hidden;
   background: #e2112e;
 }
-/* line 173, ../scss/_team-services.scss */
+/* line 196, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery li:nth-child(2) img {
   margin: 0;
   display: inline-block;
   float: right;
 }
-/* line 178, ../scss/_team-services.scss */
+/* line 201, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery li .name {
   text-decoration: none;
   text-transform: uppercase;
@@ -1214,7 +1279,7 @@ span.spans {
   width: 100%;
   height: 100%;
 }
-/* line 194, ../scss/_team-services.scss */
+/* line 217, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery li .name .title {
   display: block;
   text-transform: none;
@@ -1235,7 +1300,7 @@ span.spans {
   -webkit-transition-duration: 0.9s;
   transition-duration: 0.9s;
 }
-/* line 206, ../scss/_team-services.scss */
+/* line 229, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery li:hover .name {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -1252,12 +1317,12 @@ span.spans {
   -webkit-transition-duration: 0.6s;
   transition-duration: 0.6s;
 }
-/* line 212, ../scss/_team-services.scss */
+/* line 235, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery li:hover .title {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-/* line 215, ../scss/_team-services.scss */
+/* line 238, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery li:hover img {
   -moz-transform: scale(1.09, 1.09);
   -ms-transform: scale(1.09, 1.09);
@@ -1275,11 +1340,11 @@ span.spans {
   -webkit-transition-duration: 0.8s;
   transition-duration: 0.8s;
 }
-/* line 223, ../scss/_team-services.scss */
+/* line 246, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery li:hover:hover img {
   opacity: 0.5;
 }
-/* line 227, ../scss/_team-services.scss */
+/* line 250, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery li img {
   display: block;
   width: auto;
@@ -1299,13 +1364,13 @@ span.spans {
   transition-duration: 0.4s;
 }
 
-/* line 246, ../scss/_team-services.scss */
+/* line 269, ../scss/_team-services.scss */
 .team-picture img {
   width: 100%;
   height: auto;
 }
 
-/* line 253, ../scss/_team-services.scss */
+/* line 276, ../scss/_team-services.scss */
 .work a:link {
   color: #e2112e;
   text-transform: uppercase;
@@ -1313,7 +1378,7 @@ span.spans {
   padding: 20px 50px;
   text-decoration: none;
 }
-/* line 260, ../scss/_team-services.scss */
+/* line 283, ../scss/_team-services.scss */
 .work a:hover {
   color: #fff !important;
   text-transform: uppercase;
@@ -1323,7 +1388,7 @@ span.spans {
   background-color: #e2112e;
   transition-duration: 0.5s;
 }
-/* line 269, ../scss/_team-services.scss */
+/* line 292, ../scss/_team-services.scss */
 .work a:visited {
   color: #e2112e;
   text-transform: uppercase;
@@ -1350,7 +1415,7 @@ span.spans {
   border-top: solid 1px #f5f5f5;
 }
 
-/* line 16, ../scss/_footer.scss */
+/* line 17, ../scss/_footer.scss */
 .footer-text {
   margin-bottom: 50px;
   font-family: "OpenSans-Regular";
@@ -1424,85 +1489,90 @@ span.spans {
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 @media (max-width: 768px) {
-  /* line 80, ../scss/_footer.scss */
+  /* line 82, ../scss/_footer.scss */
   .banner-wrapper .inner-content .vertical-wrap {
     margin-left: 30px;
   }
-  /* line 83, ../scss/_footer.scss */
+  /* line 85, ../scss/_footer.scss */
   .banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text {
     width: 70%;
   }
-  /* line 85, ../scss/_footer.scss */
+  /* line 87, ../scss/_footer.scss */
   .banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text h1 {
     font-size: 15px;
   }
-  /* line 88, ../scss/_footer.scss */
+  /* line 90, ../scss/_footer.scss */
   .banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text p {
     font-size: 20px;
   }
 }
 @media (max-width: 1366px) {
-  /* line 104, ../scss/_footer.scss */
+  /* line 105, ../scss/_footer.scss */
   .mobile-nav {
     padding-top: 150px;
   }
 
-  /* line 108, ../scss/_footer.scss */
+  /* line 110, ../scss/_footer.scss */
   .banner-wrapper .inner-content .vertical-wrap {
     margin-left: 30px;
   }
-  /* line 111, ../scss/_footer.scss */
+  /* line 113, ../scss/_footer.scss */
   .banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text {
     width: 70%;
   }
-  /* line 113, ../scss/_footer.scss */
+  /* line 115, ../scss/_footer.scss */
   .banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text h1 {
     font-size: 35px;
   }
-  /* line 116, ../scss/_footer.scss */
+  /* line 118, ../scss/_footer.scss */
   .banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text p {
     font-size: 20px;
   }
 
-  /* line 127, ../scss/_footer.scss */
+  /* line 129, ../scss/_footer.scss */
   .project-section .container .block-projects .gallery {
     margin: 50px auto;
   }
-  /* line 129, ../scss/_footer.scss */
+  /* line 131, ../scss/_footer.scss */
   .project-section .container .block-projects .gallery li {
     width: 25%;
     margin: 10px;
   }
 
-  /* line 138, ../scss/_footer.scss */
+  /* line 140, ../scss/_footer.scss */
   .services-text .container {
     height: 110vh;
     padding: 8%;
   }
-  /* line 141, ../scss/_footer.scss */
+  /* line 143, ../scss/_footer.scss */
   .services-text .container p {
     font-size: 20px;
     margin: 0 15% 10%;
   }
 
-  /* line 147, ../scss/_footer.scss */
+  /* line 149, ../scss/_footer.scss */
   .caption {
     font-size: 25px;
     padding: 40px 25% 20px;
   }
 
-  /* line 151, ../scss/_footer.scss */
+  /* line 153, ../scss/_footer.scss */
   .about {
     height: 60vh;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1367px) {
   /* line 163, ../scss/_footer.scss */
   .project-section .container {
     width: 1270px;
   }
+
+  /* line 168, ../scss/_footer.scss */
+  .services-text .card-background {
+    margin: -21.4%;
+  }
 }
-/* line 169, ../scss/_footer.scss */
+/* line 174, ../scss/_footer.scss */
 #test {
   width: 227px;
   height: 142px;
@@ -2138,11 +2208,39 @@ button {
   animation-fill-mode: forwards;
 }
 
-/* line 1, ../scss/_owl-carousel.scss */
-#owl-demo .item {
-  display: block;
-  width: 100%;
-  height: auto;
+/* line 2, ../scss/_owl-carousel.scss */
+.owl-carousel .owl-stage-outer {
+  background: #fff;
+}
+/* line 4, ../scss/_owl-carousel.scss */
+.owl-carousel .owl-stage-outer .owl-stage {
+  height: 300px;
+}
+/* line 8, ../scss/_owl-carousel.scss */
+.owl-carousel .owl-stage-outer .owl-stage .owl-item .item {
+  margin-top: 4%;
+}
+/* line 11, ../scss/_owl-carousel.scss */
+.owl-carousel .owl-stage-outer .owl-stage .owl-item .item h5 {
+  font-family: "georgiaitalic";
+  font-size: 16px;
+  color: #888;
+}
+/* line 17, ../scss/_owl-carousel.scss */
+.owl-carousel .owl-stage-outer .owl-stage .owl-item .item span {
+  margin-top: 20px;
+}
+/* line 19, ../scss/_owl-carousel.scss */
+.owl-carousel .owl-stage-outer .owl-stage .owl-item .item span a {
+  font-family: "OpenSans-Light";
+  color: #d32f2f;
+  text-decoration: none;
+  margin-top: 20px;
+}
+/* line 24, ../scss/_owl-carousel.scss */
+.owl-carousel .owl-stage-outer .owl-stage .owl-item .item span a:hover {
+  text-decoration: none;
+  color: #d32f2f;
 }
 
 /* line 1, ../scss/_image-map.scss */
