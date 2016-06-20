@@ -151,35 +151,36 @@
         .block-projects {
             margin: 0 auto;
             width: 100%;
-             h2 {
-        color: #666;
-        text-transform: uppercase;
-        font-size: 12px;
-        letter-spacing: 2px;
-    }
-    h2.background {
-        position: relative;
-        z-index: 1;
-    }
-    h2.background:before {
-        border-top: 1px solid #e2112e;;
-        content: "";
-        margin: 0 auto;
-        /* this centers the line to the full width specified */
-        position: absolute;
-        /* positioning must be absolute here, and relative positioning must be applied to the parent */
-        top: 50%;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 50%;
-        z-index: -1;
-    }
-    h2.background span {
-        /* to hide the lines from behind the text, you have to set the background color the same as the container */
-        background: #ebebeb;
-        padding: 0 15px;
-    }
+            h2 {
+                color: #666;
+                text-transform: uppercase;
+                font-size: 12px;
+                letter-spacing: 2px;
+            }
+            h2.background {
+                position: relative;
+                z-index: 1;
+            }
+            h2.background:before {
+                border-top: 1px solid #e2112e;
+                ;
+                content: "";
+                margin: 0 auto;
+                /* this centers the line to the full width specified */
+                position: absolute;
+                /* positioning must be absolute here, and relative positioning must be applied to the parent */
+                top: 50%;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 50%;
+                z-index: -1;
+            }
+            h2.background span {
+                /* to hide the lines from behind the text, you have to set the background color the same as the container */
+                background: #ebebeb;
+                padding: 0 15px;
+            }
             .gallery {
                 margin: 70px auto;
                 text-align: center;
@@ -203,17 +204,19 @@
                         text-transform: uppercase;
                         color: #fff;
                         font-weight: lighter;
-                        font-size: 25px;
-                        letter-spacing: .1em;
+                        font-size: 15px;
+                        letter-spacing: .5em;
                         position: absolute;
                         display: block;
-                        top: 40%;
+                        top: 88%;
                         left: 0;
                         text-align: center;
                         @include opacity(0);
                         z-index: 2;
                         width: 100%;
                         height: 100%;
+                        text-decoration: none;
+                        background: rgba(17,17,17,.8);
                         .title {
                             display: block;
                             text-transform: none;
@@ -238,13 +241,12 @@
                         img {
                             @include scale(1.09);
                             background-position: top top;
-
                             @include filter((.4) blur(2px));
-                           @include transition-property(all);
+                            @include transition-property(all);
                             @include transition-duration(.8s);
                         }
                         &:hover img {
-                            opacity: 0.5;
+                            opacity: 1;
                         }
                     }
                     img {
@@ -255,7 +257,7 @@
                         display: inline-block;
                         text-align: center;
                         opacity: 1;
-                        background: #e2112e;
+                       // background: #e2112e;
                         @include transition-property(all);
                         @include transition-duration(.4s);
                     }

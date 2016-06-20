@@ -1231,19 +1231,19 @@ span.spans {
   width: 50%;
   z-index: -1;
 }
-/* line 178, ../scss/_team-services.scss */
+/* line 179, ../scss/_team-services.scss */
 .project-section .container .block-projects h2.background span {
   /* to hide the lines from behind the text, you have to set the background color the same as the container */
   background: #ebebeb;
   padding: 0 15px;
 }
-/* line 183, ../scss/_team-services.scss */
+/* line 184, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery {
   margin: 70px auto;
   text-align: center;
   width: 100%;
 }
-/* line 187, ../scss/_team-services.scss */
+/* line 188, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery li {
   max-width: 100%;
   min-height: 100%;
@@ -1254,23 +1254,23 @@ span.spans {
   overflow: hidden;
   background: #e2112e;
 }
-/* line 196, ../scss/_team-services.scss */
+/* line 197, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery li:nth-child(2) img {
   margin: 0;
   display: inline-block;
   float: right;
 }
-/* line 201, ../scss/_team-services.scss */
+/* line 202, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery li .name {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
   font-weight: lighter;
-  font-size: 25px;
-  letter-spacing: .1em;
+  font-size: 15px;
+  letter-spacing: .5em;
   position: absolute;
   display: block;
-  top: 40%;
+  top: 88%;
   left: 0;
   text-align: center;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
@@ -1278,8 +1278,10 @@ span.spans {
   z-index: 2;
   width: 100%;
   height: 100%;
+  text-decoration: none;
+  background: rgba(17, 17, 17, 0.8);
 }
-/* line 217, ../scss/_team-services.scss */
+/* line 220, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery li .name .title {
   display: block;
   text-transform: none;
@@ -1300,7 +1302,7 @@ span.spans {
   -webkit-transition-duration: 0.9s;
   transition-duration: 0.9s;
 }
-/* line 229, ../scss/_team-services.scss */
+/* line 232, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery li:hover .name {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -1317,12 +1319,12 @@ span.spans {
   -webkit-transition-duration: 0.6s;
   transition-duration: 0.6s;
 }
-/* line 235, ../scss/_team-services.scss */
+/* line 238, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery li:hover .title {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-/* line 238, ../scss/_team-services.scss */
+/* line 241, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery li:hover img {
   -moz-transform: scale(1.09, 1.09);
   -ms-transform: scale(1.09, 1.09);
@@ -1340,11 +1342,11 @@ span.spans {
   -webkit-transition-duration: 0.8s;
   transition-duration: 0.8s;
 }
-/* line 246, ../scss/_team-services.scss */
+/* line 248, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery li:hover:hover img {
-  opacity: 0.5;
+  opacity: 1;
 }
-/* line 250, ../scss/_team-services.scss */
+/* line 252, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery li img {
   display: block;
   width: auto;
@@ -1353,7 +1355,6 @@ span.spans {
   display: inline-block;
   text-align: center;
   opacity: 1;
-  background: #e2112e;
   -moz-transition-property: all;
   -o-transition-property: all;
   -webkit-transition-property: all;
@@ -1364,13 +1365,13 @@ span.spans {
   transition-duration: 0.4s;
 }
 
-/* line 269, ../scss/_team-services.scss */
+/* line 271, ../scss/_team-services.scss */
 .team-picture img {
   width: 100%;
   height: auto;
 }
 
-/* line 276, ../scss/_team-services.scss */
+/* line 278, ../scss/_team-services.scss */
 .work a:link {
   color: #e2112e;
   text-transform: uppercase;
@@ -1378,7 +1379,7 @@ span.spans {
   padding: 20px 50px;
   text-decoration: none;
 }
-/* line 283, ../scss/_team-services.scss */
+/* line 285, ../scss/_team-services.scss */
 .work a:hover {
   color: #fff !important;
   text-transform: uppercase;
@@ -1388,7 +1389,7 @@ span.spans {
   background-color: #e2112e;
   transition-duration: 0.5s;
 }
-/* line 292, ../scss/_team-services.scss */
+/* line 294, ../scss/_team-services.scss */
 .work a:visited {
   color: #e2112e;
   text-transform: uppercase;
@@ -1488,91 +1489,101 @@ span.spans {
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
-@media (max-width: 768px) {
-  /* line 82, ../scss/_footer.scss */
+@media (min-width: 320px) {
+  /* line 80, ../scss/_footer.scss */
   .banner-wrapper .inner-content .vertical-wrap {
     margin-left: 30px;
   }
-  /* line 85, ../scss/_footer.scss */
+  /* line 83, ../scss/_footer.scss */
   .banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text {
     width: 70%;
   }
-  /* line 87, ../scss/_footer.scss */
+}
+@media (max-width: 768px) {
+  /* line 103, ../scss/_footer.scss */
+  .banner-wrapper .inner-content .vertical-wrap {
+    margin-left: 30px;
+  }
+  /* line 106, ../scss/_footer.scss */
+  .banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text {
+    width: 70%;
+  }
+  /* line 108, ../scss/_footer.scss */
   .banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text h1 {
     font-size: 15px;
   }
-  /* line 90, ../scss/_footer.scss */
+  /* line 111, ../scss/_footer.scss */
   .banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text p {
     font-size: 20px;
   }
 }
 @media (max-width: 1366px) {
-  /* line 105, ../scss/_footer.scss */
+  /* line 126, ../scss/_footer.scss */
   .mobile-nav {
     padding-top: 150px;
   }
 
-  /* line 110, ../scss/_footer.scss */
+  /* line 131, ../scss/_footer.scss */
   .banner-wrapper .inner-content .vertical-wrap {
     margin-left: 30px;
   }
-  /* line 113, ../scss/_footer.scss */
+  /* line 134, ../scss/_footer.scss */
   .banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text {
     width: 70%;
   }
-  /* line 115, ../scss/_footer.scss */
+  /* line 136, ../scss/_footer.scss */
   .banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text h1 {
     font-size: 35px;
   }
-  /* line 118, ../scss/_footer.scss */
+  /* line 139, ../scss/_footer.scss */
   .banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text p {
     font-size: 20px;
   }
 
-  /* line 129, ../scss/_footer.scss */
+  /* line 150, ../scss/_footer.scss */
   .project-section .container .block-projects .gallery {
     margin: 50px auto;
   }
-  /* line 131, ../scss/_footer.scss */
+  /* line 152, ../scss/_footer.scss */
   .project-section .container .block-projects .gallery li {
     width: 25%;
     margin: 10px;
   }
 
-  /* line 140, ../scss/_footer.scss */
+  /* line 161, ../scss/_footer.scss */
   .services-text .container {
     height: 110vh;
     padding: 8%;
   }
-  /* line 143, ../scss/_footer.scss */
+  /* line 164, ../scss/_footer.scss */
   .services-text .container p {
     font-size: 20px;
     margin: 0 15% 10%;
   }
 
-  /* line 149, ../scss/_footer.scss */
+  /* line 170, ../scss/_footer.scss */
   .caption {
     font-size: 25px;
     padding: 40px 25% 20px;
   }
 
-  /* line 153, ../scss/_footer.scss */
+  /* line 174, ../scss/_footer.scss */
   .about {
     height: 60vh;
   }
 }
 @media (min-width: 1367px) {
-  /* line 163, ../scss/_footer.scss */
+  /* line 184, ../scss/_footer.scss */
   .project-section .container {
     width: 1270px;
   }
 
-  /* line 168, ../scss/_footer.scss */
+  /* line 189, ../scss/_footer.scss */
   .services-text .card-background {
     margin: -21.4%;
   }
 }
-/* line 174, ../scss/_footer.scss */
+/* line 195, ../scss/_footer.scss */
 #test {
   width: 227px;
   height: 142px;
