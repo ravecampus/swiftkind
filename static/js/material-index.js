@@ -15,6 +15,6 @@ $(".card").each(function(){
     $closeButton.on("click", function(){
         $buttonWrapper.removeClass("clicked");
         $ripple.removeClass("rippling");
-        $layer.removeClass("active");
+     //   $layer.removeClass("active");
     });
 });

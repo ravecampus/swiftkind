@@ -1671,143 +1671,181 @@ span.spans {
   color: #e2112e;
 }
 
-/* line 3, ../scss/design.scss */
-.banner-wrapper1 {
-  background-image: url("../images/img51.jpg");
+/* line 1, ../scss/_design.scss */
+.team-wrapper {
+  background-image: url("../images/team-header.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #e11111;
 }
-
-/* line 12, ../scss/design.scss */
-.job-title {
+/* line 6, ../scss/_design.scss */
+.team-wrapper .icon-bar {
+  display: flex;
+  width: 36px;
+  height: 1px;
+  margin-top: 9px;
+  background: #fff;
+}
+/* line 13, ../scss/_design.scss */
+.team-wrapper .nav-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  z-index: 9;
+}
+/* line 25, ../scss/_design.scss */
+.team-wrapper .navbar {
+  padding-top: 80px;
+}
+/* line 27, ../scss/_design.scss */
+.team-wrapper .navbar a {
+  display: block;
+  width: 150px;
+  height: 25px;
+}
+/* line 34, ../scss/_design.scss */
+.team-wrapper .navbar-items ul {
+  list-style-type: none;
+}
+/* line 36, ../scss/_design.scss */
+.team-wrapper .navbar-items ul li {
+  display: inline !important;
+  margin: 0 50px;
+  color: #222;
+}
+/* line 43, ../scss/_design.scss */
+.team-wrapper .affix {
+  padding-top: 20px;
+  overflow: hidden;
+  color: #000;
+  -moz-transition: padding 0.2s ease-in-out;
+  -o-transition: padding 0.2s ease-in-out;
+  -webkit-transition: padding 0.2s ease-in-out;
+  transition: padding 0.2s ease-in-out;
+}
+/* line 49, ../scss/_design.scss */
+.team-wrapper .affix a {
+  display: block;
+  width: 200px;
+  height: 55px;
+  margin-bottom: 10px;
+}
+/* line 54, ../scss/_design.scss */
+.team-wrapper .affix a.navbar-brand {
+  background: url("../images/bat1.png") no-repeat;
+  background-size: cover;
+}
+/* line 59, ../scss/_design.scss */
+.team-wrapper .affix .bar {
+  background-color: #000;
+}
+/* line 64, ../scss/_design.scss */
+.team-wrapper .inner-content .vertical-wrap {
+  display: table;
+  height: 100vh;
+  width: 100%;
+}
+/* line 68, ../scss/_design.scss */
+.team-wrapper .inner-content .vertical-wrap .vertical-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 71, ../scss/_design.scss */
+.team-wrapper .inner-content .vertical-wrap .vertical-content .header-text {
   color: #fff;
-}
-/* line 14, ../scss/design.scss */
-.job-title h1 {
-  font-family: "open-sans-SemiboldItalic";
+  font-family: "OpenSans-Light";
   font-weight: 100;
-  font-size: 50px !important;
-  margin: 0;
 }
-/* line 20, ../scss/design.scss */
-.job-title h3 {
-  font-family: 'open sans';
+/* line 75, ../scss/_design.scss */
+.team-wrapper .inner-content .vertical-wrap .vertical-content .header-text h1 {
+  font-size: 45px;
   font-weight: 100;
-  font-size: 20px !important;
-  margin: 0;
-  position: relative;
+}
+/* line 79, ../scss/_design.scss */
+.team-wrapper .inner-content .vertical-wrap .vertical-content .header-text p {
+  margin-top: 15px;
+  font-size: 20px;
+}
+/* line 84, ../scss/_design.scss */
+.team-wrapper .inner-content .vertical-wrap .vertical-content .header-text a.hire-link {
+  color: #fff;
+  border-bottom: #fff solid 1px;
+  text-decoration: none;
+}
+/* line 89, ../scss/_design.scss */
+.team-wrapper .inner-content .vertical-wrap .vertical-content .header-text a.hover {
+  text-decoration: none;
+}
+/* line 94, ../scss/_design.scss */
+.team-wrapper .inner-content .vertical-wrap .vertical-content .header-text .header-icons img {
+  display: inline;
+  width: 50px;
+  background: rgba(226, 17, 46, 0.4);
+  margin: 1px;
+  padding: 10px;
+  border-radius: 10px;
+  border-bottom: none;
 }
 
-/* line 29, ../scss/design.scss */
-.desc-caption {
-  color: #222222;
-  font-family: 'open sans';
-  font-weight: 100;
-  margin: 20%;
+/* line 110, ../scss/_design.scss */
+.about-full {
+  font-family: "OpenSans-Light";
+  height: 80vh;
 }
-
-/* line 36, ../scss/design.scss */
-.description {
-  margin: 10% 5% 10%;
-}
-/* line 38, ../scss/design.scss */
-.description .desc-image-left {
-  width: 15%;
-  float: left;
-}
-/* line 42, ../scss/design.scss */
-.description .desc-image-right {
-  width: 15%;
-  margin: 10% -56px;
-  float: right;
-  position: absolute;
-}
-/* line 48, ../scss/design.scss */
-.description .desc-right {
-  float: right;
-  width: 50%;
-  margin: 25% -10%;
-  font-family: 'open sans';
-}
-/* line 53, ../scss/design.scss */
-.description .desc-right h4 {
-  font-size: 30px;
-  font-weight: 600;
+/* line 113, ../scss/_design.scss */
+.about-full h1 {
   color: #e2112e;
-  margin: 20px 0;
+  margin: 10% auto 5%;
+  font-size: 20px;
 }
-/* line 59, ../scss/design.scss */
-.description .desc-right p {
-  font-family: 'open sans';
-  font-size: 15px;
-  line-height: 2em;
-  color: #999999;
-  position: relative;
-  width: 90%;
-}
-/* line 67, ../scss/design.scss */
-.description .desc-right span {
-  float: left;
-  font-size: 114px;
-  font-weight: 100;
-  color: #ebebeb;
-  font-family: 'open sans';
-  margin: -108px 0px -9px;
+/* line 118, ../scss/_design.scss */
+.about-full p {
+  color: #666666;
+  font-size: 25px;
+  line-height: 150%;
+  margin: 50px auto;
+  width: 80%;
 }
 
-/* line 78, ../scss/design.scss */
-.desc-left {
-  float: left;
+/* line 127, ../scss/_design.scss */
+.values {
+  height: 100vh;
+  background: #f9f9f9;
+  padding: 20%;
+}
+/* line 132, ../scss/_design.scss */
+.values .container h2 {
+  color: #666;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+/* line 138, ../scss/_design.scss */
+.values .container h2.background {
+  position: relative;
+  z-index: 1;
+}
+/* line 142, ../scss/_design.scss */
+.values .container h2.background:before {
+  border-top: 1px solid #e2112e;
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 50%;
-  margin: 10% auto;
-  font-family: 'open sans';
+  z-index: -1;
 }
-/* line 83, ../scss/design.scss */
-.desc-left h4 {
-  font-size: 30px;
-  font-weight: 600;
-  color: #464646;
-  margin: 20px 0;
-  text-transform: uppercase;
-}
-/* line 90, ../scss/design.scss */
-.desc-left h5 {
-  text-transform: uppercase;
-}
-/* line 93, ../scss/design.scss */
-.desc-left p {
-  font-family: 'open sans';
-  font-size: 15px;
-  line-height: 2em;
-  color: #999999;
-  position: relative;
-  width: 90%;
-}
-/* line 101, ../scss/design.scss */
-.desc-left span {
-  float: left;
-  font-size: 114px;
-  font-weight: 100;
-  color: #ebebeb;
-  font-family: 'open sans';
-  margin: -108px 0px -9px;
-}
-
-/* line 111, ../scss/design.scss */
-.design-divider {
-  margin: 10% auto;
-  border-bottom: thick dashed #e1e1e1;
-  border-bottom-width: 3px;
-}
-
-/* line 117, ../scss/design.scss */
-.hire {
-  color: #d0122c;
-  font-size: 80px;
-  font-weight: 600;
-  font-family: 'open sans';
-  border-bottom: solid 5px #d0122c;
+/* line 155, ../scss/_design.scss */
+.values .container h2.background span {
+  background: #f7f7f7;
+  padding: 0 15px;
 }
 
 /* line 1, ../scss/_materialize.scss */
