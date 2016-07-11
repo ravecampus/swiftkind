@@ -118,10 +118,6 @@ body {
   padding-top: 20px;
   overflow: hidden;
   color: #000;
-  -moz-transition: padding 0.2s ease-in-out;
-  -o-transition: padding 0.2s ease-in-out;
-  -webkit-transition: padding 0.2s ease-in-out;
-  transition: padding 0.2s ease-in-out;
 }
 /* line 45, ../scss/_header.scss */
 .banner-wrapper .affix a {
@@ -1879,7 +1875,7 @@ button:hover {
   padding: 75px 0;
   background: #fff;
 }
-/* line 28, ../scss/_materialize.scss */
+/* line 27, ../scss/_materialize.scss */
 .card h2 {
   color: #222;
   text-align: center;
@@ -1888,7 +1884,7 @@ button:hover {
   font-family: "OpenSans-Regular";
   margin-top: 20px;
 }
-/* line 38, ../scss/_materialize.scss */
+/* line 36, ../scss/_materialize.scss */
 .card h3 {
   text-transform: uppercase;
   font-size: 12px;
@@ -1897,7 +1893,14 @@ button:hover {
   font-family: "OpenSans-Light";
 }
 
-/* line 49, ../scss/_materialize.scss */
+@-moz-document url-prefix() {
+  /* line 45, ../scss/_materialize.scss */
+  .card {
+    position: relative;
+    display: inline-block;
+  }
+}
+/* line 51, ../scss/_materialize.scss */
 .detail {
   color: #777;
   padding: 20px;
@@ -1905,20 +1908,20 @@ button:hover {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 56, ../scss/_materialize.scss */
+/* line 58, ../scss/_materialize.scss */
 .img-wrapper {
   padding: 0;
   position: relative;
 }
 
-/* line 71, ../scss/_materialize.scss */
+/* line 73, ../scss/_materialize.scss */
 .img-wrapper img {
   width: 30%;
   margin: 0;
   margin-top: 20px;
 }
 
-/* line 77, ../scss/_materialize.scss */
+/* line 79, ../scss/_materialize.scss */
 .button-wrapper {
   height: 100%;
   position: absolute;
@@ -1943,7 +1946,7 @@ button:hover {
   bottom: 20px;
 }
 
-/* line 101, ../scss/_materialize.scss */
+/* line 103, ../scss/_materialize.scss */
 button {
   width: 50px;
   height: 50px;
@@ -1954,7 +1957,7 @@ button {
   position: relative;
 }
 
-/* line 112, ../scss/_materialize.scss */
+/* line 114, ../scss/_materialize.scss */
 .main-button {
   background: #e2112e;
   -webkit-align-self: flex-end;
@@ -1963,7 +1966,7 @@ button {
   color: #fff;
 }
 
-/* line 121, ../scss/_materialize.scss */
+/* line 122, ../scss/_materialize.scss */
 .ripple {
   position: absolute;
   left: 0;
@@ -1982,7 +1985,7 @@ button {
   opacity: 1;
 }
 
-/* line 139, ../scss/_materialize.scss */
+/* line 140, ../scss/_materialize.scss */
 .rippling {
   -webkit-animation: .2s rippling 1;
   animation: .2s rippling 1;
@@ -2023,7 +2026,7 @@ button {
     opacity: 0;
   }
 }
-/* line 182, ../scss/_materialize.scss */
+/* line 183, ../scss/_materialize.scss */
 .layer {
   position: absolute;
   left: 0;
@@ -2042,7 +2045,7 @@ button {
   pointer-events: none;
 }
 
-/* line 200, ../scss/_materialize.scss */
+/* line 202, ../scss/_materialize.scss */
 .button-wrapper.clicked {
   -webkit-transform: rotate(90deg) translateY(-96px);
   -ms-transform: rotate(90deg) translateY(-96px);
@@ -2053,14 +2056,14 @@ button {
   transition: .3s all ease .6s;
 }
 
-/* line 210, ../scss/_materialize.scss */
+/* line 212, ../scss/_materialize.scss */
 .button-wrapper.clicked .main-button {
   opacity: 0;
   -webkit-transition: .3s all ease .3s;
   transition: .3s all ease .3s;
 }
 
-/* line 216, ../scss/_materialize.scss */
+/* line 218, ../scss/_materialize.scss */
 .button-wrapper.clicked .layer {
   -webkit-transform: scale(100);
   -ms-transform: scale(100);
@@ -2069,7 +2072,7 @@ button {
   transition: 2.25s all ease .9s;
 }
 
-/* line 224, ../scss/_materialize.scss */
+/* line 226, ../scss/_materialize.scss */
 .layered-content {
   position: absolute;
   top: 0;
@@ -2091,12 +2094,12 @@ button {
   opacity: 0;
 }
 
-/* line 245, ../scss/_materialize.scss */
+/* line 247, ../scss/_materialize.scss */
 .layered-content.active {
   opacity: 1;
 }
 
-/* line 249, ../scss/_materialize.scss */
+/* line 251, ../scss/_materialize.scss */
 .close-button {
   background: white;
   position: absolute;
@@ -2105,19 +2108,19 @@ button {
   color: #ff2670;
 }
 
-/* line 257, ../scss/_materialize.scss */
+/* line 259, ../scss/_materialize.scss */
 .layered-content.active .close-button {
   -webkit-animation: .5s bounceIn;
   animation: .5s bounceIn;
 }
 
-/* line 262, ../scss/_materialize.scss */
+/* line 264, ../scss/_materialize.scss */
 .content h3 {
   color: #fff;
   font-family: "OpenSans-Regular";
 }
 
-/* line 267, ../scss/_materialize.scss */
+/* line 269, ../scss/_materialize.scss */
 .content p {
   color: #fff;
   font-weight: 300;
@@ -2127,7 +2130,7 @@ button {
   margin: 30px;
 }
 
-/* line 276, ../scss/_materialize.scss */
+/* line 278, ../scss/_materialize.scss */
 .content p a {
   font-size: 12px;
   background: white;
@@ -2139,7 +2142,7 @@ button {
   margin-left: 1.5px;
 }
 
-/* line 288, ../scss/_materialize.scss */
+/* line 290, ../scss/_materialize.scss */
 .content img,
 .content p {
   opacity: 0;
@@ -2147,7 +2150,7 @@ button {
   top: -7.5px;
 }
 
-/* line 295, ../scss/_materialize.scss */
+/* line 297, ../scss/_materialize.scss */
 .layered-content.active .content p {
   opacity: 1;
   top: 0;
@@ -2226,7 +2229,7 @@ button {
     border-color: #485563;
   }
 }
-/* line 368, ../scss/_materialize.scss */
+/* line 377, ../scss/_materialize.scss */
 .ripple1 {
   display: block;
   height: 0;
@@ -2242,12 +2245,12 @@ button {
   animation: none;
 }
 
-/* line 382, ../scss/_materialize.scss */
+/* line 392, ../scss/_materialize.scss */
 .ripple-wrap.goripple {
   display: block;
 }
 
-/* line 385, ../scss/_materialize.scss */
+/* line 396, ../scss/_materialize.scss */
 .ripple-wrap.goripple .ripple1 {
   -webkit-animation-name: RIPPLER;
   -webkit-animation-duration: 1.5s;

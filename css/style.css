@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300);
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: #000;
+  background: transparent;
+  border: none;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background: #202020;
+  font-family: 'Roboto', sans-serif;
+}
+.wrap {
+  width: 80%;
+  margin: auto;
+  height: 500px;
+  position: relative;
+  transform: translateY(-50%);
+  top: 50%;
+}
+.card {
+  position: relative;
+  background: #fff;
+  height: 500px;
+  width: 350px;
+  border-radius: 10px;
+  margin: auto;
+  text-align: center;
+  padding: 40px 10px;
+  overflow: hidden;
+}
+.card .content-card h1 {
+  margin: 40px auto 60px auto;
+  text-transform: uppercase;
+  width: 80%;
+  font-size: 36px;
+  color: #999;
+}
+.card .content-card p {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #999;
+}
+.card .action {
+  background: #F12121;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  transition: 0.2s all ease-out 0.1s;
+}
+.card .action span {
+  color: #fff;
+  font-size: 24px;
+  transition: 0.1s all ease-out 0.4s;
+}
+.card .close {
+  background: #fff;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -190px;
+  right: 20px;
+  transition: 0.3s all ease-out 0.2s;
+  transform: scale(0);
+}
+.card .close span {
+  color: #F12121;
+  font-size: 24px;
+  transition: 0.1s all ease-out;
+  transform: rotate(45deg);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+}
+.card .action.active {
+  transform: scale(12);
+  bottom: 100%;
+  right: 40%;
+  transform-origin: top;
+  pointer-events: none;
+  transition: 0.3s all ease-out;
+}
+.card .action.active span {
+  transition: 0.1s all ease-out;
+  transform: translateY(100%);
+  opacity: 0;
+}
+.content1 {
+  transform: translateX(0%);
+  transition: 0.2s all ease-out 0.1s;
+}
+.content1.inactive {
+  transform: translateX(100%);
+  transition: 0.3s all ease-out;
+}
+.content2 {
+  z-index: 2;
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40px;
+  margin: auto;
+  transform: translateX(-100%) scale(0);
+  transition: 0.2s all ease-out 0s;
+}
+.content2 h1 {
+  color: #fff !important;
+}
+.content2 p {
+  color: #fff !important;
+}
+.content2.active {
+  transform: translateX(0%) scale(1);
+}
+.content2.active .close {
+  transform: scale(1);
+  transition: 0.1s all ease-out 0.2s;
+}
+.action {
+  z-index: 1;
+}
