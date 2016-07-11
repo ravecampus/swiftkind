@@ -512,7 +512,7 @@ hr {
 /* line 154, ../scss/_services.scss */
 .services-text .container {
   font-family: "OpenSans-Light";
-  background: #485563;
+  background: #f7f7f7;
   /* fallback for old browsers */
   width: 100%;
   height: 110vh;
@@ -526,7 +526,7 @@ hr {
 }
 /* line 175, ../scss/_services.scss */
 .services-text .container p {
-  color: #fff;
+  color: #333;
   font-size: 25px;
   margin: 0 15% 10%;
 }
@@ -657,7 +657,7 @@ hr {
 
 /* line 1, ../scss/_counter.scss */
 .counter-text {
-  color: #fff;
+  color: #333;
   margin: 10em;
   font-family: "OpenSans-Light";
   font-weight: 100;
@@ -1667,12 +1667,12 @@ span.spans {
   color: #e2112e;
 }
 
-/* line 1, ../scss/_design.scss */
+/* line 1, ../scss/_team.scss */
 .team-wrapper {
   background-image: url("../images/team-header.jpg");
   background-size: cover;
 }
-/* line 6, ../scss/_design.scss */
+/* line 6, ../scss/_team.scss */
 .team-wrapper .icon-bar {
   display: flex;
   width: 36px;
@@ -1680,7 +1680,7 @@ span.spans {
   margin-top: 9px;
   background: #fff;
 }
-/* line 13, ../scss/_design.scss */
+/* line 13, ../scss/_team.scss */
 .team-wrapper .nav-toggle {
   position: relative;
   float: right;
@@ -1693,27 +1693,27 @@ span.spans {
   border: none;
   z-index: 9;
 }
-/* line 25, ../scss/_design.scss */
+/* line 25, ../scss/_team.scss */
 .team-wrapper .navbar {
   padding-top: 80px;
 }
-/* line 27, ../scss/_design.scss */
+/* line 27, ../scss/_team.scss */
 .team-wrapper .navbar a {
   display: block;
   width: 150px;
   height: 25px;
 }
-/* line 34, ../scss/_design.scss */
+/* line 34, ../scss/_team.scss */
 .team-wrapper .navbar-items ul {
   list-style-type: none;
 }
-/* line 36, ../scss/_design.scss */
+/* line 36, ../scss/_team.scss */
 .team-wrapper .navbar-items ul li {
   display: inline !important;
   margin: 0 50px;
   color: #222;
 }
-/* line 43, ../scss/_design.scss */
+/* line 43, ../scss/_team.scss */
 .team-wrapper .affix {
   padding-top: 20px;
   overflow: hidden;
@@ -1723,60 +1723,60 @@ span.spans {
   -webkit-transition: padding 0.2s ease-in-out;
   transition: padding 0.2s ease-in-out;
 }
-/* line 49, ../scss/_design.scss */
+/* line 49, ../scss/_team.scss */
 .team-wrapper .affix a {
   display: block;
   width: 200px;
   height: 55px;
   margin-bottom: 10px;
 }
-/* line 54, ../scss/_design.scss */
+/* line 54, ../scss/_team.scss */
 .team-wrapper .affix a.navbar-brand {
   background: url("../images/bat1.png") no-repeat;
   background-size: cover;
 }
-/* line 59, ../scss/_design.scss */
+/* line 59, ../scss/_team.scss */
 .team-wrapper .affix .bar {
   background-color: #000;
 }
-/* line 64, ../scss/_design.scss */
+/* line 64, ../scss/_team.scss */
 .team-wrapper .inner-content .vertical-wrap {
   display: table;
   height: 100vh;
   width: 100%;
 }
-/* line 68, ../scss/_design.scss */
+/* line 68, ../scss/_team.scss */
 .team-wrapper .inner-content .vertical-wrap .vertical-content {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 71, ../scss/_design.scss */
+/* line 71, ../scss/_team.scss */
 .team-wrapper .inner-content .vertical-wrap .vertical-content .header-text {
   color: #fff;
   font-family: "OpenSans-Light";
   font-weight: 100;
 }
-/* line 75, ../scss/_design.scss */
+/* line 75, ../scss/_team.scss */
 .team-wrapper .inner-content .vertical-wrap .vertical-content .header-text h1 {
   font-size: 45px;
   font-weight: 100;
 }
-/* line 79, ../scss/_design.scss */
+/* line 79, ../scss/_team.scss */
 .team-wrapper .inner-content .vertical-wrap .vertical-content .header-text p {
   margin-top: 15px;
   font-size: 20px;
 }
-/* line 84, ../scss/_design.scss */
+/* line 84, ../scss/_team.scss */
 .team-wrapper .inner-content .vertical-wrap .vertical-content .header-text a.hire-link {
   color: #fff;
   border-bottom: #fff solid 1px;
   text-decoration: none;
 }
-/* line 89, ../scss/_design.scss */
+/* line 89, ../scss/_team.scss */
 .team-wrapper .inner-content .vertical-wrap .vertical-content .header-text a.hover {
   text-decoration: none;
 }
-/* line 94, ../scss/_design.scss */
+/* line 94, ../scss/_team.scss */
 .team-wrapper .inner-content .vertical-wrap .vertical-content .header-text .header-icons img {
   display: inline;
   width: 50px;
@@ -1787,18 +1787,18 @@ span.spans {
   border-bottom: none;
 }
 
-/* line 110, ../scss/_design.scss */
+/* line 110, ../scss/_team.scss */
 .about-full {
   font-family: "OpenSans-Light";
   height: 80vh;
 }
-/* line 113, ../scss/_design.scss */
+/* line 113, ../scss/_team.scss */
 .about-full h1 {
   color: #e2112e;
   margin: 10% auto 5%;
   font-size: 20px;
 }
-/* line 118, ../scss/_design.scss */
+/* line 118, ../scss/_team.scss */
 .about-full p {
   color: #666666;
   font-size: 25px;
@@ -1807,25 +1807,25 @@ span.spans {
   width: 80%;
 }
 
-/* line 127, ../scss/_design.scss */
+/* line 127, ../scss/_team.scss */
 .values {
   height: 100vh;
   background: #f9f9f9;
   padding: 20%;
 }
-/* line 132, ../scss/_design.scss */
+/* line 132, ../scss/_team.scss */
 .values .container h2 {
   color: #666;
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 2px;
 }
-/* line 138, ../scss/_design.scss */
+/* line 138, ../scss/_team.scss */
 .values .container h2.background {
   position: relative;
   z-index: 1;
 }
-/* line 142, ../scss/_design.scss */
+/* line 142, ../scss/_team.scss */
 .values .container h2.background:before {
   border-top: 1px solid #e2112e;
   content: "";
@@ -1838,10 +1838,23 @@ span.spans {
   width: 50%;
   z-index: -1;
 }
-/* line 155, ../scss/_design.scss */
+/* line 155, ../scss/_team.scss */
 .values .container h2.background span {
   background: #f7f7f7;
   padding: 0 15px;
+}
+/* line 160, ../scss/_team.scss */
+.values h1 {
+  font-size: 1.7em;
+  color: #d70204;
+}
+/* line 164, ../scss/_team.scss */
+.values img {
+  float: left;
+}
+/* line 167, ../scss/_team.scss */
+.values p {
+  color: #666666;
 }
 
 /* line 1, ../scss/_materialize.scss */
@@ -2181,7 +2194,7 @@ button {
     border-width: 1500px;
     margin-top: -1500px;
     margin-left: -1500px;
-    border-color: #485563;
+    border-color: #f72a46;
   }
   41% {
     height: 0;
@@ -2189,7 +2202,7 @@ button {
     border-width: 1500px;
     margin-top: -1500px;
     margin-left: -1500px;
-    border-color: #485563;
+    border-color: #f72a46;
   }
   100% {
     border-width: 1500px;
@@ -2197,7 +2210,7 @@ button {
     width: 2000px;
     margin-top: -2500px;
     margin-left: -2500px;
-    border-color: #485563;
+    border-color: #f72a46;
   }
 }
 @keyframes RIPPLER {
@@ -2210,7 +2223,7 @@ button {
     border-width: 1500px;
     margin-top: -1500px;
     margin-left: -1500px;
-    border-color: #485563;
+    border-color: #f72a46;
   }
   41% {
     height: 0;
@@ -2218,7 +2231,7 @@ button {
     border-width: 1500px;
     margin-top: -1500px;
     margin-left: -1500px;
-    border-color: #485563;
+    border-color: #f72a46;
   }
   100% {
     border-width: 1500px;
@@ -2226,7 +2239,7 @@ button {
     width: 2000px;
     margin-top: -2500px;
     margin-left: -2500px;
-    border-color: #485563;
+    border-color: #f7f7f7;
   }
 }
 /* line 377, ../scss/_materialize.scss */
@@ -2236,7 +2249,7 @@ button {
   width: 0;
   border-width: 0px;
   border-style: solid;
-  border-color: #29323c;
+  border-color: #fc687d;
   border-radius: 100%;
   position: absolute;
   top: 300px;
