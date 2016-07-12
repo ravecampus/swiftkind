@@ -1809,9 +1809,8 @@ span.spans {
 
 /* line 127, ../scss/_team.scss */
 .values {
-  height: 100vh;
   background: #f9f9f9;
-  padding: 20%;
+  padding: 10%;
 }
 /* line 132, ../scss/_team.scss */
 .values .container h2 {
@@ -1838,23 +1837,30 @@ span.spans {
   width: 50%;
   z-index: -1;
 }
-/* line 155, ../scss/_team.scss */
+/* line 154, ../scss/_team.scss */
 .values .container h2.background span {
   background: #f7f7f7;
   padding: 0 15px;
 }
+/* line 158, ../scss/_team.scss */
+.values .container .value-content {
+  padding: 0 40px;
+}
 /* line 160, ../scss/_team.scss */
-.values h1 {
+.values .container .value-content h1 {
   font-size: 1.7em;
   color: #d70204;
+  font-family: "OpenSans-Regular";
 }
-/* line 164, ../scss/_team.scss */
-.values img {
-  float: left;
+/* line 165, ../scss/_team.scss */
+.values .container .value-content img {
+  width: 100%;
 }
-/* line 167, ../scss/_team.scss */
-.values p {
+/* line 168, ../scss/_team.scss */
+.values .container .value-content p {
+  font-family: "OpenSans-Light";
   color: #666666;
+  font-size: 1.25em;
 }
 
 /* line 1, ../scss/_materialize.scss */
@@ -2845,4 +2851,92 @@ button {
 /* line 62, ../scss/_map.scss */
 #cd-zoom-out {
   background-position: 50% -32px;
+}
+
+/* line 2, ../scss/_team-gallery.scss */
+.team-gallery div, .team-gallery div::before, .team-gallery div::after,
+.team-gallery img,
+.team-gallery span {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+/* line 9, ../scss/_team-gallery.scss */
+.team-gallery img {
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 18, ../scss/_team-gallery.scss */
+.team-gallery div {
+  width: 33%;
+  margin: 0 1px 1px 0;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+/* line 25, ../scss/_team-gallery.scss */
+.team-gallery div:hover img {
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+}
+/* line 29, ../scss/_team-gallery.scss */
+.team-gallery div:hover span {
+  opacity: 1;
+}
+/* line 32, ../scss/_team-gallery.scss */
+.team-gallery div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+/* line 41, ../scss/_team-gallery.scss */
+.team-gallery div:hover::before {
+  -webkit-backdrop-filter: blur(10px) saturate(120%);
+  backdrop-filter: blur(10px) saturate(120%);
+}
+/* line 45, ../scss/_team-gallery.scss */
+.team-gallery div::after {
+  content: "";
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.35), 0 0px 4px rgba(0, 0, 0, 0.35) inset;
+  height: 75px;
+  width: 75px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+/* line 58, ../scss/_team-gallery.scss */
+.team-gallery div:hover::after {
+  opacity: 1;
+}
+/* line 62, ../scss/_team-gallery.scss */
+.team-gallery span {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.65);
+  font: bold 14px sans-serif;
+}
+@media screen and (min-width: 760px) {
+  /* line 78, ../scss/_team-gallery.scss */
+  .team-gallery div {
+    width: calc(25% - 1px);
+  }
 }
