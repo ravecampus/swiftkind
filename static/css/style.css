@@ -1450,14 +1450,20 @@ span.spans {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 252, ../scss/_team-services.scss */
+  .project-section .container .block-projects .gallery li img {
+    width: 100px;
+  }
+}
 
-/* line 271, ../scss/_team-services.scss */
+/* line 274, ../scss/_team-services.scss */
 .team-picture img {
   width: 100%;
   height: auto;
 }
 
-/* line 278, ../scss/_team-services.scss */
+/* line 281, ../scss/_team-services.scss */
 .work a:link {
   color: #e2112e;
   text-transform: uppercase;
@@ -1465,7 +1471,7 @@ span.spans {
   padding: 20px 50px;
   text-decoration: none;
 }
-/* line 285, ../scss/_team-services.scss */
+/* line 288, ../scss/_team-services.scss */
 .work a:hover {
   color: #fff !important;
   text-transform: uppercase;
@@ -1475,7 +1481,7 @@ span.spans {
   background-color: #e2112e;
   transition-duration: 0.5s;
 }
-/* line 294, ../scss/_team-services.scss */
+/* line 297, ../scss/_team-services.scss */
 .work a:visited {
   color: #e2112e;
   text-transform: uppercase;
