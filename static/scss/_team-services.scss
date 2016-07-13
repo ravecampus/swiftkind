@@ -185,7 +185,31 @@
                 margin: 70px auto;
                 text-align: center;
                 width: 100%;
+                @include mobile{
+                    margin: 70px -20px;
+                }
                 li {
+                    @include mobile{
+                          .name {
+                            @include opacity(1);
+                            @include scale(1);
+                            @include transition-property(all);
+                            @include transition-duration(.6s);
+                        }
+                        .title {
+                            @include opacity(1);
+                        }
+                        img {
+                            @include scale(1.09);
+                            background-position: top top;
+                            @include filter((.4) blur(2px));
+                            @include transition-property(all);
+                            @include transition-duration(.8s);
+                        }
+                        &:hover img {
+                            opacity: 1;
+                        }
+                    }
                     max-width: 100%;
                     min-height: 100%;
                     text-align: center;
@@ -217,6 +241,10 @@
                         height: 100%;
                         text-decoration: none;
                         background: rgba(17,17,17,.8);
+                        @include mobile{
+                            font-size: .5em;
+                                top: 90%;
+                        }
                         .title {
                             display: block;
                             text-transform: none;
@@ -228,7 +256,9 @@
                             @include transition-duration(.9s);
                         }
                     }
+
                     &:hover {
+
                         .name {
                             @include opacity(1);
                             @include scale(1);
@@ -248,6 +278,9 @@
                         &:hover img {
                             opacity: 1;
                         }
+                        @include mobile{
+                            display: none;
+                        }
                     }
                     img {
                         display: block;
@@ -261,7 +294,7 @@
                         @include transition-property(all);
                         @include transition-duration(.4s);
                         @include mobile{
-                            width: 100px;
+                            width: 120px;
                         }
                     }
                 }

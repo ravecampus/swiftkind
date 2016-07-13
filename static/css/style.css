@@ -376,17 +376,17 @@ body {
   height: 3px;
 }
 
-/* line 5, ../scss/_services.scss */
+/* line 3, ../scss/_services.scss */
 .col2 {
   margin-top: 85px;
 }
 
-/* line 9, ../scss/_services.scss */
+/* line 7, ../scss/_services.scss */
 .col2 h5 {
   font-size: 25px;
 }
 
-/* line 13, ../scss/_services.scss */
+/* line 11, ../scss/_services.scss */
 .col2 button {
   background-color: transparent;
   border-color: blue;
@@ -397,7 +397,7 @@ body {
   border-width: 0.1px;
 }
 
-/* line 23, ../scss/_services.scss */
+/* line 21, ../scss/_services.scss */
 .h1Projects h1 {
   vertical-align: bottom;
   margin-top: 100px;
@@ -416,38 +416,38 @@ hr {
 
 }
 */
-/* line 43, ../scss/_services.scss */
+/* line 41, ../scss/_services.scss */
 .inner-title {
   margin-right: 187px;
   font-family: "Source-Light", sans-serif;
 }
 
-/* line 48, ../scss/_services.scss */
+/* line 46, ../scss/_services.scss */
 .inner-title h2 {
   font-size: 40px;
   font-family: "Source-Light", sans-serif;
   font-weight: bold;
 }
 
-/* line 54, ../scss/_services.scss */
+/* line 52, ../scss/_services.scss */
 .services {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #f7f7f7;
 }
-/* line 61, ../scss/_services.scss */
+/* line 59, ../scss/_services.scss */
 .services h2 {
   color: #666;
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 2px;
 }
-/* line 67, ../scss/_services.scss */
+/* line 65, ../scss/_services.scss */
 .services h2.background {
   position: relative;
   z-index: 1;
 }
-/* line 71, ../scss/_services.scss */
+/* line 69, ../scss/_services.scss */
 .services h2.background:before {
   border-top: 1px solid #e2112e;
   content: "";
@@ -462,21 +462,21 @@ hr {
   width: 50%;
   z-index: -1;
 }
-/* line 85, ../scss/_services.scss */
+/* line 83, ../scss/_services.scss */
 .services h2.background span {
   /* to hide the lines from behind the text, you have to set the background color the same as the container */
   background: #f7f7f7;
   padding: 0 15px;
 }
 
-/* line 92, ../scss/_services.scss */
+/* line 90, ../scss/_services.scss */
 .caption {
   font-family: "OpenSans-Regular";
   font-size: 30px;
   padding: 100px 22% 40px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 92, ../scss/_services.scss */
+  /* line 90, ../scss/_services.scss */
   .caption {
     font-family: "OpenSans-Light";
     font-size: 1.2em;
@@ -487,13 +487,13 @@ hr {
   }
 }
 @media (min-width: 1024px) {
-  /* line 105, ../scss/_services.scss */
+  /* line 103, ../scss/_services.scss */
   .caption br {
     display: none;
   }
 }
 
-/* line 111, ../scss/_services.scss */
+/* line 109, ../scss/_services.scss */
 .square {
   width: 100px;
   height: 5px;
@@ -501,14 +501,14 @@ hr {
   margin: 0 auto;
 }
 
-/* line 118, ../scss/_services.scss */
+/* line 116, ../scss/_services.scss */
 .services2 {
   position: relative;
   display: -webkit-inline-box;
   margin: 0 auto 120px;
 }
 
-/* line 124, ../scss/_services.scss */
+/* line 122, ../scss/_services.scss */
 .design {
   background: #fff;
   width: 300px;
@@ -517,12 +517,12 @@ hr {
   color: #e2112e;
   font-family: "OpenSans-Light";
 }
-/* line 131, ../scss/_services.scss */
+/* line 129, ../scss/_services.scss */
 .design img {
   width: 40px;
   float: left;
 }
-/* line 135, ../scss/_services.scss */
+/* line 133, ../scss/_services.scss */
 .design p {
   color: #7d7d7d;
   font-size: 14px;
@@ -531,19 +531,19 @@ hr {
   font-family: "OpenSans-Light";
   text-align: justify;
 }
-/* line 143, ../scss/_services.scss */
+/* line 141, ../scss/_services.scss */
 .design h2 {
   font-size: 25px;
   color: #222;
   font-family: "OpenSans-Bold";
   padding: 40px 0 15px;
 }
-/* line 149, ../scss/_services.scss */
+/* line 147, ../scss/_services.scss */
 .design .divider {
   border-bottom: 1px solid #e1e1e1;
   margin: 15px 0;
 }
-/* line 153, ../scss/_services.scss */
+/* line 151, ../scss/_services.scss */
 .design .plus {
   border-radius: 50%;
   background: #e2112e;
@@ -556,11 +556,11 @@ hr {
   margin: 0 auto -10px;
 }
 
-/* line 166, ../scss/_services.scss */
+/* line 164, ../scss/_services.scss */
 .services-text {
   z-index: 100;
 }
-/* line 168, ../scss/_services.scss */
+/* line 166, ../scss/_services.scss */
 .services-text .container {
   font-family: "OpenSans-Light";
   background: #f7f7f7;
@@ -569,9 +569,10 @@ hr {
   padding: 15%;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 168, ../scss/_services.scss */
+  /* line 166, ../scss/_services.scss */
   .services-text .container {
     padding: 0;
+    height: 100vh;
   }
 }
 /* line 178, ../scss/_services.scss */
@@ -589,23 +590,31 @@ hr {
 @media (min-width: 320px) and (max-width: 767px) {
   /* line 183, ../scss/_services.scss */
   .services-text .container p {
-    font-size: 1em;
-    margin: 0;
+    font-family: "OpenSans-Light";
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    text-align: justify;
+    text-align-last: center;
+    margin: 20% 7%;
+  }
+  /* line 194, ../scss/_services.scss */
+  .services-text .container p br {
+    display: none;
   }
 }
-/* line 192, ../scss/_services.scss */
+/* line 199, ../scss/_services.scss */
 .services-text .container a {
   margin: 0 10px 0;
   letter-spacing: 2px;
 }
-/* line 196, ../scss/_services.scss */
+/* line 203, ../scss/_services.scss */
 .services-text .container a:link {
   color: #fff;
   padding: 15px 50px;
   text-decoration: none;
   background: #f72a46;
 }
-/* line 202, ../scss/_services.scss */
+/* line 209, ../scss/_services.scss */
 .services-text .container a:hover {
   transition: 1s;
   color: #fff;
@@ -614,7 +623,7 @@ hr {
   border: none;
   background: #ce0d28;
 }
-/* line 210, ../scss/_services.scss */
+/* line 217, ../scss/_services.scss */
 .services-text .container a:visited {
   transition: 1s;
   color: #fff;
@@ -622,11 +631,11 @@ hr {
   text-decoration: none;
   border: 1px solid #fc687d;
 }
-/* line 218, ../scss/_services.scss */
+/* line 225, ../scss/_services.scss */
 .services-text #content-2 {
   display: none;
 }
-/* line 221, ../scss/_services.scss */
+/* line 228, ../scss/_services.scss */
 .services-text .card-background {
   background-image: url("../images/img18.jpg");
   background-size: cover;
@@ -635,7 +644,7 @@ hr {
   padding-left: 10%;
   padding-top: 30%;
 }
-/* line 230, ../scss/_services.scss */
+/* line 237, ../scss/_services.scss */
 .services-text .card-background .hire-card {
   background: #f72a46;
   color: #fff;
@@ -648,43 +657,43 @@ hr {
   margin-top: -70px;
   margin-left: 130px;
 }
-/* line 241, ../scss/_services.scss */
+/* line 248, ../scss/_services.scss */
 .services-text .card-background .hire-card .hello {
   border-bottom: solid 0.2px #ffbec7;
 }
-/* line 244, ../scss/_services.scss */
+/* line 251, ../scss/_services.scss */
 .services-text .card-background .hire-card .close-link {
   padding: 5px;
 }
-/* line 247, ../scss/_services.scss */
+/* line 254, ../scss/_services.scss */
 .services-text .card-background .hire-card .card-link {
   padding: 5px;
 }
-/* line 249, ../scss/_services.scss */
+/* line 256, ../scss/_services.scss */
 .services-text .card-background .hire-card .card-link:link {
   color: #fff;
   border: none;
   text-decoration: none;
   padding: 0;
 }
-/* line 255, ../scss/_services.scss */
+/* line 262, ../scss/_services.scss */
 .services-text .card-background .hire-card .card-link:hover {
   color: #fff;
   border: none;
   text-decoration: none;
   background: none;
 }
-/* line 261, ../scss/_services.scss */
+/* line 268, ../scss/_services.scss */
 .services-text .card-background .hire-card .card-link:visited {
   color: #fff;
   border: none;
   text-decoration: none;
 }
-/* line 267, ../scss/_services.scss */
+/* line 274, ../scss/_services.scss */
 .services-text .card-background .hire-card h3 {
   font-family: "georgiaitalic";
 }
-/* line 270, ../scss/_services.scss */
+/* line 277, ../scss/_services.scss */
 .services-text .card-background .hire-card p {
   color: #ffbec7;
   font-size: 13px;
@@ -692,28 +701,28 @@ hr {
   margin-top: 40px;
   margin-left: 53px;
 }
-/* line 277, ../scss/_services.scss */
+/* line 284, ../scss/_services.scss */
 .services-text .card-background .hire-card h1 {
   font-family: "OpenSans-Bold";
 }
-/* line 280, ../scss/_services.scss */
+/* line 287, ../scss/_services.scss */
 .services-text .card-background .hire-card .card-social {
   margin-left: -53px;
   margin-top: 30px;
 }
-/* line 283, ../scss/_services.scss */
+/* line 290, ../scss/_services.scss */
 .services-text .card-background .hire-card .card-social ul {
   list-style: none;
 }
-/* line 285, ../scss/_services.scss */
+/* line 292, ../scss/_services.scss */
 .services-text .card-background .hire-card .card-social ul li {
   display: inline;
 }
-/* line 290, ../scss/_services.scss */
+/* line 297, ../scss/_services.scss */
 .services-text .card-background .hire-card .card-div {
   border-bottom: solid 0.5px #ad0219;
 }
-/* line 293, ../scss/_services.scss */
+/* line 300, ../scss/_services.scss */
 .services-text .card-background .hire-card .card-img {
   width: 100%;
 }
@@ -721,16 +730,31 @@ hr {
 /* line 1, ../scss/_counter.scss */
 .counter-text {
   color: #333;
-  margin: 10em;
   font-family: "OpenSans-Light";
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-/* line 9, ../scss/_counter.scss */
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 1, ../scss/_counter.scss */
+  .counter-text {
+    margin: 30% 0;
+  }
+}
+/* line 11, ../scss/_counter.scss */
 .counter-text .number {
   font-size: 40px;
   font-family: "OpenSans-Bold";
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 11, ../scss/_counter.scss */
+  .counter-text .number {
+    font-size: 1em;
+  }
+}
+/* line 18, ../scss/_counter.scss */
+.counter-text .counter-name {
+  font-size: 1em;
 }
 
 /* line 1, ../scss/_sliders-counter.scss */
@@ -1329,7 +1353,13 @@ span.spans {
   text-align: center;
   width: 100%;
 }
-/* line 188, ../scss/_team-services.scss */
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 184, ../scss/_team-services.scss */
+  .project-section .container .block-projects .gallery {
+    margin: 70px -20px;
+  }
+}
+/* line 191, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery li {
   max-width: 100%;
   min-height: 100%;
@@ -1340,13 +1370,59 @@ span.spans {
   overflow: hidden;
   background: #e2112e;
 }
-/* line 197, ../scss/_team-services.scss */
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 193, ../scss/_team-services.scss */
+  .project-section .container .block-projects .gallery li .name {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: 0.6s;
+    -o-transition-duration: 0.6s;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+  }
+  /* line 199, ../scss/_team-services.scss */
+  .project-section .container .block-projects .gallery li .title {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  /* line 202, ../scss/_team-services.scss */
+  .project-section .container .block-projects .gallery li img {
+    -moz-transform: scale(1.09, 1.09);
+    -ms-transform: scale(1.09, 1.09);
+    -webkit-transform: scale(1.09, 1.09);
+    transform: scale(1.09, 1.09);
+    background-position: top top;
+    -webkit-filter: 0.4 blur(2px);
+    filter: 0.4 blur(2px);
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+  }
+  /* line 209, ../scss/_team-services.scss */
+  .project-section .container .block-projects .gallery li:hover img {
+    opacity: 1;
+  }
+}
+/* line 221, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery li:nth-child(2) img {
   margin: 0;
   display: inline-block;
   float: right;
 }
-/* line 202, ../scss/_team-services.scss */
+/* line 226, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery li .name {
   text-decoration: none;
   text-transform: uppercase;
@@ -1367,7 +1443,14 @@ span.spans {
   text-decoration: none;
   background: rgba(17, 17, 17, 0.8);
 }
-/* line 220, ../scss/_team-services.scss */
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 226, ../scss/_team-services.scss */
+  .project-section .container .block-projects .gallery li .name {
+    font-size: .5em;
+    top: 90%;
+  }
+}
+/* line 248, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery li .name .title {
   display: block;
   text-transform: none;
@@ -1388,7 +1471,7 @@ span.spans {
   -webkit-transition-duration: 0.9s;
   transition-duration: 0.9s;
 }
-/* line 232, ../scss/_team-services.scss */
+/* line 262, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery li:hover .name {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -1405,12 +1488,12 @@ span.spans {
   -webkit-transition-duration: 0.6s;
   transition-duration: 0.6s;
 }
-/* line 238, ../scss/_team-services.scss */
+/* line 268, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery li:hover .title {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
-/* line 241, ../scss/_team-services.scss */
+/* line 271, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery li:hover img {
   -moz-transform: scale(1.09, 1.09);
   -ms-transform: scale(1.09, 1.09);
@@ -1428,11 +1511,17 @@ span.spans {
   -webkit-transition-duration: 0.8s;
   transition-duration: 0.8s;
 }
-/* line 248, ../scss/_team-services.scss */
+/* line 278, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery li:hover:hover img {
   opacity: 1;
 }
-/* line 252, ../scss/_team-services.scss */
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 260, ../scss/_team-services.scss */
+  .project-section .container .block-projects .gallery li:hover {
+    display: none;
+  }
+}
+/* line 285, ../scss/_team-services.scss */
 .project-section .container .block-projects .gallery li img {
   display: block;
   width: auto;
@@ -1451,19 +1540,19 @@ span.spans {
   transition-duration: 0.4s;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 252, ../scss/_team-services.scss */
+  /* line 285, ../scss/_team-services.scss */
   .project-section .container .block-projects .gallery li img {
-    width: 100px;
+    width: 120px;
   }
 }
 
-/* line 274, ../scss/_team-services.scss */
+/* line 307, ../scss/_team-services.scss */
 .team-picture img {
   width: 100%;
   height: auto;
 }
 
-/* line 281, ../scss/_team-services.scss */
+/* line 314, ../scss/_team-services.scss */
 .work a:link {
   color: #e2112e;
   text-transform: uppercase;
@@ -1471,7 +1560,7 @@ span.spans {
   padding: 20px 50px;
   text-decoration: none;
 }
-/* line 288, ../scss/_team-services.scss */
+/* line 321, ../scss/_team-services.scss */
 .work a:hover {
   color: #fff !important;
   text-transform: uppercase;
@@ -1481,7 +1570,7 @@ span.spans {
   background-color: #e2112e;
   transition-duration: 0.5s;
 }
-/* line 297, ../scss/_team-services.scss */
+/* line 330, ../scss/_team-services.scss */
 .work a:visited {
   color: #e2112e;
   text-transform: uppercase;
