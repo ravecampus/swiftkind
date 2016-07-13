@@ -24,6 +24,9 @@ button:hover {
     //border: solid 0.1px #bdc3c7;
     padding: 75px 0;
     background: #fff;
+    @include mobile {
+            display: inline-block;
+    }
     h2 {
         //padding: 20px;
         color: #222;

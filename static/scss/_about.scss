@@ -1,19 +1,23 @@
 .about {
     background: {
         color: #2c2c33;
-        size: cover;
     }
+    @include mobile{
+        height:70vh;
+         }
     .agile {
-    	margin-top:200px;
-   		font-family:$OpenSans-Light;
+        margin-top: 200px;
+        font-family: $OpenSans-Light;
         color: #fff;
-
         h1 {
-            font-family:$OpenSans-Regular;
+            font-family: $OpenSans-Regular;
             font-size: 20px;
             margin: 10% auto;
-            color:#ff1744;
+            color: #ff1744;
             letter-spacing: 1px;
+            @include mobile {
+                font-size: .9em;
+            }
         }
         margin:50px auto 100px;
         .agile-text {
@@ -24,6 +28,17 @@
             position: relative;
             margin: -35px auto 0;
             line-height: 150%;
+            @include mobile {
+                text-align-last: center;
+                font-size: 1.1em;
+                text-align: justify;
+                margin-top: 10%;
+            }
+        }
+        @include desktop {
+            br {
+                display: none;
+            }
         }
     }
 }

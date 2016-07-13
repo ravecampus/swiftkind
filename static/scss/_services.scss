@@ -1,5 +1,5 @@
 .entire-text {
-    font-family: $font-family-Source-Sans-light;
+    font-family: $OpenSans-Light;
 }
 
 .col2 {
@@ -90,8 +90,21 @@ hr {
 }
 
 .caption {
+    font-family: $OpenSans-Light;
     font-size: 30px;
     padding: 100px 22% 40px;
+    @include mobile {
+        font-size: 1.2em;
+        padding: 100px 10% 40px;
+        letter-spacing: 1px;
+        text-align: justify;
+        text-align-last: center;
+    }
+    @include desktop {
+        br {
+            display: none;
+        }
+    }
 }
 
 .square {
@@ -153,20 +166,14 @@ hr {
     z-index: 100;
     .container {
         font-family: $OpenSans-Light;
-        // background: {
-        //     //color:rgba(0,0,0,.5);
-        //     color: #e2112e;
-        //     //image:url('../images/img15.jpg');
-        //     size: cover;
-        //     opacity: 1;
-        // }
-      background: #f7f7f7;;
-        /* fallback for old browsers */
-        //background: -webkit-linear-gradient(to left, #485563 , #29323c); /* Chrome 10-25, Safari 5.1-6 */
-        //background: linear-gradient(to left, #485563 , #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: #f7f7f7;
+        ;
         width: 100%;
         height: 110vh;
         padding: 15%;
+        @include mobile{ 
+            padding: 0;
+        }
         h1 {
             font-size: 30px;
             color: #fff;
@@ -176,6 +183,10 @@ hr {
             color: #333;
             font-size: 25px;
             margin: 0 15% 10%;
+            @include mobile{
+                font-size: 1em;
+                margin: 0;
+            }
         }
         a {
             margin: 0 10px 0;
@@ -208,9 +219,8 @@ hr {
     }
     .card-background {
         background: {
-            image:url("../images/img18.jpg");
+            image: url("../images/img18.jpg");
             size: cover;
-           
         }
         height: 110vh;
         margin:-9.5%;

@@ -1,11 +1,4 @@
 .banner-wrapper {
-    .icon-bar {
-        display: flex;
-        width: 36px;
-        height: 1px;
-        margin-top: 9px;
-        background: #fff;
-    }
     .nav-toggle {
         position: relative;
         float: right;
@@ -18,12 +11,23 @@
         border: none;
         z-index: 9;
     }
+    .navbar-fixed-top {
+        @include mobile {
+            padding: 40px 10px;
+        }
+    }
     .navbar {
         padding-top: 80px;
         a {
             display: block;
-            width: 150px;
-            height: 25px;
+            img {
+                @include mobile {
+                    width: 35px;
+                    height: auto;
+                    margin-top: 15px;
+                    margin-left: 10px;
+                }
+            }
         }
     }
     .navbar-items {
@@ -39,9 +43,10 @@
     .affix {
         padding-top: 20px;
         overflow: hidden;
-        //background: #f9f9f9;
         color: #000;
-       
+        @include mobile {
+            padding: 0 10px;
+        }
         a {
             display: block;
             width: 200px;
@@ -50,86 +55,9 @@
             &.navbar-brand {
                 background: url("../images/bat1.png") no-repeat;
                 background-size: cover;
-                // .hambuger-style{
-                //   &.a {
-                //      background: rgba(255, 255, 255, 0);
-                //      border-bottom: 1px solid;
-                //      color: #fff;
-                //      line-height: 1.4;
-                //      padding: .25em;
-                //      text-decoration: none;
-                //      &:hover {
-                //          background: rgba(255, 255, 255, 1);
-                //          color: red;
-                //      }
-                //  }
-                // }
-                //button styles
-                //default button
-                // .btn {
-                //     color: #fff;
-                //     cursor: pointer;
-                //     display: block;
-                //     font-size: 16px;
-                //     font-weight: 400;
-                //     line-height: 45px;
-                //     margin: 0 auto 2em;
-                //     max-width: 160px;
-                //     position: relative;
-                //     text-decoration: none;
-                //     text-transform: uppercase;
-                //     vertical-align: middle;
-                //     width: 100%;
-                //     @media(min-width: 400px) {
-                //         display: inline-block;
-                //         margin-right: 2.5em;
-                //         &:nth-of-type(even) {
-                //             margin-right: 0;
-                //         }
-                //     }
-                //     @media(min-width: 600px) {
-                //         &:nth-of-type(even) {
-                //             margin-right: 2.5em;
-                //         }
-                //         &:nth-of-type(5) {
-                //             margin-right: 0;
-                //         }
-                //     }
-                //     &:hover {
-                //         text-decoration: none;
-                //     }
-                // }
-                /////////////////////////////////
-                //button one
-                ///////////////////////////////
-                // .btn-1 {
-                //     background: (255, 0, 0, 1.5%);
-                //     font-weight: 100;
-                //     svg {
-                //         height: 45px;
-                //         left: 0;
-                //         position: absolute;
-                //         top: 0;
-                //         width: 100%;
-                //     }
-                //     rect {
-                //         fill: none;
-                //         stroke-width: 2;
-                //         stroke-dasharray: 422, 0;
-                //     }
-                // }
-                // .btn-1:hover {
-                //     background: rgba(255, 0, 0, 0);
-                //     font-weight: 900;
-                //     letter-spacing: 1px;
-                //     rect {
-                //         stroke: #fff;
-                //         stroke-width: 5;
-                //         stroke-dasharray: 15, 310;
-                //         stroke-dashoffset: 48;
-                //         transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
-                //     }
-                // }
+                @include mobile {
+                    display: none;
+                }
             }
         }
         .bar {
@@ -148,14 +76,26 @@
                     font-family: $OpenSans-Light;
                     font-weight: 100;
                     width: 70%;
+                    @include mobile {
+                        width: 100%;
+                        text-align: center;
+                    }
                     h1 {
                         font-size: 45px;
                         font-weight: 100;
+                        @include mobile{
+                            font-size: 1.75em;
+                            line-height: 1.5em;
+                        }
                     }
                     p {
                         margin-top: 15px;
                         font-size: 20px;
                         width: 85%;
+                        @include mobile{
+                            width: 100%;
+                            font-size: .75em;
+                        }
                     }
                     a {
                         &.hire-link {
@@ -168,17 +108,15 @@
                         }
                     }
                     .header-icons {
-                       
-                            img {
-                                display: inline;
-                                width: 50px;
-                                background: rgba(226, 17, 46, .4);
-                                margin: 1px;
-                                padding: 10px;
-                                border-radius: 10px;
-                                border-bottom: none;
-                            }
-                        
+                        img {
+                            display: inline;
+                            width: 50px;
+                            background: rgba(226, 17, 46, .4);
+                            margin: 1px;
+                            padding: 10px;
+                            border-radius: 10px;
+                            border-bottom: none;
+                        }
                     }
                 }
             }

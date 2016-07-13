@@ -4,6 +4,9 @@
     width: 100%;
     height: auto;
     padding: 30% auto;
+    @include mobile {
+        height: 30vh;
+    }
     // custom style
     &#technologies {
         background: #2c2c33;
@@ -12,14 +15,23 @@
                 color: #666;
                 text-transform: uppercase;
                 font-size: 12px;
-                letter-spacing:2px;
+                letter-spacing: 2px;
                 margin-bottom: 40px;
+                @include mobile {
+                    font-size: .75em;
+                    letter-spacing: 1px;
+                }
             }
             & .img-holder {
                 display: inline-block;
                 width: 70px;
                 height: 120px;
                 margin: 0px 10px 0;
+                @include mobile {
+                    width: 25px;
+                    height: auto;
+                    margin: 0;
+                }
                 & img {
                     width: 50%;
                     height: auto;
@@ -27,18 +39,9 @@
                     margin: 0 auto;
                     float: none;
                     cursor: pointer;
-                    // -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-                    // filter: grayscale(100%);
-                    // -moz-transition: all ease-in-out 0.15s !important;
-                    // -webkit-transition: all ease-in-out 0.15s !important;
-                    // -o-transition: all ease-in-out 0.15s !important;
-                    // -ms-transition: all ease-in-out 0.15s !important;
-                    // transition: all ease-in-out 0.15s !important;
-                    // -moz-backface-visibility: hidden !important;
-                    // -webkit-backface-visibility: hidden !important;
-                    // -o-backface-visibility: hidden !important;
-                    // -ms-backface-visibility: hidden !important;
-                    // backface-visibility: hidden !important;
+                    @include mobile {
+                        width: 80%;
+                    }
                     &:hover {
                         -webkit-filter: grayscale(0);
                         /* Chrome, Safari, Opera */
