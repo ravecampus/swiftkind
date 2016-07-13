@@ -1,0 +1,127 @@
+    // for sections with height greater than 100vh
+    .page-section {
+        padding: 5% 0;
+        font-family: $Montserrat-Light;
+        .container {
+            .vertical-wrapper {
+                display: table;
+                height: 100vh;
+                .vertical-content {
+                    display: table-cell;
+                    vertical-align: middle;
+                    h1 {
+                        font-size: 3.5em;
+                        line-height: 1.5em;
+                        @include mobile {
+                            font-size: 2em;
+                            line-height: 1.5em;
+                        }
+                        @include tablet {
+                            font-size: 3em;
+                            line-height: 1.5em;
+                        }
+                        br {
+                            @include mobile {
+                                display: none;
+                            }
+                        }
+                    }
+                    p {
+                        font-size: 20px;
+                        margin: 5% auto;
+                        line-height: 1.5em;
+                        @include mobile {
+                            font-size: 1em;
+                            line-height: 1.5em;
+                            margin: 5% auto;
+                        }
+                    }
+                    ol {
+                        li {
+                            font-size: 22px;
+                            line-height: 2em;
+                            @include mobile {
+                                font-size: 1em;
+                                line-height: 1.5em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    // for headers
+    .page-header {
+        margin: 0;
+        font-family: $Montserrat-Light;
+        .container {
+            .vertical-wrapper {
+                .vertical-content {
+                    h1 {
+                        font-size: 3em;
+                        line-height: 1.5em;
+                        @include mobile {
+                            font-size: 2em;
+                            line-height: 1em;
+                            br {
+                                display: none;
+                            }
+                        }
+                        @include desktop {
+                            font-size: 4em;
+                        }
+                        @include tablet {
+                            br {
+                                display: none;
+                            }
+                        }
+                    }
+                    p {
+                        font-size: 22px;
+                        line-height: 1.5em;
+                        @include mobile {
+                            font-size: 1em;
+                        }
+                        @include desktop {
+                            margin: 10% auto;
+                        }
+                        @include tablet {
+                            margin-bottom: 6%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    // for section with height less than 100vh
+    .page-content {
+        font-family: $Montserrat-Light;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        
+        .container {
+            .row {
+                h1 {
+                    font-size: 3.5em;
+                    line-height: 1.5em;
+                    @include mobile {
+                        font-size: 25px;
+                    }
+                    @include tablet {
+                        font-size: 3em;
+                    }
+                }
+                p {
+                    font-size: 22px;
+                    line-height: 1.5em;
+                    margin: 5% auto;
+                    @include mobile {
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }

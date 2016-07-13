@@ -1,0 +1,19 @@
+.join-header{
+	
+	 background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/DSC_9454.png");
+       background-size: cover; 
+	color: #fff!important;
+	@include mobile{
+		background-position: -300px 0;
+	}
+	@include tablet {
+		background-position: -400px 0;
+	}
+}
+.join-staff{
+	background: {
+		image:url("../img/Program Background.png");
+		size:cover;
+	}
+	color: #fff;
+}
