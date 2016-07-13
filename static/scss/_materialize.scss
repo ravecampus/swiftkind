@@ -26,6 +26,8 @@ button:hover {
     background: #fff;
     @include mobile {
             display: inline-block;
+            padding: 0;
+            margin: 0;
     }
     h2 {
         //padding: 20px;
@@ -35,13 +37,25 @@ button:hover {
         font-size: 20px;
         font-family: $OpenSans-Regular;
         margin-top: 20px;
+        @include mobile{
+            font-size: 1.2em;
+        }
     }
     h3 {
         text-transform: uppercase;
         font-size: 12px;
         letter-spacing: 2px;
         color: #999999;
-        font-family: "OpenSans-Light";
+        font-family: $OpenSans-Light;
+
+    }
+    p{
+            font-family: $OpenSans-Light;
+            color: #666;
+            margin: 0 10%;
+            font-size: 1em;
+            line-height: 1.5em;
+            text-align-last:center;
     }
 }
 @-moz-document url-prefix() { 

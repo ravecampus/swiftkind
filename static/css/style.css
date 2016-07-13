@@ -376,11 +376,6 @@ body {
   height: 3px;
 }
 
-/* line 1, ../scss/_services.scss */
-.entire-text {
-  font-family: "OpenSans-Light";
-}
-
 /* line 5, ../scss/_services.scss */
 .col2 {
   margin-top: 85px;
@@ -476,13 +471,14 @@ hr {
 
 /* line 92, ../scss/_services.scss */
 .caption {
-  font-family: "OpenSans-Light";
+  font-family: "OpenSans-Regular";
   font-size: 30px;
   padding: 100px 22% 40px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   /* line 92, ../scss/_services.scss */
   .caption {
+    font-family: "OpenSans-Light";
     font-size: 1.2em;
     padding: 100px 10% 40px;
     letter-spacing: 1px;
@@ -491,13 +487,13 @@ hr {
   }
 }
 @media (min-width: 1024px) {
-  /* line 104, ../scss/_services.scss */
+  /* line 105, ../scss/_services.scss */
   .caption br {
     display: none;
   }
 }
 
-/* line 110, ../scss/_services.scss */
+/* line 111, ../scss/_services.scss */
 .square {
   width: 100px;
   height: 5px;
@@ -505,14 +501,14 @@ hr {
   margin: 0 auto;
 }
 
-/* line 117, ../scss/_services.scss */
+/* line 118, ../scss/_services.scss */
 .services2 {
   position: relative;
   display: -webkit-inline-box;
   margin: 0 auto 120px;
 }
 
-/* line 123, ../scss/_services.scss */
+/* line 124, ../scss/_services.scss */
 .design {
   background: #fff;
   width: 300px;
@@ -521,12 +517,12 @@ hr {
   color: #e2112e;
   font-family: "OpenSans-Light";
 }
-/* line 130, ../scss/_services.scss */
+/* line 131, ../scss/_services.scss */
 .design img {
   width: 40px;
   float: left;
 }
-/* line 134, ../scss/_services.scss */
+/* line 135, ../scss/_services.scss */
 .design p {
   color: #7d7d7d;
   font-size: 14px;
@@ -535,19 +531,19 @@ hr {
   font-family: "OpenSans-Light";
   text-align: justify;
 }
-/* line 142, ../scss/_services.scss */
+/* line 143, ../scss/_services.scss */
 .design h2 {
   font-size: 25px;
   color: #222;
   font-family: "OpenSans-Bold";
   padding: 40px 0 15px;
 }
-/* line 148, ../scss/_services.scss */
+/* line 149, ../scss/_services.scss */
 .design .divider {
   border-bottom: 1px solid #e1e1e1;
   margin: 15px 0;
 }
-/* line 152, ../scss/_services.scss */
+/* line 153, ../scss/_services.scss */
 .design .plus {
   border-radius: 50%;
   background: #e2112e;
@@ -560,11 +556,11 @@ hr {
   margin: 0 auto -10px;
 }
 
-/* line 165, ../scss/_services.scss */
+/* line 166, ../scss/_services.scss */
 .services-text {
   z-index: 100;
 }
-/* line 167, ../scss/_services.scss */
+/* line 168, ../scss/_services.scss */
 .services-text .container {
   font-family: "OpenSans-Light";
   background: #f7f7f7;
@@ -573,43 +569,43 @@ hr {
   padding: 15%;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 167, ../scss/_services.scss */
+  /* line 168, ../scss/_services.scss */
   .services-text .container {
     padding: 0;
   }
 }
-/* line 177, ../scss/_services.scss */
+/* line 178, ../scss/_services.scss */
 .services-text .container h1 {
   font-size: 30px;
   color: #fff;
   font-family: "OpenSans-Bold";
 }
-/* line 182, ../scss/_services.scss */
+/* line 183, ../scss/_services.scss */
 .services-text .container p {
   color: #333;
   font-size: 25px;
   margin: 0 15% 10%;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 182, ../scss/_services.scss */
+  /* line 183, ../scss/_services.scss */
   .services-text .container p {
     font-size: 1em;
     margin: 0;
   }
 }
-/* line 191, ../scss/_services.scss */
+/* line 192, ../scss/_services.scss */
 .services-text .container a {
   margin: 0 10px 0;
   letter-spacing: 2px;
 }
-/* line 195, ../scss/_services.scss */
+/* line 196, ../scss/_services.scss */
 .services-text .container a:link {
   color: #fff;
   padding: 15px 50px;
   text-decoration: none;
   background: #f72a46;
 }
-/* line 201, ../scss/_services.scss */
+/* line 202, ../scss/_services.scss */
 .services-text .container a:hover {
   transition: 1s;
   color: #fff;
@@ -618,7 +614,7 @@ hr {
   border: none;
   background: #ce0d28;
 }
-/* line 209, ../scss/_services.scss */
+/* line 210, ../scss/_services.scss */
 .services-text .container a:visited {
   transition: 1s;
   color: #fff;
@@ -626,11 +622,11 @@ hr {
   text-decoration: none;
   border: 1px solid #fc687d;
 }
-/* line 217, ../scss/_services.scss */
+/* line 218, ../scss/_services.scss */
 .services-text #content-2 {
   display: none;
 }
-/* line 220, ../scss/_services.scss */
+/* line 221, ../scss/_services.scss */
 .services-text .card-background {
   background-image: url("../images/img18.jpg");
   background-size: cover;
@@ -639,7 +635,7 @@ hr {
   padding-left: 10%;
   padding-top: 30%;
 }
-/* line 229, ../scss/_services.scss */
+/* line 230, ../scss/_services.scss */
 .services-text .card-background .hire-card {
   background: #f72a46;
   color: #fff;
@@ -652,43 +648,43 @@ hr {
   margin-top: -70px;
   margin-left: 130px;
 }
-/* line 240, ../scss/_services.scss */
+/* line 241, ../scss/_services.scss */
 .services-text .card-background .hire-card .hello {
   border-bottom: solid 0.2px #ffbec7;
 }
-/* line 243, ../scss/_services.scss */
+/* line 244, ../scss/_services.scss */
 .services-text .card-background .hire-card .close-link {
   padding: 5px;
 }
-/* line 246, ../scss/_services.scss */
+/* line 247, ../scss/_services.scss */
 .services-text .card-background .hire-card .card-link {
   padding: 5px;
 }
-/* line 248, ../scss/_services.scss */
+/* line 249, ../scss/_services.scss */
 .services-text .card-background .hire-card .card-link:link {
   color: #fff;
   border: none;
   text-decoration: none;
   padding: 0;
 }
-/* line 254, ../scss/_services.scss */
+/* line 255, ../scss/_services.scss */
 .services-text .card-background .hire-card .card-link:hover {
   color: #fff;
   border: none;
   text-decoration: none;
   background: none;
 }
-/* line 260, ../scss/_services.scss */
+/* line 261, ../scss/_services.scss */
 .services-text .card-background .hire-card .card-link:visited {
   color: #fff;
   border: none;
   text-decoration: none;
 }
-/* line 266, ../scss/_services.scss */
+/* line 267, ../scss/_services.scss */
 .services-text .card-background .hire-card h3 {
   font-family: "georgiaitalic";
 }
-/* line 269, ../scss/_services.scss */
+/* line 270, ../scss/_services.scss */
 .services-text .card-background .hire-card p {
   color: #ffbec7;
   font-size: 13px;
@@ -696,28 +692,28 @@ hr {
   margin-top: 40px;
   margin-left: 53px;
 }
-/* line 276, ../scss/_services.scss */
+/* line 277, ../scss/_services.scss */
 .services-text .card-background .hire-card h1 {
   font-family: "OpenSans-Bold";
 }
-/* line 279, ../scss/_services.scss */
+/* line 280, ../scss/_services.scss */
 .services-text .card-background .hire-card .card-social {
   margin-left: -53px;
   margin-top: 30px;
 }
-/* line 282, ../scss/_services.scss */
+/* line 283, ../scss/_services.scss */
 .services-text .card-background .hire-card .card-social ul {
   list-style: none;
 }
-/* line 284, ../scss/_services.scss */
+/* line 285, ../scss/_services.scss */
 .services-text .card-background .hire-card .card-social ul li {
   display: inline;
 }
-/* line 289, ../scss/_services.scss */
+/* line 290, ../scss/_services.scss */
 .services-text .card-background .hire-card .card-div {
   border-bottom: solid 0.5px #ad0219;
 }
-/* line 292, ../scss/_services.scss */
+/* line 293, ../scss/_services.scss */
 .services-text .card-background .hire-card .card-img {
   width: 100%;
 }
@@ -1927,9 +1923,11 @@ button:hover {
   /* line 17, ../scss/_materialize.scss */
   .card {
     display: inline-block;
+    padding: 0;
+    margin: 0;
   }
 }
-/* line 30, ../scss/_materialize.scss */
+/* line 32, ../scss/_materialize.scss */
 .card h2 {
   color: #222;
   text-align: center;
@@ -1938,7 +1936,13 @@ button:hover {
   font-family: "OpenSans-Regular";
   margin-top: 20px;
 }
-/* line 39, ../scss/_materialize.scss */
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 32, ../scss/_materialize.scss */
+  .card h2 {
+    font-size: 1.2em;
+  }
+}
+/* line 44, ../scss/_materialize.scss */
 .card h3 {
   text-transform: uppercase;
   font-size: 12px;
@@ -1946,15 +1950,24 @@ button:hover {
   color: #999999;
   font-family: "OpenSans-Light";
 }
+/* line 52, ../scss/_materialize.scss */
+.card p {
+  font-family: "OpenSans-Light";
+  color: #666;
+  margin: 0 10%;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-align-last: center;
+}
 
 @-moz-document url-prefix() {
-  /* line 48, ../scss/_materialize.scss */
+  /* line 62, ../scss/_materialize.scss */
   .card {
     position: relative;
     display: inline-block;
   }
 }
-/* line 54, ../scss/_materialize.scss */
+/* line 68, ../scss/_materialize.scss */
 .detail {
   color: #777;
   padding: 20px;
@@ -1962,20 +1975,20 @@ button:hover {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 61, ../scss/_materialize.scss */
+/* line 75, ../scss/_materialize.scss */
 .img-wrapper {
   padding: 0;
   position: relative;
 }
 
-/* line 76, ../scss/_materialize.scss */
+/* line 90, ../scss/_materialize.scss */
 .img-wrapper img {
   width: 30%;
   margin: 0;
   margin-top: 20px;
 }
 
-/* line 82, ../scss/_materialize.scss */
+/* line 96, ../scss/_materialize.scss */
 .button-wrapper {
   height: 100%;
   position: absolute;
@@ -2000,7 +2013,7 @@ button:hover {
   bottom: 20px;
 }
 
-/* line 106, ../scss/_materialize.scss */
+/* line 120, ../scss/_materialize.scss */
 button {
   width: 50px;
   height: 50px;
@@ -2011,7 +2024,7 @@ button {
   position: relative;
 }
 
-/* line 117, ../scss/_materialize.scss */
+/* line 131, ../scss/_materialize.scss */
 .main-button {
   background: #e2112e;
   -webkit-align-self: flex-end;
@@ -2020,7 +2033,7 @@ button {
   color: #fff;
 }
 
-/* line 125, ../scss/_materialize.scss */
+/* line 139, ../scss/_materialize.scss */
 .ripple {
   position: absolute;
   left: 0;
@@ -2039,7 +2052,7 @@ button {
   opacity: 1;
 }
 
-/* line 143, ../scss/_materialize.scss */
+/* line 157, ../scss/_materialize.scss */
 .rippling {
   -webkit-animation: .2s rippling 1;
   animation: .2s rippling 1;
@@ -2080,7 +2093,7 @@ button {
     opacity: 0;
   }
 }
-/* line 186, ../scss/_materialize.scss */
+/* line 200, ../scss/_materialize.scss */
 .layer {
   position: absolute;
   left: 0;
@@ -2099,7 +2112,7 @@ button {
   pointer-events: none;
 }
 
-/* line 205, ../scss/_materialize.scss */
+/* line 219, ../scss/_materialize.scss */
 .button-wrapper.clicked {
   -webkit-transform: rotate(90deg) translateY(-96px);
   -ms-transform: rotate(90deg) translateY(-96px);
@@ -2110,14 +2123,14 @@ button {
   transition: .3s all ease .6s;
 }
 
-/* line 215, ../scss/_materialize.scss */
+/* line 229, ../scss/_materialize.scss */
 .button-wrapper.clicked .main-button {
   opacity: 0;
   -webkit-transition: .3s all ease .3s;
   transition: .3s all ease .3s;
 }
 
-/* line 221, ../scss/_materialize.scss */
+/* line 235, ../scss/_materialize.scss */
 .button-wrapper.clicked .layer {
   -webkit-transform: scale(100);
   -ms-transform: scale(100);
@@ -2126,7 +2139,7 @@ button {
   transition: 2.25s all ease .9s;
 }
 
-/* line 229, ../scss/_materialize.scss */
+/* line 243, ../scss/_materialize.scss */
 .layered-content {
   position: absolute;
   top: 0;
@@ -2148,12 +2161,12 @@ button {
   opacity: 0;
 }
 
-/* line 250, ../scss/_materialize.scss */
+/* line 264, ../scss/_materialize.scss */
 .layered-content.active {
   opacity: 1;
 }
 
-/* line 254, ../scss/_materialize.scss */
+/* line 268, ../scss/_materialize.scss */
 .close-button {
   background: white;
   position: absolute;
@@ -2162,19 +2175,19 @@ button {
   color: #ff2670;
 }
 
-/* line 262, ../scss/_materialize.scss */
+/* line 276, ../scss/_materialize.scss */
 .layered-content.active .close-button {
   -webkit-animation: .5s bounceIn;
   animation: .5s bounceIn;
 }
 
-/* line 267, ../scss/_materialize.scss */
+/* line 281, ../scss/_materialize.scss */
 .content h3 {
   color: #fff;
   font-family: "OpenSans-Regular";
 }
 
-/* line 272, ../scss/_materialize.scss */
+/* line 286, ../scss/_materialize.scss */
 .content p {
   color: #fff;
   font-weight: 300;
@@ -2184,7 +2197,7 @@ button {
   margin: 30px;
 }
 
-/* line 281, ../scss/_materialize.scss */
+/* line 295, ../scss/_materialize.scss */
 .content p a {
   font-size: 12px;
   background: white;
@@ -2196,7 +2209,7 @@ button {
   margin-left: 1.5px;
 }
 
-/* line 293, ../scss/_materialize.scss */
+/* line 307, ../scss/_materialize.scss */
 .content img,
 .content p {
   opacity: 0;
@@ -2204,7 +2217,7 @@ button {
   top: -7.5px;
 }
 
-/* line 300, ../scss/_materialize.scss */
+/* line 314, ../scss/_materialize.scss */
 .layered-content.active .content p {
   opacity: 1;
   top: 0;
@@ -2212,7 +2225,7 @@ button {
   transition: .2s all ease 0.2s;
 }
 
-/* line 308, ../scss/_materialize.scss */
+/* line 322, ../scss/_materialize.scss */
 .ripple-wrap {
   display: none;
   overflow: hidden;
@@ -2283,7 +2296,7 @@ button {
     border-color: #f7f7f7;
   }
 }
-/* line 380, ../scss/_materialize.scss */
+/* line 394, ../scss/_materialize.scss */
 .ripple1 {
   display: block;
   height: 0;
@@ -2299,12 +2312,12 @@ button {
   animation: none;
 }
 
-/* line 395, ../scss/_materialize.scss */
+/* line 409, ../scss/_materialize.scss */
 .ripple-wrap.goripple {
   display: block;
 }
 
-/* line 399, ../scss/_materialize.scss */
+/* line 413, ../scss/_materialize.scss */
 .ripple-wrap.goripple .ripple1 {
   -webkit-animation-name: RIPPLER;
   -webkit-animation-duration: 1.5s;

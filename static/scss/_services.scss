@@ -1,5 +1,5 @@
 .entire-text {
-    font-family: $OpenSans-Light;
+    
 }
 
 .col2 {
@@ -90,10 +90,11 @@ hr {
 }
 
 .caption {
-    font-family: $OpenSans-Light;
+    font-family:  $OpenSans-Regular;
     font-size: 30px;
     padding: 100px 22% 40px;
     @include mobile {
+        font-family: $OpenSans-Light;
         font-size: 1.2em;
         padding: 100px 10% 40px;
         letter-spacing: 1px;
@@ -171,7 +172,7 @@ hr {
         width: 100%;
         height: 110vh;
         padding: 15%;
-        @include mobile{ 
+        @include mobile {
             padding: 0;
         }
         h1 {
@@ -183,7 +184,7 @@ hr {
             color: #333;
             font-size: 25px;
             margin: 0 15% 10%;
-            @include mobile{
+            @include mobile {
                 font-size: 1em;
                 margin: 0;
             }
