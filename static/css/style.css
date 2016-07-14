@@ -712,7 +712,7 @@ hr {
 @media (min-width: 320px) and (max-width: 767px) {
   /* line 241, ../scss/_services.scss */
   .services-text .card-background .hire-card {
-    width: 92%;
+    width: 100%;
     height: 110vh;
     padding: 20%;
     margin: 0;
@@ -2456,6 +2456,12 @@ button {
     margin-top: -1500px;
     margin-left: -1500px;
     border-color: #f72a46;
+    @media (min-width: 320px) and (max-width: 767px) {
+      border-width: 500px;
+      margin-top: -500px;
+      margin-left: -500px;
+      border-color: #f72a46;
+    }
   }
   41% {
     height: 0;
@@ -2464,6 +2470,12 @@ button {
     margin-top: -1500px;
     margin-left: -1500px;
     border-color: #f72a46;
+    @media (min-width: 320px) and (max-width: 767px) {
+      border-width: 500px;
+      margin-top: -500px;
+      margin-left: -500px;
+      border-color: #f72a46;
+    }
   }
   100% {
     border-width: 1500px;
@@ -2472,9 +2484,16 @@ button {
     margin-top: -2500px;
     margin-left: -2500px;
     border-color: #f7f7f7;
+    @media (min-width: 320px) and (max-width: 767px) {
+      border-width: 500px;
+      height: 1000px;
+      width: 1000px;
+      margin-top: -1500px;
+      margin-left: -1500px;
+    }
   }
 }
-/* line 394, ../scss/_materialize.scss */
+/* line 413, ../scss/_materialize.scss */
 .ripple1 {
   display: block;
   height: 0;
@@ -2490,12 +2509,12 @@ button {
   animation: none;
 }
 
-/* line 409, ../scss/_materialize.scss */
+/* line 428, ../scss/_materialize.scss */
 .ripple-wrap.goripple {
   display: block;
 }
 
-/* line 413, ../scss/_materialize.scss */
+/* line 432, ../scss/_materialize.scss */
 .ripple-wrap.goripple .ripple1 {
   -webkit-animation-name: RIPPLER;
   -webkit-animation-duration: 1.5s;
