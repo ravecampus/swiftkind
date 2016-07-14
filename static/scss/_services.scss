@@ -90,7 +90,7 @@ hr {
 .caption {
     font-family: $OpenSans-Regular;
     font-size: 30px;
-    padding: 100px 22% 40px;
+    padding: 100px 0 40px;
     @include mobile {
         font-family: $OpenSans-Light;
         font-size: 1.2em;
@@ -174,10 +174,21 @@ hr {
             padding: 0;
             height: 100vh;
         }
-        h1 {
-            font-size: 30px;
+        .email{
+            font-size: 3em;
             color: #fff;
             font-family: $OpenSans-Bold;
+            margin-bottom: 5%;
+        }
+        h1 {
+            font-size: 3em;
+            color: #333;
+            font-family: $OpenSans-Bold;
+            margin-bottom: 5%;
+            @include mobile{
+                font-size: 1.5em;
+
+            }
         }
         p {
             color: #333;
@@ -189,7 +200,7 @@ hr {
                 letter-spacing: 1px;
                 text-align: justify;
                 text-align-last: center;
-                margin: 20% 7%;
+                margin: 10% 7%;
                 br {
                     display: none;
                 }
@@ -291,7 +302,7 @@ hr {
             h3 {
                 font-family: $georgiaitalic;
                @include mobile{
-                 margin-top: 30%;
+                 margin-top: 53%;
                }
             }
             p {
