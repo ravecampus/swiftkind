@@ -25,6 +25,9 @@ body {
 // Styles for menu
 .mobile-nav {
  padding-top:300px;
+ @include  mobile{
+      padding-top: 150px;
+ }
  background: rgba(0,0,0, .9);
  @include transition(all 3s ease);
  @include transition( background 6s ease-in-out);

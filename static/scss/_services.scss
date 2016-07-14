@@ -169,7 +169,6 @@ hr {
         ;
         width: 100%;
         height: 110vh;
-
         padding: 15%;
         @include mobile {
             padding: 0;
@@ -191,7 +190,7 @@ hr {
                 text-align: justify;
                 text-align-last: center;
                 margin: 20% 7%;
-                br{
+                br {
                     display: none;
                 }
             }
@@ -234,6 +233,11 @@ hr {
         margin:-9.5%;
         padding-left: 10%;
         padding-top: 30%;
+        @include mobile {
+            background-image: none;
+            padding: 0;
+            margin:0;
+        }
         .hire-card {
             background: #f72a46;
             color: #fff;
@@ -245,6 +249,19 @@ hr {
             position: relative;
             margin-top: -70px;
             margin-left: 130px;
+            text-align: center;
+            @include mobile {
+                width: 92%;
+                height: 110vh;
+                padding: 20%;
+                margin: 0;
+            }
+            h1{
+                font-size: 30px;
+                @include mobile{
+                    font-size: 1.5em;
+                }
+            }
             .hello {
                 border-bottom: solid 0.2px #ffbec7;
             }
@@ -273,6 +290,9 @@ hr {
             }
             h3 {
                 font-family: $georgiaitalic;
+               @include mobile{
+                 margin-top: 30%;
+               }
             }
             p {
                 color: #ffbec7;
@@ -280,6 +300,9 @@ hr {
                 letter-spacing: 2px;
                 margin-top: 40px;
                 margin-left: 53px;
+                @include mobile{
+                    margin: 0;
+                }
             }
             h1 {
                 font-family: $OpenSans-Bold;

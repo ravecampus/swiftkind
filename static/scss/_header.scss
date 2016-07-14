@@ -18,16 +18,20 @@
     }
     .navbar {
         padding-top: 80px;
-        a {
-            display: block;
-            img {
-                @include mobile {
-                    width: 35px;
-                    height: auto;
-                    margin-top: 15px;
-                    margin-left: 10px;
-                }
-            }
+    }
+    .navbar-brand {
+        background: url("../images/bat1.png") no-repeat;
+        background-size: cover;
+        @include mobile {
+            background: url("../images/bat-logo.png") no-repeat;
+            background-size: cover;
+            width: 128px;
+            height: 35px;
+            margin-left: 15px;
+            margin-top: 15px;
+        }
+        @include desktop {
+            background: none;
         }
     }
     .navbar-items {
@@ -40,28 +44,53 @@
             }
         }
     }
+    .icon-bar {
+        a {
+            display: block;
+            img {
+                @include mobile {
+                    width: 35px;
+                    height: auto;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
     .affix {
         padding-top: 20px;
         overflow: hidden;
         color: #000;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        .icon-bar {
+            display: none;
+        }
         @include mobile {
             padding: 0 10px;
+            background: #fff;
         }
         a {
             display: block;
-            width: 200px;
-            height: 55px;
+            width: 20px;
+            height: 20px;
             margin-bottom: 10px;
             &.navbar-brand {
                 background: url("../images/bat1.png") no-repeat;
                 background-size: cover;
                 @include mobile {
-                    display: none;
+                    background: url("../images/bat-logo-black.png") no-repeat;
+                    background-size: cover;
+                    width: 113px;
+                    height: 11px;
+                }
+                @include desktop {
+                    background: none;
                 }
             }
         }
         .bar {
-            background-color: #000;
+            background-color: #2c2c33;
+            ;
         }
     }
     .inner-content {
@@ -83,7 +112,7 @@
                     h1 {
                         font-size: 45px;
                         font-weight: 100;
-                        @include mobile{
+                        @include mobile {
                             font-size: 1.75em;
                             line-height: 1.5em;
                         }
@@ -92,7 +121,7 @@
                         margin-top: 15px;
                         font-size: 20px;
                         width: 85%;
-                        @include mobile{
+                        @include mobile {
                             width: 100%;
                             font-size: .75em;
                         }

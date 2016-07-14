@@ -3,6 +3,9 @@
         background: #fff;
         .owl-stage {
             height: 300px;
+            @include mobile{
+                    height: auto;
+            }
 
             .owl-item {
                 .item {

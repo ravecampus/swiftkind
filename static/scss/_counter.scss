@@ -4,10 +4,9 @@
     font-weight: 100;
     text-transform: uppercase;
     letter-spacing: 2px;
-    @include mobile{
-            margin: 30% 0;
+    @include mobile {
+        margin: 30% 0;
     }
-
     .number {
         font-size: 40px;
         font-family: $OpenSans-Bold;
@@ -15,7 +14,7 @@
             font-size: 1em;
         }
     }
-    .counter-name{
+    .counter-name {
         font-size: 1em;
     }
 }
