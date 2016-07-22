@@ -148,6 +148,10 @@
     height: 100%;
     background: #ebebeb;
     .container {
+        @include desktop{
+            width: 1270px;
+
+        }
         .block-projects {
             margin: 0 auto;
             width: 100%;
@@ -185,12 +189,12 @@
                 margin: 70px auto;
                 text-align: center;
                 width: 100%;
-                @include mobile{
+                @include mobile {
                     margin: 70px -20px;
                 }
                 li {
-                    @include mobile{
-                          .name {
+                    @include mobile {
+                        .name {
                             @include opacity(1);
                             @include scale(1);
                             @include transition-property(all);
@@ -240,10 +244,10 @@
                         width: 100%;
                         height: 100%;
                         text-decoration: none;
-                        background: rgba(17,17,17,.8);
-                        @include mobile{
+                        background: rgba(17, 17, 17, .8);
+                        @include mobile {
                             font-size: .5em;
-                                top: 90%;
+                            top: 90%;
                         }
                         .title {
                             display: block;
@@ -256,9 +260,7 @@
                             @include transition-duration(.9s);
                         }
                     }
-
                     &:hover {
-
                         .name {
                             @include opacity(1);
                             @include scale(1);
@@ -278,7 +280,7 @@
                         &:hover img {
                             opacity: 1;
                         }
-                        @include mobile{
+                        @include mobile {
                             display: none;
                         }
                     }
@@ -290,10 +292,10 @@
                         display: inline-block;
                         text-align: center;
                         opacity: 1;
-                       // background: #e2112e;
+                        // background: #e2112e;
                         @include transition-property(all);
                         @include transition-duration(.4s);
-                        @include mobile{
+                        @include mobile {
                             width: 120px;
                         }
                     }
@@ -303,11 +305,18 @@
     }
 }
 
-.team-picture {
+.team {
+    background: #ecf0f2;
     img {
         width: 100%;
         height: auto;
     }
+}
+
+.flex-box {
+    display: flex;
+    height: 70vh;
+    align-items: center;
 }
 
 .work {

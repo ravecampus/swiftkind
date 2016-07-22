@@ -249,6 +249,9 @@ hr {
             padding: 0;
             margin:0;
         }
+        @include desktop{
+            margin: -21.4%;
+        }
         .hire-card {
             background: #f72a46;
             color: #fff;

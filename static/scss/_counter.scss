@@ -7,6 +7,9 @@
     @include mobile {
         margin: 30% 0;
     }
+    @include desktop{
+            margin-top: 10%;
+    }
     .number {
         font-size: 40px;
         font-family: $OpenSans-Bold;
