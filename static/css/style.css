@@ -66,7 +66,11 @@
   font-family: 'georgiaitalic';
   src: url(../fonts/georgiai.ttf);
 }
-/* line 81, ../scss/_typography.scss */
+@font-face {
+  font-family: 'Ubuntu-L';
+  src: url(../fonts/Ubuntu-L.ttf);
+}
+/* line 85, ../scss/_typography.scss */
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -143,7 +147,7 @@ body {
 .banner-wrapper .affix {
   padding-top: 20px;
   overflow: hidden;
-  color: #000;
+  color: #163875;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -182,80 +186,83 @@ body {
 @media (min-width: 1024px) {
   /* line 77, ../scss/_header.scss */
   .banner-wrapper .affix a.navbar-brand {
-    background: none;
+    background: url("../images/logo-blue-full.png") no-repeat;
+    background-size: cover;
+    width: 130px;
+    height: 11px;
   }
 }
-/* line 91, ../scss/_header.scss */
+/* line 95, ../scss/_header.scss */
 .banner-wrapper .affix .bar {
   background-color: #2c2c33;
 }
-/* line 97, ../scss/_header.scss */
+/* line 101, ../scss/_header.scss */
 .banner-wrapper .inner-content .vertical-wrap {
-  display: table;
   height: 100vh;
+  margin: 0 auto;
 }
-/* line 100, ../scss/_header.scss */
-.banner-wrapper .inner-content .vertical-wrap .vertical-content {
-  display: table-cell;
-  vertical-align: middle;
-}
-/* line 103, ../scss/_header.scss */
-.banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text {
-  color: #fff;
+/* line 104, ../scss/_header.scss */
+.banner-wrapper .inner-content .vertical-wrap .header-text {
+  margin-top: 35vh;
+  color: #333;
   font-family: "OpenSans-Light";
   font-weight: 100;
+  display: inline-block;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 103, ../scss/_header.scss */
-  .banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text {
+  /* line 104, ../scss/_header.scss */
+  .banner-wrapper .inner-content .vertical-wrap .header-text {
     width: 100%;
     text-align: center;
   }
 }
-/* line 112, ../scss/_header.scss */
-.banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text h1 {
-  font-size: 45px;
-  font-weight: 100;
+/* line 114, ../scss/_header.scss */
+.banner-wrapper .inner-content .vertical-wrap .header-text h1 {
+  font-size: 75px;
+  display: block;
+  letter-spacing: 1px;
+  color: #143c80;
+  font-family: "Ubuntu-L";
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 112, ../scss/_header.scss */
-  .banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text h1 {
+  /* line 114, ../scss/_header.scss */
+  .banner-wrapper .inner-content .vertical-wrap .header-text h1 {
     font-size: 1.75em;
     line-height: 1.5em;
   }
-  /* line 118, ../scss/_header.scss */
-  .banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text h1 br {
+  /* line 123, ../scss/_header.scss */
+  .banner-wrapper .inner-content .vertical-wrap .header-text h1 br {
     display: none;
   }
 }
-/* line 123, ../scss/_header.scss */
-.banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text p {
+/* line 128, ../scss/_header.scss */
+.banner-wrapper .inner-content .vertical-wrap .header-text p {
   margin-top: 15px;
   font-size: 20px;
-  color: #999;
+  color: #444;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 123, ../scss/_header.scss */
-  .banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text p {
+  /* line 128, ../scss/_header.scss */
+  .banner-wrapper .inner-content .vertical-wrap .header-text p {
     font-size: .75em;
   }
 }
-/* line 132, ../scss/_header.scss */
-.banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text a.hire-link {
+/* line 137, ../scss/_header.scss */
+.banner-wrapper .inner-content .vertical-wrap .header-text a.hire-link {
   color: #fff;
   border-bottom: #fff solid 1px;
   text-decoration: none;
 }
-/* line 137, ../scss/_header.scss */
-.banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text a.hover {
+/* line 142, ../scss/_header.scss */
+.banner-wrapper .inner-content .vertical-wrap .header-text a.hover {
   text-decoration: none;
 }
-/* line 141, ../scss/_header.scss */
-.banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text .header-icons {
+/* line 146, ../scss/_header.scss */
+.banner-wrapper .inner-content .vertical-wrap .header-text .header-icons {
   margin-top: 20px;
 }
-/* line 143, ../scss/_header.scss */
-.banner-wrapper .inner-content .vertical-wrap .vertical-content .header-text .header-icons img {
+/* line 148, ../scss/_header.scss */
+.banner-wrapper .inner-content .vertical-wrap .header-text .header-icons img {
   display: inline;
   width: 50px;
   background: rgba(226, 17, 46, 0.4);
@@ -264,18 +271,20 @@ body {
   border-radius: 10px;
   border-bottom: none;
 }
-/* line 156, ../scss/_header.scss */
+/* line 160, ../scss/_header.scss */
 .banner-wrapper .inner-content .btn-arrow {
   margin-bottom: 430px;
   width: 39px;
   height: 39px;
 }
-/* line 162, ../scss/_header.scss */
+/* line 166, ../scss/_header.scss */
 .banner-wrapper .inner-content .header-logo {
-  width: 200px;
+  width: 70px;
+  margin-top: -40px;
+  margin-right: 0.5em;
 }
 
-/* line 168, ../scss/_header.scss */
+/* line 174, ../scss/_header.scss */
 .overlay {
   content: " ";
   position: absolute;
@@ -287,10 +296,10 @@ body {
   opacity: 0.9;
   z-index: -1;
   mix-blend-mode: unset;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(255, 255, 255, 0.99);
 }
 
-/* line 182, ../scss/_header.scss */
+/* line 188, ../scss/_header.scss */
 video#bgvid {
   position: fixed;
   top: 50%;
@@ -425,17 +434,17 @@ body {
   height: 3px;
 }
 
-/* line 3, ../scss/_services.scss */
+/* line 1, ../scss/_services.scss */
 .col2 {
   margin-top: 85px;
 }
 
-/* line 7, ../scss/_services.scss */
+/* line 5, ../scss/_services.scss */
 .col2 h5 {
   font-size: 25px;
 }
 
-/* line 11, ../scss/_services.scss */
+/* line 9, ../scss/_services.scss */
 .col2 button {
   background-color: transparent;
   border-color: blue;
@@ -446,7 +455,7 @@ body {
   border-width: 0.1px;
 }
 
-/* line 21, ../scss/_services.scss */
+/* line 19, ../scss/_services.scss */
 .h1Projects h1 {
   vertical-align: bottom;
   margin-top: 100px;
@@ -465,40 +474,40 @@ hr {
 
 }
 */
-/* line 41, ../scss/_services.scss */
+/* line 39, ../scss/_services.scss */
 .inner-title {
   margin-right: 187px;
   font-family: "Source-Light", sans-serif;
 }
 
-/* line 46, ../scss/_services.scss */
+/* line 44, ../scss/_services.scss */
 .inner-title h2 {
   font-size: 40px;
   font-family: "Source-Light", sans-serif;
   font-weight: bold;
 }
 
-/* line 52, ../scss/_services.scss */
+/* line 50, ../scss/_services.scss */
 .services {
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #f7f7f7;
+  background-color: #fff;
 }
-/* line 59, ../scss/_services.scss */
+/* line 57, ../scss/_services.scss */
 .services h2 {
   color: #666;
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 2px;
 }
-/* line 65, ../scss/_services.scss */
+/* line 63, ../scss/_services.scss */
 .services h2.background {
   position: relative;
   z-index: 1;
 }
-/* line 69, ../scss/_services.scss */
+/* line 67, ../scss/_services.scss */
 .services h2.background:before {
-  border-top: 1px solid #e2112e;
+  border-top: 1px solid #0081ba;
   content: "";
   margin: 0 auto;
   /* this centers the line to the full width specified */
@@ -511,21 +520,47 @@ hr {
   width: 50%;
   z-index: -1;
 }
-/* line 83, ../scss/_services.scss */
+/* line 81, ../scss/_services.scss */
 .services h2.background span {
   /* to hide the lines from behind the text, you have to set the background color the same as the container */
-  background: #f7f7f7;
+  background: #fff;
   padding: 0 15px;
 }
+/* line 86, ../scss/_services.scss */
+.services .services-caption {
+  color: #fff;
+  background-color: #0081ba;
+  font-family: "OpenSans-Regular";
+  font-size: 30px;
+  padding: 100px 0;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 86, ../scss/_services.scss */
+  .services .services-caption {
+    font-family: "OpenSans-Light";
+    font-size: 1.2em;
+    padding: 100px 10% 40px;
+    letter-spacing: 1px;
+    text-align: justify;
+    text-align-last: center;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 101, ../scss/_services.scss */
+  .services .services-caption br {
+    display: none;
+  }
+}
 
-/* line 90, ../scss/_services.scss */
+/* line 108, ../scss/_services.scss */
 .caption {
   font-family: "OpenSans-Regular";
   font-size: 30px;
   padding: 100px 0 40px;
+  color: #303030;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 90, ../scss/_services.scss */
+  /* line 108, ../scss/_services.scss */
   .caption {
     font-family: "OpenSans-Light";
     font-size: 1.2em;
@@ -536,13 +571,13 @@ hr {
   }
 }
 @media (min-width: 1024px) {
-  /* line 103, ../scss/_services.scss */
+  /* line 122, ../scss/_services.scss */
   .caption br {
     display: none;
   }
 }
 
-/* line 109, ../scss/_services.scss */
+/* line 128, ../scss/_services.scss */
 .square {
   width: 100px;
   height: 5px;
@@ -550,14 +585,14 @@ hr {
   margin: 0 auto;
 }
 
-/* line 116, ../scss/_services.scss */
+/* line 135, ../scss/_services.scss */
 .services2 {
   position: relative;
   display: -webkit-inline-box;
   margin: 0 auto 120px;
 }
 
-/* line 122, ../scss/_services.scss */
+/* line 141, ../scss/_services.scss */
 .design {
   background: #fff;
   width: 300px;
@@ -566,12 +601,12 @@ hr {
   color: #e2112e;
   font-family: "OpenSans-Light";
 }
-/* line 129, ../scss/_services.scss */
+/* line 148, ../scss/_services.scss */
 .design img {
   width: 40px;
   float: left;
 }
-/* line 133, ../scss/_services.scss */
+/* line 152, ../scss/_services.scss */
 .design p {
   color: #7d7d7d;
   font-size: 14px;
@@ -580,19 +615,19 @@ hr {
   font-family: "OpenSans-Light";
   text-align: justify;
 }
-/* line 141, ../scss/_services.scss */
+/* line 160, ../scss/_services.scss */
 .design h2 {
   font-size: 25px;
   color: #222;
   font-family: "OpenSans-Bold";
   padding: 40px 0 15px;
 }
-/* line 147, ../scss/_services.scss */
+/* line 166, ../scss/_services.scss */
 .design .divider {
   border-bottom: 1px solid #e1e1e1;
   margin: 15px 0;
 }
-/* line 151, ../scss/_services.scss */
+/* line 170, ../scss/_services.scss */
 .design .plus {
   border-radius: 50%;
   background: #e2112e;
@@ -605,33 +640,33 @@ hr {
   margin: 0 auto -10px;
 }
 
-/* line 164, ../scss/_services.scss */
+/* line 183, ../scss/_services.scss */
 .services-text {
   z-index: 100;
 }
-/* line 166, ../scss/_services.scss */
+/* line 185, ../scss/_services.scss */
 .services-text .container {
   font-family: "OpenSans-Light";
-  background: #f7f7f7;
+  background: #fff;
   width: 100%;
-  height: 110vh;
-  padding: 15%;
+  height: 100vh;
+  padding: 10%;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 166, ../scss/_services.scss */
+  /* line 185, ../scss/_services.scss */
   .services-text .container {
     padding: 0;
     height: 100vh;
   }
 }
-/* line 177, ../scss/_services.scss */
+/* line 195, ../scss/_services.scss */
 .services-text .container .email {
   font-size: 3em;
   color: #fff;
   font-family: "OpenSans-Bold";
   margin-bottom: 5%;
 }
-/* line 183, ../scss/_services.scss */
+/* line 201, ../scss/_services.scss */
 .services-text .container h1 {
   font-size: 3em;
   color: #333;
@@ -639,19 +674,19 @@ hr {
   margin-bottom: 5%;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 183, ../scss/_services.scss */
+  /* line 201, ../scss/_services.scss */
   .services-text .container h1 {
     font-size: 1.5em;
   }
 }
-/* line 193, ../scss/_services.scss */
+/* line 210, ../scss/_services.scss */
 .services-text .container p {
   color: #333;
   font-size: 25px;
   margin: 0 15% 10%;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 193, ../scss/_services.scss */
+  /* line 210, ../scss/_services.scss */
   .services-text .container p {
     font-family: "OpenSans-Light";
     font-size: 1.2em;
@@ -660,33 +695,33 @@ hr {
     text-align-last: center;
     margin: 10% 7%;
   }
-  /* line 204, ../scss/_services.scss */
+  /* line 221, ../scss/_services.scss */
   .services-text .container p br {
     display: none;
   }
 }
-/* line 209, ../scss/_services.scss */
+/* line 226, ../scss/_services.scss */
 .services-text .container a {
   margin: 0 10px 0;
   letter-spacing: 2px;
 }
-/* line 213, ../scss/_services.scss */
+/* line 230, ../scss/_services.scss */
 .services-text .container a:link {
   color: #fff;
   padding: 15px 50px;
   text-decoration: none;
-  background: #f72a46;
+  background: #0081ba;
 }
-/* line 219, ../scss/_services.scss */
+/* line 236, ../scss/_services.scss */
 .services-text .container a:hover {
   transition: 1s;
   color: #fff;
   padding: 15px 50px;
   text-decoration: none;
   border: none;
-  background: #ce0d28;
+  background: #0081ba;
 }
-/* line 227, ../scss/_services.scss */
+/* line 244, ../scss/_services.scss */
 .services-text .container a:visited {
   transition: 1s;
   color: #fff;
@@ -694,49 +729,36 @@ hr {
   text-decoration: none;
   border: 1px solid #fc687d;
 }
-/* line 235, ../scss/_services.scss */
+/* line 252, ../scss/_services.scss */
 .services-text #content-2 {
   display: none;
 }
-/* line 238, ../scss/_services.scss */
+/* line 255, ../scss/_services.scss */
 .services-text .card-background {
-  background-image: url("../images/img18.jpg");
-  background-size: cover;
-  height: 110vh;
-  margin: -9.5%;
-  padding-left: 10%;
-  padding-top: 30%;
+  height: 100vh;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 238, ../scss/_services.scss */
+  /* line 255, ../scss/_services.scss */
   .services-text .card-background {
     background-image: none;
     padding: 0;
     margin: 0;
   }
 }
-@media (min-width: 1024px) {
-  /* line 238, ../scss/_services.scss */
-  .services-text .card-background {
-    margin: -21.4%;
-  }
-}
-/* line 255, ../scss/_services.scss */
+/* line 263, ../scss/_services.scss */
 .services-text .card-background .hire-card {
-  background: #f72a46;
+  background: #0081ba;
   color: #fff;
-  width: 40%;
+  width: 50%;
   height: auto;
   padding: 5%;
   display: block;
-  clear: both;
   position: relative;
-  margin-top: -70px;
-  margin-left: 130px;
+  margin: 0 auto;
   text-align: center;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 255, ../scss/_services.scss */
+  /* line 263, ../scss/_services.scss */
   .services-text .card-background .hire-card {
     width: 100%;
     height: 110vh;
@@ -744,59 +766,59 @@ hr {
     margin: 0;
   }
 }
-/* line 273, ../scss/_services.scss */
+/* line 279, ../scss/_services.scss */
 .services-text .card-background .hire-card h1 {
   font-size: 30px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 273, ../scss/_services.scss */
+  /* line 279, ../scss/_services.scss */
   .services-text .card-background .hire-card h1 {
     font-size: 1.5em;
   }
 }
-/* line 279, ../scss/_services.scss */
+/* line 285, ../scss/_services.scss */
 .services-text .card-background .hire-card .hello {
   border-bottom: solid 0.2px #ffbec7;
 }
-/* line 282, ../scss/_services.scss */
+/* line 288, ../scss/_services.scss */
 .services-text .card-background .hire-card .close-link {
   padding: 5px;
 }
-/* line 285, ../scss/_services.scss */
+/* line 291, ../scss/_services.scss */
 .services-text .card-background .hire-card .card-link {
   padding: 5px;
 }
-/* line 287, ../scss/_services.scss */
+/* line 293, ../scss/_services.scss */
 .services-text .card-background .hire-card .card-link:link {
   color: #fff;
   border: none;
   text-decoration: none;
   padding: 0;
 }
-/* line 293, ../scss/_services.scss */
+/* line 299, ../scss/_services.scss */
 .services-text .card-background .hire-card .card-link:hover {
   color: #fff;
   border: none;
   text-decoration: none;
   background: none;
 }
-/* line 299, ../scss/_services.scss */
+/* line 305, ../scss/_services.scss */
 .services-text .card-background .hire-card .card-link:visited {
   color: #fff;
   border: none;
   text-decoration: none;
 }
-/* line 305, ../scss/_services.scss */
+/* line 311, ../scss/_services.scss */
 .services-text .card-background .hire-card h3 {
   font-family: "georgiaitalic";
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 305, ../scss/_services.scss */
+  /* line 311, ../scss/_services.scss */
   .services-text .card-background .hire-card h3 {
     margin-top: 53%;
   }
 }
-/* line 311, ../scss/_services.scss */
+/* line 317, ../scss/_services.scss */
 .services-text .card-background .hire-card p {
   color: #ffbec7;
   font-size: 13px;
@@ -805,33 +827,33 @@ hr {
   margin-left: 53px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 311, ../scss/_services.scss */
+  /* line 317, ../scss/_services.scss */
   .services-text .card-background .hire-card p {
     margin: 0;
   }
 }
-/* line 321, ../scss/_services.scss */
+/* line 327, ../scss/_services.scss */
 .services-text .card-background .hire-card h1 {
   font-family: "OpenSans-Bold";
 }
-/* line 324, ../scss/_services.scss */
+/* line 330, ../scss/_services.scss */
 .services-text .card-background .hire-card .card-social {
   margin-left: -53px;
   margin-top: 30px;
 }
-/* line 327, ../scss/_services.scss */
+/* line 333, ../scss/_services.scss */
 .services-text .card-background .hire-card .card-social ul {
   list-style: none;
 }
-/* line 329, ../scss/_services.scss */
+/* line 335, ../scss/_services.scss */
 .services-text .card-background .hire-card .card-social ul li {
   display: inline;
 }
-/* line 334, ../scss/_services.scss */
+/* line 340, ../scss/_services.scss */
 .services-text .card-background .hire-card .card-div {
   border-bottom: solid 0.5px #ad0219;
 }
-/* line 337, ../scss/_services.scss */
+/* line 343, ../scss/_services.scss */
 .services-text .card-background .hire-card .card-img {
   width: 100%;
 }
@@ -843,6 +865,7 @@ hr {
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing: 2px;
+  margin: 10% 0;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   /* line 1, ../scss/_counter.scss */
@@ -850,24 +873,18 @@ hr {
     margin: 30% 0;
   }
 }
-@media (min-width: 1024px) {
-  /* line 1, ../scss/_counter.scss */
-  .counter-text {
-    margin-top: 10%;
-  }
-}
-/* line 13, ../scss/_counter.scss */
+/* line 12, ../scss/_counter.scss */
 .counter-text .number {
   font-size: 40px;
   font-family: "OpenSans-Bold";
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 13, ../scss/_counter.scss */
+  /* line 12, ../scss/_counter.scss */
   .counter-text .number {
     font-size: 1em;
   }
 }
-/* line 20, ../scss/_counter.scss */
+/* line 19, ../scss/_counter.scss */
 .counter-text .counter-name {
   font-size: 1em;
 }
@@ -1174,6 +1191,7 @@ span.spans {
   width: 100%;
   height: auto;
   padding: 30% auto;
+  height: 30vh;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   /* line 2, ../scss/_technologies.scss */
@@ -1181,11 +1199,11 @@ span.spans {
     height: 30vh;
   }
 }
-/* line 11, ../scss/_technologies.scss */
+/* line 12, ../scss/_technologies.scss */
 .technologies#technologies {
-  background: #2c2c33;
+  background: #fff;
 }
-/* line 14, ../scss/_technologies.scss */
+/* line 15, ../scss/_technologies.scss */
 .technologies#technologies .container h2 {
   color: #666;
   text-transform: uppercase;
@@ -1194,13 +1212,13 @@ span.spans {
   margin-bottom: 40px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 14, ../scss/_technologies.scss */
+  /* line 15, ../scss/_technologies.scss */
   .technologies#technologies .container h2 {
     font-size: .75em;
     letter-spacing: 1px;
   }
 }
-/* line 25, ../scss/_technologies.scss */
+/* line 26, ../scss/_technologies.scss */
 .technologies#technologies .container .img-holder {
   display: inline-block;
   width: 70px;
@@ -1208,14 +1226,14 @@ span.spans {
   margin: 0px 10px 0;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 25, ../scss/_technologies.scss */
+  /* line 26, ../scss/_technologies.scss */
   .technologies#technologies .container .img-holder {
     width: 25px;
     height: auto;
     margin: 0;
   }
 }
-/* line 35, ../scss/_technologies.scss */
+/* line 36, ../scss/_technologies.scss */
 .technologies#technologies .container .img-holder img {
   width: 50%;
   height: auto;
@@ -1225,19 +1243,19 @@ span.spans {
   cursor: pointer;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 35, ../scss/_technologies.scss */
+  /* line 36, ../scss/_technologies.scss */
   .technologies#technologies .container .img-holder img {
     width: 80%;
   }
 }
-/* line 45, ../scss/_technologies.scss */
+/* line 46, ../scss/_technologies.scss */
 .technologies#technologies .container .img-holder img:hover {
   -webkit-filter: grayscale(0);
   /* Chrome, Safari, Opera */
   filter: grayscale(0);
 }
 
-/* line 56, ../scss/_technologies.scss */
+/* line 57, ../scss/_technologies.scss */
 #particles-js {
   width: 100%;
   height: 100%;
@@ -1422,7 +1440,7 @@ span.spans {
   z-index: 1;
   width: 100%;
   height: 100%;
-  background: #ebebeb;
+  background: #fff;
 }
 @media (min-width: 1024px) {
   /* line 150, ../scss/_team-services.scss */
@@ -1449,7 +1467,7 @@ span.spans {
 }
 /* line 168, ../scss/_team-services.scss */
 .project-section .container .block-projects h2.background:before {
-  border-top: 1px solid #e2112e;
+  border-top: 1px solid #175574;
   content: "";
   margin: 0 auto;
   /* this centers the line to the full width specified */
@@ -1465,7 +1483,7 @@ span.spans {
 /* line 183, ../scss/_team-services.scss */
 .project-section .container .block-projects h2.background span {
   /* to hide the lines from behind the text, you have to set the background color the same as the container */
-  background: #ebebeb;
+  background: #fff;
   padding: 0 15px;
 }
 /* line 188, ../scss/_team-services.scss */
@@ -1713,7 +1731,7 @@ span.spans {
 
 /* line 1, ../scss/_footer.scss */
 .site-footer {
-  background-color: #f7f7f7;
+  background-color: #fff;
   color: #666666;
   font-family: "Source-Light", sans-serif;
   font-size: 16px;
@@ -1800,11 +1818,12 @@ span.spans {
   vertical-align: middle;
 }
 
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
 /* line 1, ../scss/_about.scss */
 .about {
-  background-color: #2c2c33;
+  background-color: #fff;
+  height: 70vh;
+  display: flex;
+  align-items: center;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   /* line 1, ../scss/_about.scss */
@@ -1812,30 +1831,30 @@ span.spans {
     height: 70vh;
   }
 }
-/* line 8, ../scss/_about.scss */
+/* line 11, ../scss/_about.scss */
 .about .agile {
   margin-top: 200px;
   font-family: "OpenSans-Light";
   color: #fff;
   margin: 50px auto 100px;
 }
-/* line 12, ../scss/_about.scss */
+/* line 15, ../scss/_about.scss */
 .about .agile h1 {
   font-family: "OpenSans-Regular";
   font-size: 20px;
   margin: 10% auto;
-  color: #ff1744;
+  color: #175574;
   letter-spacing: 1px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 12, ../scss/_about.scss */
+  /* line 15, ../scss/_about.scss */
   .about .agile h1 {
     font-size: .9em;
   }
 }
-/* line 23, ../scss/_about.scss */
+/* line 26, ../scss/_about.scss */
 .about .agile .agile-text {
-  color: #979797;
+  color: #303030;
   font-size: 25px;
   font-weight: 100;
   width: 80%;
@@ -1844,7 +1863,7 @@ span.spans {
   line-height: 150%;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 23, ../scss/_about.scss */
+  /* line 26, ../scss/_about.scss */
   .about .agile .agile-text {
     text-align-last: center;
     font-size: 1.1em;
@@ -1853,22 +1872,22 @@ span.spans {
   }
 }
 @media (min-width: 1024px) {
-  /* line 39, ../scss/_about.scss */
+  /* line 42, ../scss/_about.scss */
   .about .agile br {
     display: none;
   }
 }
 
-/* line 46, ../scss/_about.scss */
+/* line 49, ../scss/_about.scss */
 .about-more {
   padding: 5% 0;
-  background: #eceff1;
+  background: #fff;
 }
-/* line 49, ../scss/_about.scss */
+/* line 52, ../scss/_about.scss */
 .about-more img {
   width: 50%;
 }
-/* line 52, ../scss/_about.scss */
+/* line 55, ../scss/_about.scss */
 .about-more p {
   color: #666666;
   font-size: 25px;
@@ -1878,7 +1897,7 @@ span.spans {
   font-family: "OpenSans-Light";
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 52, ../scss/_about.scss */
+  /* line 55, ../scss/_about.scss */
   .about-more p {
     font-size: 1.2em;
     width: 100%;
@@ -2160,6 +2179,7 @@ button:hover {
   overflow: hidden;
   padding: 75px 0;
   background: #fff;
+  border-bottom: 5px solid #0081ba;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   /* line 17, ../scss/_materialize.scss */
@@ -2169,7 +2189,7 @@ button:hover {
     margin: 0;
   }
 }
-/* line 32, ../scss/_materialize.scss */
+/* line 34, ../scss/_materialize.scss */
 .card h2 {
   color: #222;
   text-align: center;
@@ -2179,12 +2199,12 @@ button:hover {
   margin-top: 20px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 32, ../scss/_materialize.scss */
+  /* line 34, ../scss/_materialize.scss */
   .card h2 {
     font-size: 1.2em;
   }
 }
-/* line 44, ../scss/_materialize.scss */
+/* line 46, ../scss/_materialize.scss */
 .card h3 {
   text-transform: uppercase;
   font-size: 12px;
@@ -2192,7 +2212,7 @@ button:hover {
   color: #999999;
   font-family: "OpenSans-Light";
 }
-/* line 52, ../scss/_materialize.scss */
+/* line 54, ../scss/_materialize.scss */
 .card p {
   font-family: "OpenSans-Light";
   color: #666;
@@ -2203,13 +2223,13 @@ button:hover {
 }
 
 @-moz-document url-prefix() {
-  /* line 62, ../scss/_materialize.scss */
+  /* line 64, ../scss/_materialize.scss */
   .card {
     position: relative;
     display: inline-block;
   }
 }
-/* line 68, ../scss/_materialize.scss */
+/* line 70, ../scss/_materialize.scss */
 .detail {
   color: #777;
   padding: 20px;
@@ -2217,20 +2237,20 @@ button:hover {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 75, ../scss/_materialize.scss */
+/* line 77, ../scss/_materialize.scss */
 .img-wrapper {
   padding: 0;
   position: relative;
 }
 
-/* line 90, ../scss/_materialize.scss */
+/* line 81, ../scss/_materialize.scss */
 .img-wrapper img {
   width: 30%;
   margin: 0;
   margin-top: 20px;
 }
 
-/* line 96, ../scss/_materialize.scss */
+/* line 87, ../scss/_materialize.scss */
 .button-wrapper {
   height: 100%;
   position: absolute;
@@ -2255,7 +2275,7 @@ button:hover {
   bottom: 20px;
 }
 
-/* line 120, ../scss/_materialize.scss */
+/* line 111, ../scss/_materialize.scss */
 button {
   width: 50px;
   height: 50px;
@@ -2266,16 +2286,16 @@ button {
   position: relative;
 }
 
-/* line 131, ../scss/_materialize.scss */
+/* line 121, ../scss/_materialize.scss */
 .main-button {
-  background: #e2112e;
+  background: #fff;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  color: #fff;
+  color: #0081ba;
 }
 
-/* line 139, ../scss/_materialize.scss */
+/* line 129, ../scss/_materialize.scss */
 .ripple {
   position: absolute;
   left: 0;
@@ -2285,7 +2305,7 @@ button {
   border-radius: 50%;
   z-index: -9;
   background: transparent;
-  border: 1px solid #ff2670;
+  border: 1px solid #0081ba;
   -webkit-transform: scale(0.2);
   -ms-transform: scale(0.2);
   transform: scale(0.2);
@@ -2294,7 +2314,7 @@ button {
   opacity: 1;
 }
 
-/* line 157, ../scss/_materialize.scss */
+/* line 147, ../scss/_materialize.scss */
 .rippling {
   -webkit-animation: .2s rippling 1;
   animation: .2s rippling 1;
@@ -2335,7 +2355,7 @@ button {
     opacity: 0;
   }
 }
-/* line 200, ../scss/_materialize.scss */
+/* line 190, ../scss/_materialize.scss */
 .layer {
   position: absolute;
   left: 0;
@@ -2343,18 +2363,18 @@ button {
   bottom: 0;
   width: 50px;
   height: 50px;
-  background: #D31027;
+  background: #0081ba;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #D31027, #EA384D);
+  background: -webkit-linear-gradient(to left, #0081ba, #0081ba);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #d31027, #ea384d);
+  background: linear-gradient(to left, #0081ba, #0081ba);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-radius: 50%;
   z-index: -99;
   pointer-events: none;
 }
 
-/* line 219, ../scss/_materialize.scss */
+/* line 209, ../scss/_materialize.scss */
 .button-wrapper.clicked {
   -webkit-transform: rotate(90deg) translateY(-96px);
   -ms-transform: rotate(90deg) translateY(-96px);
@@ -2365,14 +2385,14 @@ button {
   transition: .3s all ease .6s;
 }
 
-/* line 229, ../scss/_materialize.scss */
+/* line 219, ../scss/_materialize.scss */
 .button-wrapper.clicked .main-button {
   opacity: 0;
   -webkit-transition: .3s all ease .3s;
   transition: .3s all ease .3s;
 }
 
-/* line 235, ../scss/_materialize.scss */
+/* line 225, ../scss/_materialize.scss */
 .button-wrapper.clicked .layer {
   -webkit-transform: scale(100);
   -ms-transform: scale(100);
@@ -2381,7 +2401,7 @@ button {
   transition: 2.25s all ease .9s;
 }
 
-/* line 243, ../scss/_materialize.scss */
+/* line 233, ../scss/_materialize.scss */
 .layered-content {
   position: absolute;
   top: 0;
@@ -2403,33 +2423,33 @@ button {
   opacity: 0;
 }
 
-/* line 264, ../scss/_materialize.scss */
+/* line 254, ../scss/_materialize.scss */
 .layered-content.active {
   opacity: 1;
 }
 
-/* line 268, ../scss/_materialize.scss */
+/* line 258, ../scss/_materialize.scss */
 .close-button {
   background: white;
   position: absolute;
   right: 20px;
   top: 20px;
-  color: #ff2670;
+  color: #0081ba;
 }
 
-/* line 276, ../scss/_materialize.scss */
+/* line 266, ../scss/_materialize.scss */
 .layered-content.active .close-button {
   -webkit-animation: .5s bounceIn;
   animation: .5s bounceIn;
 }
 
-/* line 281, ../scss/_materialize.scss */
+/* line 271, ../scss/_materialize.scss */
 .content h3 {
   color: #fff;
   font-family: "OpenSans-Regular";
 }
 
-/* line 286, ../scss/_materialize.scss */
+/* line 276, ../scss/_materialize.scss */
 .content p {
   color: #fff;
   font-weight: 300;
@@ -2439,19 +2459,19 @@ button {
   margin: 30px;
 }
 
-/* line 295, ../scss/_materialize.scss */
+/* line 285, ../scss/_materialize.scss */
 .content p a {
   font-size: 12px;
   background: white;
   padding: 2.5px 5px;
-  color: #ff2670;
+  color: #0081ba;
   text-decoration: none;
   border-radius: 50px;
   display: inline-block;
   margin-left: 1.5px;
 }
 
-/* line 307, ../scss/_materialize.scss */
+/* line 297, ../scss/_materialize.scss */
 .content img,
 .content p {
   opacity: 0;
@@ -2459,7 +2479,7 @@ button {
   top: -7.5px;
 }
 
-/* line 314, ../scss/_materialize.scss */
+/* line 304, ../scss/_materialize.scss */
 .layered-content.active .content p {
   opacity: 1;
   top: 0;
@@ -2467,7 +2487,7 @@ button {
   transition: .2s all ease 0.2s;
 }
 
-/* line 322, ../scss/_materialize.scss */
+/* line 312, ../scss/_materialize.scss */
 .ripple-wrap {
   display: none;
   overflow: hidden;
@@ -2519,12 +2539,12 @@ button {
     border-width: 1500px;
     margin-top: -1500px;
     margin-left: -1500px;
-    border-color: #f72a46;
+    border-color: #0081ba;
     @media (min-width: 320px) and (max-width: 767px) {
       border-width: 500px;
       margin-top: -500px;
       margin-left: -500px;
-      border-color: #f72a46;
+      border-color: #0081ba;
     }
   }
   41% {
@@ -2533,12 +2553,12 @@ button {
     border-width: 1500px;
     margin-top: -1500px;
     margin-left: -1500px;
-    border-color: #f72a46;
+    border-color: #0081ba;
     @media (min-width: 320px) and (max-width: 767px) {
       border-width: 500px;
       margin-top: -500px;
       margin-left: -500px;
-      border-color: #f72a46;
+      border-color: #0081ba;
     }
   }
   100% {
@@ -2547,7 +2567,7 @@ button {
     width: 2000px;
     margin-top: -2500px;
     margin-left: -2500px;
-    border-color: #f7f7f7;
+    border-color: #a7ddf4;
     @media (min-width: 320px) and (max-width: 767px) {
       border-width: 500px;
       height: 1000px;
@@ -2557,14 +2577,14 @@ button {
     }
   }
 }
-/* line 413, ../scss/_materialize.scss */
+/* line 403, ../scss/_materialize.scss */
 .ripple1 {
   display: block;
   height: 0;
   width: 0;
   border-width: 0px;
   border-style: solid;
-  border-color: #fc687d;
+  border-color: #0081ba;
   border-radius: 100%;
   position: absolute;
   top: 300px;
@@ -2573,12 +2593,12 @@ button {
   animation: none;
 }
 
-/* line 428, ../scss/_materialize.scss */
+/* line 418, ../scss/_materialize.scss */
 .ripple-wrap.goripple {
   display: block;
 }
 
-/* line 432, ../scss/_materialize.scss */
+/* line 422, ../scss/_materialize.scss */
 .ripple-wrap.goripple .ripple1 {
   -webkit-animation-name: RIPPLER;
   -webkit-animation-duration: 1.5s;

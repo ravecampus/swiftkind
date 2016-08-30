@@ -146,7 +146,7 @@
     z-index: 1;
     width: 100%;
     height: 100%;
-    background: #ebebeb;
+    background: #fff;
     .container {
         @include desktop{
             width: 1270px;
@@ -166,7 +166,7 @@
                 z-index: 1;
             }
             h2.background:before {
-                border-top: 1px solid #e2112e;
+                border-top: 1px solid #175574;
                 ;
                 content: "";
                 margin: 0 auto;
@@ -182,7 +182,7 @@
             }
             h2.background span {
                 /* to hide the lines from behind the text, you have to set the background color the same as the container */
-                background: #ebebeb;
+                background: #fff;
                 padding: 0 15px;
             }
             .gallery {

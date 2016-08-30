@@ -4,12 +4,13 @@
     width: 100%;
     height: auto;
     padding: 30% auto;
+    height: 30vh;
     @include mobile {
         height: 30vh;
     }
     // custom style
     &#technologies {
-        background: #2c2c33;
+        background: #fff;
         & .container {
             h2 {
                 color: #666;

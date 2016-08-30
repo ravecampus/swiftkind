@@ -21,9 +21,11 @@ button:hover {
     max-width: 330px;
     position: relative;
     overflow: hidden;
-    //border: solid 0.1px #bdc3c7;
+    // border: solid 0.1px #f3f3f3;
     padding: 75px 0;
     background: #fff;
+    // box-shadow: 0px 1px 3px #c9c9c9;
+        border-bottom: 5px solid #0081ba;
     @include mobile {
             display: inline-block;
             padding: 0;
@@ -76,17 +78,6 @@ display: inline-block;
     padding: 0;
     position: relative;
 }
-
-// .img-wrapper:after {
-//     content: "";
-//     position: absolute;
-//     left: 0;
-//     top: 0;
-//     right: 0;
-//     bottom: 0;
-//     background: rgba(62, 79, 178, .25);
-//     width: 100%;
-// }
 .img-wrapper img {
     width: 30%;
     margin: 0;
@@ -123,17 +114,16 @@ button {
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    //box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
     z-index: 9;
     position: relative;
 }
 
 .main-button {
-    background: #e2112e;
+    background: #fff;
     -webkit-align-self: flex-end;
     -ms-flex-item-align: end;
     align-self: flex-end;
-    color: #fff;
+        color: #0081ba;
 }
 
 .ripple {
@@ -145,7 +135,7 @@ button {
     border-radius: 50%;
     z-index: -9;
     background: transparent;
-    border: 1px solid #ff2670;
+    border: 1px solid #0081ba;
     -webkit-transform: scale(.2);
     -ms-transform: scale(.2);
     transform: scale(.2);
@@ -205,11 +195,11 @@ button {
     width: 50px;
     height: 50px;
     // background: #e2112e;
-    background: #D31027;
+    background: #0081ba;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #D31027, #EA384D);
+    background: -webkit-linear-gradient(to left, #0081ba, #0081ba);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #D31027, #EA384D);
+    background: linear-gradient(to left, #0081ba, #0081ba);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 50%;
     z-index: -99;
@@ -270,7 +260,7 @@ button {
     position: absolute;
     right: 20px;
     top: 20px;
-    color: #ff2670;
+    color: #0081ba;
 }
 
 .layered-content.active .close-button {
@@ -296,7 +286,7 @@ button {
     font-size: 12px;
     background: white;
     padding: 2.5px 5px;
-    color: #ff2670;
+    color: #0081ba;
     ;
     text-decoration: none;
     border-radius: 50px;
@@ -371,12 +361,12 @@ button {
         border-width: 1500px;
         margin-top: -1500px;
         margin-left: -1500px;
-        border-color: #f72a46;
+        border-color: #0081ba;
         @include mobile{
               border-width: 500px;
         margin-top: -500px;
         margin-left: -500px;
-        border-color: #f72a46;
+        border-color: #0081ba;
         }
     }
     41% {
@@ -385,12 +375,12 @@ button {
         border-width: 1500px;
         margin-top: -1500px;
         margin-left: -1500px;
-        border-color: #f72a46;
+        border-color: #0081ba;
                 @include mobile{
               border-width: 500px;
         margin-top: -500px;
         margin-left: -500px;
-        border-color: #f72a46;
+        border-color: #0081ba;
         }
     }
     100% {
@@ -399,9 +389,9 @@ button {
         width: 2000px;
         margin-top: -2500px;
         margin-left: -2500px;
-        border-color: #f7f7f7;
+        border-color: #a7ddf4;
         @include mobile{
-             border-width: 500px;
+        border-width: 500px;
         height: 1000px;
         width: 1000px;
         margin-top: -1500px;
@@ -416,7 +406,7 @@ button {
     width: 0;
     border-width: 0px;
     border-style: solid;
-    border-color: #fc687d;
+    border-color: #0081ba;
     border-radius: 100%;
     position: absolute;
     top: 300px;

@@ -59,7 +59,7 @@
     .affix {
         padding-top: 20px;
         overflow: hidden;
-        color: #000;
+        color: #163875;
         -webkit-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out;
         .icon-bar {
@@ -84,7 +84,11 @@
                     height: 11px;
                 }
                 @include desktop {
-                    background: none;
+                    background: url("../images/logo-blue-full.png") no-repeat;
+                    background-size: cover;
+                    width: 130px;
+                    height: 11px;
+
                 }
             }
         }
@@ -95,60 +99,60 @@
     }
     .inner-content {
         .vertical-wrap {
-            display: table;
             height: 100vh;
-            .vertical-content {
-                display: table-cell;
-                vertical-align: middle;
-                .header-text {
-                    color: #fff;
-                    font-family: $OpenSans-Light;
-                    font-weight: 100;
+            margin: 0 auto;
+            .header-text {
+                margin-top: 35vh;
+                color: #333;
+                font-family: $OpenSans-Light;
+                font-weight: 100;
+                display: inline-block;
+                @include mobile {
+                    width: 100%;
+                    text-align: center;
+                }
+                h1 {
+                    font-size: 75px;
+                    display: block;
+                    letter-spacing: 1px;
+                    color: #143c80;
+                    font-family: $Ubuntu-L;
                     @include mobile {
-                        width: 100%;
-                        text-align: center;
-
-                    }
-                    h1 {
-                        font-size: 45px;
-                        font-weight: 100;
-                        @include mobile {
-                            font-size: 1.75em;
-                            line-height: 1.5em;
-                            br{
-                                display: none;
-                            }
+                        font-size: 1.75em;
+                        line-height: 1.5em;
+                        br {
+                            display: none;
                         }
                     }
-                    p {
-                        margin-top: 15px;
-                        font-size: 20px;
-                            color: #999;
-                        @include mobile {
-                            font-size: .75em;
-                        }
+                }
+                p {
+                    margin-top: 15px;
+                    font-size: 20px;
+                    color: #444;
+                    @include mobile {
+                        font-size: .75em;
                     }
-                    a {
-                        &.hire-link {
-                            color: #fff;
-                            border-bottom: #fff solid 1px;
-                            text-decoration: none;
-                        }
-                        &.hover {
-                            text-decoration: none;
-                        }
+                }
+                a {
+                    &.hire-link {
+                        color: #fff;
+                        border-bottom: #fff solid 1px;
+                        text-decoration: none;
                     }
-                    .header-icons {
-                            margin-top: 20px;
-                        img {
-                            display: inline;
-                            width: 50px;
-                            background: rgba(226, 17, 46, .4);
-                            margin: 1px;
-                            padding: 10px;
-                            border-radius: 10px;
-                            border-bottom: none;
-                        }
+                    &.hover {
+                        text-decoration: none;
+                    }
+                }
+                .header-icons {
+                    margin-top: 20px;
+                    img {
+                        display: inline;
+                        width: 50px;
+                        background: rgba(226, 17, 46, .4);
+                        margin: 1px;
+                        padding: 10px;
+                        border-radius: 10px;
+                        border-bottom: none;
                     }
                 }
             }
@@ -160,7 +164,9 @@
             height: 39px;
         }
         .header-logo {
-            width: 200px;
+            width: 70px;
+            margin-top: -40px;
+            margin-right: 0.5em;
         }
     }
 }
@@ -176,7 +182,7 @@
     opacity: 0.9;
     z-index: -1;
     mix-blend-mode: unset;
-    background: rgba(0, 0, 0, 0.9)
+    background: rgba(255, 255, 255, 0.99);
 }
 
 video#bgvid {
