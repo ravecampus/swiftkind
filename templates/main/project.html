@@ -1,0 +1,26 @@
+{% if section.project.all %}
+ <section id="projects">
+    <div class="project-section ">
+        <div class="container">
+            <div class="block-projects text-center ">
+                       
+                    <p class="caption ">
+                        {{ section.description_project }}
+                    </p>
+                
+                <h2 class="background"><span>OUR PROJECTS</span></h2>
+                <ul class="gallery ">
+                    {% for proj in section.project.all %}
+                    <li class="wow fadeIn " data-wow-duration="2s " data-wow-delay="1.5s ">
+                        <a href="# "><img src="{{ proj.background.url }}" /><span class="name ">{{ proj.name }}<span class="title ">{{ proj.title }}</span></span>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            
+            </div>
+            <!-- /.block-projects -->
+        </div>
+    </div>
+</section>
+{% endif %}

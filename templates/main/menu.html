@@ -1,0 +1,83 @@
+{% load pages_tags  %}
+{% for section in page.get_content_model.section.all %}
+<!-- about -->
+{% if section.title %}
+<section id="{{ section.id }}">
+    <div class="{{ section.id }} about">
+
+        <div class="entire-text container">
+            <div class="col2">
+                <div class="agile text-center wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
+                 <h1>{{ section.title }}</h1>
+                    <div class="agile-text wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
+                        <p>{{ section.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+{% endif %}
+
+{% if section.technology.all %}
+{% if section.title %}
+<section class="technologies techno text-center">
+{% else %}
+<section id="{{ section.id }}" class="technologies techno text-center">
+{% endif %}
+    <div class="container text-center">
+       <h2>our technologies</h2>
+       {% for tech in section.technology.all %}
+        <div class="img-holder">
+            <img src="{{ tech.icon.url }}" alt="html5-prog-lang-img" class="img-responsive wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s" />
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
+
+{% if section.project.all %}
+{% if section.title or section.technology.all %}
+<section">
+{% else %}
+<section id="{{ section.id }}">
+{% endif %}
+    <div class="project-section ">
+        <div class="container">
+            <div class="block-projects text-center ">
+                       
+                    <p class="caption ">
+                        {{ section.description_project }}
+                    </p>
+                
+                <h2 class="background"><span>OUR PROJECTS</span></h2>
+                <ul class="gallery ">
+                    {% for proj in section.project.all %}
+                    <li class="wow fadeIn " data-wow-duration="2s " data-wow-delay="1.5s ">
+                        <a href="# "><img src="{{ proj.background.url }}" /><span class="name ">{{ proj.name }}<span class="title ">{{ proj.title }}</span></span>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+{% endif %}
+
+{% endfor %}
+<div class="mobile-nav">
+    <ul class="nav-list">
+        <li><a href="#home">Home</a></li>
+    {% for section in page.get_content_model.section.all %}
+        <li><a href="#{{ section.id }}">{{ section.nabvar }}</a></li>
+    {% endfor %}
+    </ul>
+</div>
+
+

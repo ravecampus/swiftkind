@@ -1,0 +1,346 @@
+.team-services {
+    background: #fff;
+    padding-top: 200px;
+    .header-title {
+        h2 {
+            font-size: 62px;
+            line-height: 1.5;
+            font-family: $font-family-Source-Sans-light;
+        }
+    }
+    .inner-content {
+        padding-top: 280px;
+        img {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+        h5 {
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+    .team-title {
+        padding-top: 320px;
+        h3 {
+            text-transform: capitalize;
+            font-size: 40px;
+            font-family: $font-family-Source-Sans-light;
+            font-weight: bold;
+        }
+        hr {
+            &.team-line {
+                float: none;
+                margin: 0;
+                padding: 0;
+                width: 60px;
+                border-top: 1px solid #000;
+                margin-left: 28px;
+                margin-top: 40px;
+            }
+        }
+    }
+    .memskill {
+        padding-top: 64px;
+        .title {
+            padding-bottom: 35px;
+            h3 {
+                color: #c8c8c8;
+                font-size: 16px;
+            }
+        }
+        ul {
+            padding: 0;
+            li {
+                list-style: none;
+                position: relative;
+                margin-top: 1px;
+                &:first-child {
+                    margin-top: 0;
+                }
+                img {
+                    width: 12px;
+                    height: 35px;
+                }
+                .members-info {
+                    position: relative;
+                    bottom: 47px;
+                    left: 25px;
+                    h4,
+                    span {
+                        line-height: 0.5;
+                    }
+                    h4 {
+                        font-size: 20px;
+                        color: #0f0f0f;
+                    }
+                    span {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #373737;
+                    }
+                }
+            }
+            &.progress-list {
+                padding: 0;
+                margin: 0;
+                position: relative;
+                bottom: 10px;
+                border-left: 1px solid #000;
+                li {
+                    margin-top: 25px;
+                    margin-left: 100px;
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                    .progress-bar {
+                        position: relative;
+                        background: #fff;
+                        left: 0;
+                        top: 0;
+                        margin: 0;
+                        width: 100%;
+                        height: 22px;
+                        border: 1px solid #3498db;
+                        div {
+                            background: #3498db;
+                            overflow: hidden;
+                            position: absolute;
+                            height: 20px;
+                            min-width: 0;
+                            border: 1px solid #3498db;
+                        }
+                    }
+                    h5 {
+                        padding-top: 30px;
+                        font-size: 14px;
+                        color: #373737;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+    .button-link {
+        padding: 150px 0;
+        a {
+            color: #000;
+            text-transform: uppercase;
+            font-size: 18px;
+            &.left {
+                i {
+                    margin-right: 10px;
+                }
+            }
+            &.right {
+                i {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+.project-section {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    .container {
+        @include desktop{
+            width: 1270px;
+
+        }
+        .block-projects {
+            margin: 0 auto;
+            width: 100%;
+            h2 {
+                color: #666;
+                text-transform: uppercase;
+                font-size: 12px;
+                letter-spacing: 2px;
+            }
+            h2.background {
+                position: relative;
+                z-index: 1;
+            }
+            h2.background:before {
+                border-top: 1px solid #175574;
+                ;
+                content: "";
+                margin: 0 auto;
+                /* this centers the line to the full width specified */
+                position: absolute;
+                /* positioning must be absolute here, and relative positioning must be applied to the parent */
+                top: 50%;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 50%;
+                z-index: -1;
+            }
+            h2.background span {
+                /* to hide the lines from behind the text, you have to set the background color the same as the container */
+                background: #fff;
+                padding: 0 15px;
+            }
+            .gallery {
+                margin: 70px auto;
+                text-align: center;
+                width: 100%;
+                @include mobile {
+                    margin: 70px -20px;
+                }
+                li {
+                    @include mobile {
+                        .name {
+                            @include opacity(1);
+                            @include scale(1);
+                            @include transition-property(all);
+                            @include transition-duration(.6s);
+                        }
+                        .title {
+                            @include opacity(1);
+                        }
+                        img {
+                            @include scale(1.09);
+                            background-position: top top;
+                            @include filter((.4) blur(2px));
+                            @include transition-property(all);
+                            @include transition-duration(.8s);
+                        }
+                        &:hover img {
+                            opacity: 1;
+                        }
+                    }
+                    max-width: 100%;
+                    min-height: 100%;
+                    text-align: center;
+                    position: relative;
+                    margin: 0 auto;
+                    display: inline-block;
+                    overflow: hidden;
+                    background: #e2112e;
+                    &:nth-child(2) img {
+                        margin: 0;
+                        display: inline-block;
+                        float: right;
+                    }
+                    .name {
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        color: #fff;
+                        font-weight: lighter;
+                        font-size: 15px;
+                        letter-spacing: .5em;
+                        position: absolute;
+                        display: block;
+                        top: 88%;
+                        left: 0;
+                        text-align: center;
+                        @include opacity(0);
+                        z-index: 2;
+                        width: 100%;
+                        height: 100%;
+                        text-decoration: none;
+                        background: rgba(17, 17, 17, .8);
+                        @include mobile {
+                            font-size: .5em;
+                            top: 90%;
+                        }
+                        .title {
+                            display: block;
+                            text-transform: none;
+                            font-size: 60%;
+                            color: rgba(255, 255, 255, .7);
+                            @include opacity(0);
+                            @include transition-property(all);
+                            @include transition-delay(.2s);
+                            @include transition-duration(.9s);
+                        }
+                    }
+                    &:hover {
+                        .name {
+                            @include opacity(1);
+                            @include scale(1);
+                            @include transition-property(all);
+                            @include transition-duration(.6s);
+                        }
+                        .title {
+                            @include opacity(1);
+                        }
+                        img {
+                            @include scale(1.09);
+                            background-position: top top;
+                            @include filter((.4) blur(2px));
+                            @include transition-property(all);
+                            @include transition-duration(.8s);
+                        }
+                        &:hover img {
+                            opacity: 1;
+                        }
+                        @include mobile {
+                            display: none;
+                        }
+                    }
+                    img {
+                        display: block;
+                        width: auto;
+                        height: auto;
+                        margin: 0 auto;
+                        display: inline-block;
+                        text-align: center;
+                        opacity: 1;
+                        // background: #e2112e;
+                        @include transition-property(all);
+                        @include transition-duration(.4s);
+                        @include mobile {
+                            width: 120px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.team {
+    background: #ecf0f2;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.flex-box {
+    display: flex;
+    height: 70vh;
+    align-items: center;
+}
+
+.work {
+    a:link {
+        color: #e2112e;
+        text-transform: uppercase;
+        border: solid 1px;
+        padding: 20px 50px;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #fff!important;
+        text-transform: uppercase;
+        border: solid 1px;
+        padding: 20px 50px;
+        text-decoration: none;
+        background-color: #e2112e;
+        transition-duration: 0.5s;
+    }
+    a:visited {
+        color: #e2112e;
+        text-transform: uppercase;
+        border: solid 1px;
+        padding: 20px 50px;
+        text-decoration: none;
+    }
+}

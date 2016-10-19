@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="{{ LANGUAGE_CODE }}"{% if LANGUAGE_BIDI %} dir="rtl"{% endif %}>
+{% load pages_tags mezzanine_tags i18n staticfiles %}
+
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="{% block meta_keywords %}{% endblock %}">
+<meta name="description" content="{% block meta_description %}{% endblock %}">
+<title>Agility Development | Experts in Python/Django, AngularJS, UI/UX Design</title>
+<link rel="shortcut icon" href="{% static "img/favicon.ico" %}">
+
+{% ifinstalled mezzanine.blog %}
+<link rel="alternate" type="application/rss+xml" title="RSS" href="{% url "blog_post_feed" "rss" %}">
+<link rel="alternate" type="application/atom+xml" title="Atom" href="{% url "blog_post_feed" "atom" %}">
+{% endifinstalled %}
+
+{% compress css %}
+<!-- <link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
+<link rel="stylesheet" href="{% static "css/mezzanine.css" %}">
+<link rel="stylesheet" href="{% static "css/bootstrap-theme.css" %}"> -->
+
+<link rel="stylesheet" href="{% static 'assets/libs/bootstrap/dist/css/bootstrap.css' %}" />
+<link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
+<link rel="stylesheet" href="{% static 'assets/css/animate.css' %}" />
+<link rel="stylesheet" href="{% static 'assets/css/owl.carousel.css' %}" />
+<link rel="stylesheet" href="{% static 'assets/css/owl.transitions.css' %}" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" />
+
+{% if LANGUAGE_BIDI %}
+<link rel="stylesheet" href="{% static "css/bootstrap-rtl.css" %}">
+{% endif %}
+{% ifinstalled cartridge.shop %}
+<link rel="stylesheet" href="{% static "css/cartridge.css" %}">
+{% if LANGUAGE_BIDI %}
+<link rel="stylesheet" href="{% static "css/cartridge.rtl.css" %}">
+{% endif %}
+{% endifinstalled %}
+
+
+{% block extra_css %}
+ <style type="text/css">
+ {% for style in page.get_content_model.style.all %}
+    {{ style.css }}
+ {% endfor %}
+
+.wrapper-background{
+  background-image: url("{% static 'assets/images/team-header.jpg' %}");
+  background-size: cover;
+}
+
+</style>
+
+{% endblock %}
+{% endcompress %}
+{% block extra_head %}{% endblock %}
+
+</head>
+<body id="{% block body_id %}body{% endblock %}">
+
+<div class="banner-wrapper">
+
+    <nav class="navbar navbar-fixed-top" data-spy="affix" data-offset-top="300">
+        <div class="container">
+            <a class="navbar-brand " href="#"></a>
+            <div class="hamburger pull-right">
+                <div class="clearfix"></div>
+                <div class="hamburger-inner">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2 cross"></div>
+                    <div class="bar bar3 cross"></div>
+                    <div class="bar bar4"></div>
+                </div>
+                <!-- /.hamburger-inner -->
+            </div>
+        </div>
+    </nav>
+    <!--/.navbar-->
+
+   <header>
+        <div class="container" id="home">
+            <div class="inner-content">
+                <div class="main-title">
+                    <div class="overlay">
+                    </div>
+                    <video autoplay loop id="bgvid">
+                        <source src="{{ page.get_content_model.video.url}}" type="video/webm">
+                        <source src="{{ page.get_content_model.video.url }}" type="video/mp4">
+                    </video>
+                    <div class="vertical-wrap">
+                        <div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
+                            <img src="{{ page.get_content_model.logo.url }}" class="header-logo">
+                            <div class="header-text">
+                                <h1>{{ page.get_content_model.name }}</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--/.container -->
+       <!--  <div class="container" id="home">
+            <div class="inner-content">
+                <div class="vertical-wrap">
+                    <div class="vertical-content">
+                        <div class="header-text text-center">
+                            <h1 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s"> They know us for swift development</h1>
+                            <p class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s"> That’s because of our super team. Yes, and we know it.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+    </header>
+</div>
+
+   <!--  <div class="row">
+    {% ifequal page.get_content_model.template '1' %}
+        <div class="col-md-12 ">
+          
+        </div>
+    {% endifequal %}
+    {% ifequal page.get_content_model.template '2' %}
+        <div class="col-md-6">
+            
+        </div>
+        <div class="col-md-6">
+            qqq
+        </div>
+    {% endifequal %}
+    {% ifequal page.get_content_model.template '3' %}
+        <div class="col-md-4">
+            ff
+        </div>
+        <div class="col-md-4">
+            ff
+        </div>
+        <div class="col-md-4">
+            ff
+        </div>
+    {% endifequal %}
+    </div> 
+ -->
+
+ {% include 'main/menu.html' %}
+
+ <section class="site-footer" id="contact">
+        <div class="container">
+            <div class="vertical-wrap">
+                <div class="vertical-content">
+                    <div class="col-md-12 text-center footer-text">
+                        <h1>We are working together</h1>
+                        <h2>So get in touch</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="footer-elements">
+                            <li>
+                                <img src="{% static 'assets/images/bat1.png' %}" class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.2s">
+                            </li>
+                            <li class="swiftkind wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+                                Swiftkind Inc.
+                            </li>
+                            <li class="address wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+                                #98 2nd flr Arquiza bldg. N. Torres St. Obrero Davao City, Philippines
+                            </li>
+                            <li class="element wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.2s">
+                                +1(941)888-4447
+                            </li>
+                            <li class="element wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.5s">
+                                info@company.com
+                            </li>
+                        </ul>
+                    </div>
+
+                    {% page_menu "pages/menus/footer.html" %}
+
+                    <div class="col-md-3">
+                        <ul class="footer-elements">
+                            <li class="title wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+                                SOCIAL NETWORKS
+                            </li>
+                            <li>
+                                <ul class="social-media wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.2s">
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></a></i>
+                                    </li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <footer>
+    <div id="copyright" class="text-center">
+        <h5>&copy; 2016 Swiftkind Inc.
+        </h5>
+    </div>
+</footer>
+
+
+{% compress js %}
+
+<!-- <script src="{% static "mezzanine/js/"|add:settings.JQUERY_FILENAME %}"></script>
+<script src="{% static "js/bootstrap.js" %}"></script>
+<script src="{% static "js/bootstrap-extras.js" %}"></script> -->
+
+<script src="{% static 'assets/libs/jquery/dist/jquery.min.js' %}"></script>
+    <!--  Bootstrap JavaScript   -->
+<script src="{% static 'assets/libs/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/js/jv-jquery-mobile-menu.min.js' %}"></script>
+<script src="{% static 'assets/js/script-right.js' %}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="{% static 'assets/js/slider.js' %}"></script>
+<script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+<script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+<script src="{% static 'assets/js/slider-counter.js' %}"></script>
+<script src="{% static 'assets/js/team-progress.min.js' %}"></script>
+<!-- <script src="static/js/graph.js"></script> -->
+<script src="{% static 'assets/js/ripple.js' %}"></script>
+<script src="{% static 'assets/js/wow.min.js' %}"></script>
+<script src="{% static 'assets/js/material-index.js' %}"></script>
+<script src="{% static 'assets/js/prefixfree.min.js' %}s"></script>
+<!-- <script src="{% static 'assets/js/material-add.js"></script> -->
+<!-- <script src="static/js/material-add.js"></script>-->
+<script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.tooltipster.min.js' %}"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARoijx6hKd4WhlT7oQu6AAApZRXGb5ImU"></script>
+<script src="{% static 'assets/js/main.js' %}"></script>
+
+{% block extra_js %}
+<script type="text/javascript">
+ {% for style in page.get_content_model.style.all %}
+        {{ style.script|safe }}
+ {% endfor %}
+</script>
+{% endblock %}
+{% endcompress %}
+</body>
+</html>
